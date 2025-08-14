@@ -3,9 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biografía - Mr. Yebra</title>
+    <title>Mr. Yebra - Biografía</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <script>
+        function cambiarIdioma(idioma) {
+            document.getElementById('bio-es').style.display = idioma === 'es' ? 'block' : 'none';
+            document.getElementById('bio-en').style.display = idioma === 'en' ? 'block' : 'none';
+        }
+    </script>
 </head>
 <body>
 
@@ -21,6 +26,51 @@
         </nav>
         <div class="social-icons">
             <a href="https://www.instagram.com/mr.yebra_/?hl=es" target="_blank">
-                <img src="img/instagram.web" alt="Instagram">
+                <img src="img/instagram.webp" alt="Instagram">
             </a>
-            <a
+            <a href="https://www.facebook.com/mr.yebra" target="_blank">
+                <img src="img/facebook.webp" alt="Facebook">
+            </a>
+            <a href="https://www.tiktok.com/@mr.yebra" target="_blank">
+                <img src="img/tiktok.webp" alt="TikTok">
+            </a>
+            <a href="https://x.com/MrYebra78474" target="_blank">
+                <img src="img/X.webp" alt="X">
+            </a>
+        </div>
+    </header>
+
+    <!-- Contenido -->
+    <section class="bio-section">
+        <div class="bio-text">
+            <!-- Botón cambio idioma -->
+            <div class="lang-buttons">
+                <button onclick="cambiarIdioma('es')">Español</button>
+                <button onclick="cambiarIdioma('en')">English</button>
+            </div>
+
+            <!-- Español -->
+            <div id="bio-es">
+                <p>Hola, soy Paco Yebra. MR. YEBRA es mi proyecto musical, una fusión de música electrónica, elementos experimentales y armonías progresivas. Este nombre representa mi identidad artística.</p>
+                <p>Después de años de giras internacionales como bajista, he decidido dar el salto a la creación personal, explorando nuevos paisajes sonoros y compartiendo mi música con el mundo.</p>
+                <p>Mi tema debut, “A House In The Stars”, se lanzó el 1 de febrero de 2024. Le siguieron “Party at the Comet” (7 de marzo), “At the Court of King Yebra” (25 de mayo) y “Daisy's Magical Dream” (8 de diciembre). En 2025, publiqué “Harmonic Dimension” el 21 de marzo, y mi próximo tema “Continuous Pulse” saldrá el 11 de julio: una nueva exploración de ritmos y atmósferas electrónicas.</p>
+                <p>Y esto es solo el principio. Bienvenido al mundo de MR. YEBRA.</p>
+            </div>
+
+            <!-- Inglés -->
+            <div id="bio-en" style="display:none;">
+                <p>Hello, I’m Paco Yebra. MR. YEBRA is my musical project, a fusion of electronic music, experimental elements, and progressive harmonies. This name represents my artistic identity.</p>
+                <p>After years of international touring as a bassist, I decided to take the leap into personal creation, exploring new sonic landscapes and sharing my music with the world.</p>
+                <p>My debut track, “A House In The Stars,” was released on February 1, 2024. It was followed by “Party at the Comet” (March 7), “At the Court of King Yebra” (May 25), and “Daisy's Magical Dream” (December 8). In 2025, I released “Harmonic Dimension” on March 21, and my upcoming track “Continuous Pulse” will be out on July 11: a new exploration of rhythms and electronic atmospheres.</p>
+                <p>And this is just the beginning. Welcome to the world of MR. YEBRA.</p>
+            </div>
+        </div>
+
+        <!-- Imagen -->
+        <div class="bio-image">
+            <img src="img/biografia.webp" alt="Biografía de Mr. Yebra">
+        </div>
+    </section>
+
+</body>
+</html>
