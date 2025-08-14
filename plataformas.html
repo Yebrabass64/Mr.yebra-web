@@ -3,12 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mr. Yebra - Plataformas</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Plataformas - Mr. Yebra</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #dcdcdc;
+            background-image: url('portada.webp'); /* Pon el mismo fondo que en index.html */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: black;
+        }
+
+        nav a {
+            color: black;
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .social-icons img {
+            width: 22px;
+            height: 22px;
+            margin-left: 8px;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 80vh;
+            text-align: center;
+        }
+
+        .platforms {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .platform-btn {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 25px;
+            border-radius: 30px;
+            background-color: orange;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+
+        .platform-btn:hover {
+            background-color: darkorange;
+        }
+
+        .platform-btn img {
+            width: 28px;
+            height: 28px;
+        }
+    </style>
 </head>
 <body>
-
-    <!-- Menú -->
     <header>
         <div class="logo">Mr. Yebra</div>
         <nav>
@@ -19,61 +99,24 @@
             <a href="contacto.html">Contacto</a>
         </nav>
         <div class="social-icons">
-            <a href="https://www.instagram.com/mr.yebra_/?hl=es" target="_blank">
-                <img src="img/instagram.webp" alt="Instagram">
-            </a>
-            <a href="https://www.facebook.com/mr.yebra" target="_blank">
-                <img src="img/facebook.webp" alt="Facebook">
-            </a>
-            <a href="https://www.tiktok.com/@mr.yebra" target="_blank">
-                <img src="img/tiktok.webp" alt="TikTok">
-            </a>
-            <a href="https://x.com/MrYebra78474" target="_blank">
-                <img src="img/X.webp" alt="X">
-            </a>
+            <a href="#"><img src="img/instagram.webp" alt="Instagram"></a>
+            <a href="#"><img src="img/facebook.webp" alt="Facebook"></a>
+            <a href="#"><img src="img/tiktok.webp" alt="TikTok"></a>
+            <a href="#"><img src="img/x.webp" alt="X"></a>
         </div>
     </header>
 
-    <!-- Fondo con imagen -->
-    <section class="hero" style="background-image: url('img/plataformas.webp'); height: 100vh;">
-        <div class="platforms" style="position: relative; z-index: 1;">
-            <!-- Spotify -->
-            <a href="https://open.spotify.com/intl-es/artist/6tcrhUe3mlNAprd72aQC29?si=sEVUz9_VTy2_4MgT1J6J4g" class="platform" target="_blank">
-                <span>Escuchar</span>
-                <img src="img/spotify.webp" alt="Spotify">
-            </a>
-            <!-- Apple Music -->
-            <a href="https://music.apple.com/us/artist/mr-yebra/1722232747" class="platform" target="_blank">
-                <span>Escuchar</span>
-                <img src="img/apple.webp" alt="Apple Music">
-            </a>
-            <!-- Deezer -->
-            <a href="https://www.deezer.com/pt/artist/248032532" class="platform" target="_blank">
-                <span>Escuchar</span>
-                <img src="img/deezer.webp" alt="Deezer">
-            </a>
-            <!-- Amazon -->
-            <a href="https://music.amazon.es/artists/B0CQPDR1BV/mr-yebra" class="platform" target="_blank">
-                <span>Escuchar</span>
-                <img src="img/amazon.webp" alt="Amazon Music">
-            </a>
-            <!-- Boomplay -->
-            <a href="https://www.boomplay.com/artists/82140340?from=search" class="platform" target="_blank">
-                <span>Escuchar</span>
-                <img src="img/boomplay.webp" alt="Boomplay">
-            </a>
-            <!-- Tidal -->
-            <a href="https://tidal.com/browse/artist/44584343" class="platform" target="_blank">
-                <span>Escuchar</span>
-                <img src="img/tidal.webp" alt="Tidal">
-            </a>
-            <!-- YouTube -->
-            <a href="https://www.youtube.com/@user-Mr._Yebra/featured" class="platform" target="_blank">
-                <span>Escuchar</span>
-                <img src="img/youtube.webp" alt="YouTube">
-            </a>
+    <main>
+        <h1>Escucha en tu plataforma favorita</h1>
+        <div class="platforms">
+            <a href="#" class="spotify.webp"><img src="img/spotify.webp" alt="Spotify">Spotify</a>
+            <a href="#" class="apple.webp"><img src="img/applemusic.webp" alt="Apple Music">Apple Music</a>
+            <a href="#" class="deezer.webp"><img src="img/deezer.webp" alt="Deezer">Deezer</a>
+            <a href="#" class="amazon.webp"><img src="img/amazonmusic.webp" alt="Amazon Music">Amazon Music</a>
+            <a href="#" class="boomplay.webp"><img src="img/boomplay.webp" alt="Boomplay">Boomplay</a>
+            <a href="#" class="tidal.webp"><img src="img/tidal.webp" alt="Tidal">Tidal</a>
+            <a href="#" class="youtube.webp"><img src="img/youtube.webp" alt="YouTube">YouTube</a>
         </div>
-    </section>
-
+    </main>
 </body>
 </html>
