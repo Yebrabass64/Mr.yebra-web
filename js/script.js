@@ -1,12 +1,13 @@
-function cambiarIdioma() {
-    const es = document.getElementById("texto-es");
-    const en = document.getElementById("texto-en");
+// Alternar biografía español / inglés
+function toggleLanguage() {
+    const esText = document.getElementById('bio-text');
+    const enText = document.getElementById('bio-text-en');
 
-    if (es.style.display === "none") {
-        es.style.display = "block";
-        en.style.display = "none";
+    if (esText.classList.contains('hidden')) {
+        esText.classList.remove('hidden');
+        enText.classList.add('hidden');
     } else {
-        es.style.display = "none";
-        en.style.display = "block";
+        esText.classList.add('hidden');
+        enText.classList.remove('hidden');
     }
 }
