@@ -160,3 +160,75 @@ body {
   transform: scale(1.05);
   background-color: #f0f0f0;
 }
+/* ===== Estilos exclusivos para plataformas.html ===== */
+body.plataformas-page {
+  background: url("img/fondo-plataformas.webp") no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+  text-align: center;
+}
+
+body.plataformas-page header {
+  background: rgba(0,0,0,0.5);
+  padding: 10px 0;
+}
+
+body.plataformas-page nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+body.plataformas-page nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+body.plataformas-page nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+body.plataformas-page .platform-content {
+  margin-top: 100px;
+}
+
+body.plataformas-page .platform-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+body.plataformas-page .btn-listen {
+  background-color: rgba(255,255,255,0.9);
+  color: black;
+  text-decoration: none;
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 250px;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+body.plataformas-page .btn-listen img {
+  height: 20px;
+  width: auto;
+}
+
+body.plataformas-page .btn-listen:hover {
+  transform: scale(1.05);
+  background-color: white;
+}
