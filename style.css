@@ -119,3 +119,44 @@ body {
     border-radius: 5px;
     cursor: pointer;
 }
+/* Fondo y estilo general */
+.plataformas-page {
+  background: url("img/fondo-plataformas.webp") no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Contenedor de botones */
+.platform-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 100px;
+}
+
+/* Botones de escuchar */
+.btn-listen {
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 250px;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.btn-listen img {
+  height: 20px;
+  width: auto;
+}
+
+.btn-listen:hover {
+  transform: scale(1.05);
+  background-color: #f0f0f0;
+}
