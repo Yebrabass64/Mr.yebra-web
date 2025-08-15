@@ -1,0 +1,117 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Encabezado */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f2f2f2;
+    padding: 10px 30px;
+    font-family: Arial, sans-serif;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+nav ul li a.active {
+    text-decoration: underline;
+}
+
+.social-icons a img {
+    width: 20px;
+    height: 20px;
+    margin-left: 8px;
+}
+
+/* Hero principal */
+.hero {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.hero-content {
+    background: rgba(0,0,0,0.5);
+    padding: 20px 40px;
+    border-radius: 10px;
+}
+
+.hero-content .disponible {
+    font-size: 18px;
+}
+
+.hero-content .titulo {
+    font-size: 32px;
+    font-family: 'Georgia', serif;
+    margin: 10px 0;
+}
+
+.btn-rojo {
+    display: inline-block;
+    background: red;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+/* Sección suscripción */
+.suscripcion {
+    text-align: center;
+    padding: 40px 20px;
+    background: #f2f2f2;
+}
+
+.suscripcion p {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.suscripcion form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.suscripcion input {
+    padding: 10px;
+    width: 250px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+}
+
+.suscripcion button {
+    padding: 10px 20px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
