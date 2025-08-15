@@ -1,0 +1,66 @@
+/* style-index.css */
+
+body {
+  background: #000;
+  color: white;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background-image: var(--hero-img);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px 40px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.hero-content .tagline {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.hero-content .song-title {
+  font-family: 'Dancing Script', cursive;
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.btn-listen {
+  background: orange;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+/* SUSCRIPCIÓN */
+.subscribe {
+  background: #f4f4f4;
+  color: #000;
+  padding: 20px;
+  text-align: center;
+}
+
+.subscribe input {
+  padding: 8px;
+  margin-right: 5px;
+}
+
+.subscribe button {
+  padding: 8px 12px;
+  background: orange;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+}
