@@ -1,53 +1,56 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mr. Yebra</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mr. Yebra</title>
 
-    <!-- Fuente para el título Continuous Pulse -->
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  <!-- Hoja de estilos -->
+  <link rel="stylesheet" href="style.css?v=home1" />
+
+  <!-- Fuente cursiva para "Continuous Pulse" (como en la captura) -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Menú superior -->
-    <header>
-        <div class="logo">Mr. Yebra</div>
-        <nav>
-            <ul>
-                <li><a href="index.html" class="active">Inicio</a></li>
-                <li><a href="biografia.html">Biografía</a></li>
-                <li><a href="musica.html">Música</a></li>
-                <li><a href="videos.html">Videos</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-        <div class="social-icons">
-            <a href="#"><img src="icons/instagram.webp" alt="Instagram"></a>
-            <a href="#"><img src="icons/facebook.webp" alt="Facebook"></a>
-            <a href="#"><img src="icons/tiktok.webp" alt="TikTok"></a>
-            <a href="#"><img src="icons/x.webp" alt="X"></a>
-        </div>
-    </header>
+  <!-- Barra superior -->
+  <header class="top-bar">
+    <div class="logo">Mr. Yebra</div>
 
-    <!-- Imagen principal -->
-    <section class="hero" style="background-image: url('images/tu-imagen.jpg');">
-        <div class="hero-content">
-            <p class="disponible">Ya disponible</p>
-            <h1 class="titulo">Continuous Pulse</h1>
-            <a href="plataformas.html" class="btn-rojo">Escuchar Ahora</a>
-        </div>
-    </section>
+    <nav class="main-menu">
+      <a href="index.html" class="active">Inicio</a>
+      <a href="biografia.html">Biografía</a>
+      <a href="musica.html">Música</a>
+      <a href="videos.html">Videos</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
 
-    <!-- Formulario de suscripción -->
-    <section class="suscripcion">
-        <p>Suscríbete con tu correo electrónico para recibir noticias y actualizaciones</p>
-        <form>
-            <input type="email" placeholder="Tu correo electrónico" required>
-            <button type="submit">Suscribirse</button>
-        </form>
-    </section>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/mr.yebra_/?hl=es" target="_blank" rel="noopener"><img src="omg/instagram.webp" alt="Instagram"></a>
+      <a href="https://www.facebook.com/mr.yebra" target="_blank" rel="noopener"><img src="omg/facebook.webp" alt="Facebook"></a>
+      <a href="https://www.tiktok.com/@mr.yebra" target="_blank" rel="noopener"><img src="omg/tiktok.webp" alt="TikTok"></a>
+      <a href="https://x.com/MrYebra78474" target="_blank" rel="noopener"><img src="omg/X.webp" alt="X"></a>
+    </div>
+  </header>
+
+  <!-- Hero con la imagen a pantalla completa -->
+  <section class="hero" style="--hero-img: url('omg/portada.webp');">
+    <div class="hero-content">
+      <p class="tagline">Ya disponible</p>
+      <h1 class="song-title">Continuous Pulse</h1>
+      <!-- Enlaza a plataformas sin cambiar el estilo del botón -->
+      <a href="plataformas.html" class="btn-listen">Escuchar Ahora</a>
+    </div>
+  </section>
+
+  <!-- Suscripción debajo de la foto -->
+  <section class="subscribe">
+    <p>Suscríbete con tu correo electrónico para recibir noticias y actualizaciones</p>
+    <form onsubmit="return false">
+      <input type="email" placeholder="Introduce tu correo electrónico" required>
+      <button type="submit">Suscribirse</button>
+    </form>
+  </section>
 
 </body>
 </html>
