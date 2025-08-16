@@ -55,8 +55,8 @@ body {
 /* AJUSTE DEL LOGO (Mr. Yebra) */
 /* ------------------------- */
 .logo {
-  font-family: 'Dancing Script', cursive;
-  font-size: 28px;   /* más grande */
-  color: #111;       /* gris muy oscuro */
-  font-weight: bold;
+  font-family: 'Dancing Script', cursive !important;
+  font-size: 28px !important;
+  color: #111 !important; /* gris oscuro */
+  font-weight: bold !important;
 }
