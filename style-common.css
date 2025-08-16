@@ -1,4 +1,6 @@
-/* style-common.css */
+/* ------------------------- */
+/* ESTILOS COMPARTIDOS       */
+/* ------------------------- */
 
 /* Reset básico */
 * {
@@ -9,26 +11,34 @@
 
 body {
   font-family: Arial, sans-serif;
+  background-color: #d3d3d3;
+  color: #000;
 }
 
-/* HEADER */
-.top-bar {
+/* Barra superior */
+.top-bar,
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #d9d9d9; /* gris claro */
-  padding: 10px 20px;
+  padding: 10px 30px;
+  background-color: rgba(0,0,0,0.6);
+  color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
 }
 
-.logo {
-  font-weight: bold;
+.main-menu {
+  display: flex;
+  gap: 20px;
 }
 
 .main-menu a {
-  margin: 0 10px;
+  color: white;
   text-decoration: none;
   font-weight: bold;
-  color: #000;
 }
 
 .main-menu a.active {
@@ -36,7 +46,17 @@ body {
 }
 
 .social-icons img {
-  width: 20px;
-  height: 20px;
+  height: 24px;
+  width: 24px;
   margin-left: 10px;
+}
+
+/* ------------------------- */
+/* AJUSTE DEL LOGO (Mr. Yebra) */
+/* ------------------------- */
+.logo {
+  font-family: 'Dancing Script', cursive;
+  font-size: 28px;   /* más grande */
+  color: #111;       /* gris muy oscuro */
+  font-weight: bold;
 }
