@@ -1,26 +1,28 @@
-/* ===== Estilos exclusivos para biografia.html ===== */
-
+/* Fondo gris intermedio */
 body.biografia-page {
   background-color: #555; /* gris intermedio */
   color: #fff;
   font-family: 'Merriweather', Georgia, serif;
-  padding-top: 80px; /* espacio para el header fijo */
+  padding-top: 100px; /* espacio para header fijo */
 }
 
+/* Contenedor principal */
 .bio-container {
   max-width: 1200px;
   margin: auto;
   padding: 40px 20px;
 }
 
+/* Título BIOGRAFÍA */
 .bio-container h1 {
-  text-align: left;
   font-size: 2rem;
   margin-bottom: 30px;
   color: white;
   letter-spacing: 2px;
+  text-align: left;
 }
 
+/* Layout en dos columnas */
 .bio-content {
   display: flex;
   justify-content: space-between;
@@ -28,12 +30,14 @@ body.biografia-page {
   gap: 40px;
 }
 
+/* Texto */
 .bio-text {
-  flex: 1;
+  flex: 2; /* más ancho */
   font-size: 1.1rem;
   line-height: 1.6;
 }
 
+/* Botón idiomas */
 .bio-text button {
   margin-top: 20px;
   padding: 10px 20px;
@@ -45,7 +49,14 @@ body.biografia-page {
   cursor: pointer;
 }
 
+/* Imagen */
+.bio-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
 .bio-image img {
-  width: 280px; /* más pequeña */
+  max-width: 280px;
   border-radius: 10px;
 }

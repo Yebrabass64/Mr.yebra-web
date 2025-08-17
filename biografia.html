@@ -5,17 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Biografía - Mr. Yebra</title>
 
-  <!-- Fuente para logo y texto -->
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Merriweather&display=swap" rel="stylesheet">
+  <!-- Fuente para logo -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
 
-  <!-- CSS común (header) -->
+  <!-- CSS común -->
   <link rel="stylesheet" href="style-common.css">
-  <!-- CSS exclusivo -->
+
+  <!-- CSS exclusivo de biografía -->
   <link rel="stylesheet" href="style-biografia.css">
 </head>
 <body class="biografia-page">
 
-  <!-- Header -->
+  <!-- Header (igual que en index y plataformas) -->
   <header class="top-bar">
     <div class="logo">Mr. Yebra</div>
     <nav class="main-menu">
@@ -36,12 +38,16 @@
   <!-- Contenido principal -->
   <main class="bio-container">
     <h1>BIOGRAFÍA</h1>
-    
+
     <div class="bio-content">
       <!-- Texto -->
       <div class="bio-text">
         <p id="bio-text">
-          Aquí irá el texto de la biografía en español. Puedes contar tu trayectoria, influencias y experiencias.
+          Hola, MR. YEBRA es mi proyecto musical, una fusión de música electrónica, elementos experimentales y armonías progresivas. 
+          Este nombre representa mi identidad artística. Después de años de giras internacionales como bajista, he decidido dar el salto a la creación personal, explorando nuevos paisajes sonoros y compartiendo mi música con el mundo. 
+          Mi tema debut, “A House in The Stars”, se lanzó el 1 de febrero de 2024. Le siguieron “Party at the Comet” (7 de marzo), “At the Court of King Yebra” (25 de mayo) y “Daisy’s Magical Dream” (8 de diciembre). 
+          En 2025, publiqué “Harmonic Dimension” el 21 de marzo, y el próximo tema “Continuous Pulse” saldrá el 11 de julio: una nueva exploración de ritmos y atmósferas electrónicas. 
+          Esto es solo el principio. Bienvenido al mundo de MR. YEBRA.
         </p>
         <button id="toggle-lang">English</button>
       </div>
@@ -53,27 +59,34 @@
     </div>
   </main>
 
+  <!-- Script para cambiar idioma -->
   <script>
-    const bioText = document.getElementById("bio-text");
-    const toggleBtn = document.getElementById("toggle-lang");
+    const toggleBtn = document.getElementById('toggle-lang');
+    const bioText = document.getElementById('bio-text');
+    let isSpanish = true;
 
-    const bioES = "Aquí irá el texto de la biografía en español. Puedes contar tu trayectoria, influencias y experiencias.";
-    const bioEN = "Here goes the biography text in English. You can share your career, influences, and experiences.";
+    const textoES = `Hola, MR. YEBRA es mi proyecto musical, una fusión de música electrónica, elementos experimentales y armonías progresivas. 
+    Este nombre representa mi identidad artística. Después de años de giras internacionales como bajista, he decidido dar el salto a la creación personal, explorando nuevos paisajes sonoros y compartiendo mi música con el mundo. 
+    Mi tema debut, “A House in The Stars”, se lanzó el 1 de febrero de 2024. Le siguieron “Party at the Comet” (7 de marzo), “At the Court of King Yebra” (25 de mayo) y “Daisy’s Magical Dream” (8 de diciembre). 
+    En 2025, publiqué “Harmonic Dimension” el 21 de marzo, y el próximo tema “Continuous Pulse” saldrá el 11 de julio: una nueva exploración de ritmos y atmósferas electrónicas. 
+    Esto es solo el principio. Bienvenido al mundo de MR. YEBRA.`;
 
-    let currentLang = "ES";
+    const textoEN = `Hello, MR. YEBRA is my musical project, a fusion of electronic music, experimental elements, and progressive harmonies. 
+    This name represents my artistic identity. After years of international tours as a bassist, I decided to take the leap into personal creation, exploring new soundscapes and sharing my music with the world. 
+    My debut track, “A House in The Stars”, was released on February 1, 2024. It was followed by “Party at the Comet” (March 7), “At the Court of King Yebra” (May 25), and “Daisy’s Magical Dream” (December 8). 
+    In 2025, I released “Harmonic Dimension” on March 21, and my upcoming track “Continuous Pulse” will be released on July 11: a new exploration of rhythms and electronic atmospheres. 
+    This is just the beginning. Welcome to the world of MR. YEBRA.`;
 
-    toggleBtn.addEventListener("click", () => {
-      if (currentLang === "ES") {
-        bioText.textContent = bioEN;
+    toggleBtn.addEventListener('click', () => {
+      if (isSpanish) {
+        bioText.textContent = textoEN;
         toggleBtn.textContent = "Español";
-        currentLang = "EN";
       } else {
-        bioText.textContent = bioES;
+        bioText.textContent = textoES;
         toggleBtn.textContent = "English";
-        currentLang = "ES";
       }
+      isSpanish = !isSpanish;
     });
   </script>
-
 </body>
 </html>
