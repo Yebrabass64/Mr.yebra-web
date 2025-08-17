@@ -181,32 +181,6 @@ body.plataformas-page {
   text-align: center;
 }
 
-body.plataformas-page header {
-  background: rgba(0,0,0,0.5);
-  padding: 10px 0;
-}
-
-body.plataformas-page nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  margin: auto;
-  padding: 0 20px;
-}
-
-body.plataformas-page nav ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-body.plataformas-page nav ul li a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-}
-
 body.plataformas-page .platform-content {
   margin-top: 100px;
 }
