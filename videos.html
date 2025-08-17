@@ -5,30 +5,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vídeos - Mr. Yebra</title>
 
-  <!-- CSS común con la barra -->
+  <!-- Fuente para logo -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+  <!-- CSS común -->
   <link rel="stylesheet" href="style-common.css">
-  <!-- Opcional: puedes usar style.css si el home lo usa -->
   <link rel="stylesheet" href="style.css">
 
   <style>
     body {
       margin: 0;
+      background-color: #555; /* gris igual que biografía */
       font-family: 'Merriweather', serif;
-      background-color: #555; /* gris como en biografía */
       min-height: 100vh;
+    }
+
+    /* Contenido centrado debajo de la barra */
+    .content {
+      padding: 120px 20px 40px;
+      text-align: center;
+      color: white;
     }
   </style>
 </head>
 <body>
 
-  <!-- Barra superior exactamente igual que en index.html -->
+  <!-- Barra superior (idéntica al home) -->
   <header class="top-bar">
     <div class="logo">Mr. Yebra</div>
     <nav class="main-menu">
       <a href="index.html">Inicio</a>
       <a href="biografia.html">Biografía</a>
       <a href="musica.html">Música</a>
-      <!-- Este enlace abre en una nueva pestaña -->
+      <!-- Abrir YouTube en una nueva pestaña -->
       <a href="https://www.youtube.com/@user-Mr._Yebra" target="_blank">Vídeos</a>
       <a href="plataformas.html">Plataformas</a>
       <a href="contacto.html">Contacto</a>
@@ -40,6 +49,12 @@
       <a href="https://www.tiktok.com/@mr.yebra" target="_blank"><img src="omg/tiktok.webp" alt="TikTok"></a>
     </div>
   </header>
+
+  <!-- Contenido debajo -->
+  <div class="content">
+    <h1>Canal de YouTube</h1>
+    <p>Haz clic en <strong>Vídeos</strong> en el menú superior para abrir el canal oficial en una nueva pestaña.</p>
+  </div>
 
 </body>
 </html>
