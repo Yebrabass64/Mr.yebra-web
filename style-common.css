@@ -1,45 +1,27 @@
-/* ===================== */
-/* ESTILOS COMUNES       */
-/* ===================== */
-
-/* Reset básico */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body base */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-}
-
-/* ===================== */
-/* CABECERA UNIFICADA    */
-/* ===================== */
+/* Barra superior común */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.9); /* negro translúcido */
-    padding: 10px 20px;
     position: fixed;
     top: 0;
     left: 0;
-    right: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    background: rgba(0, 0, 0, 0.9); /* Negro translúcido */
     z-index: 1000;
 }
 
-/* Logo "Mr. Yebra" */
+/* Logo Mr. Yebra */
 header .logo {
-    font-family: "Brush Script MT", cursive;
-    font-size: 2rem;
+    font-family: 'Brush Script MT', cursive;
+    font-size: 26px;
     font-weight: bold;
-    color: #fff;
+    color: #fff;  /* Blanco */
+    text-decoration: none;
 }
 
-/* Menú principal */
+/* Navegación */
 nav ul {
     list-style: none;
     display: flex;
@@ -50,21 +32,29 @@ nav ul {
 
 nav ul li a {
     text-decoration: none;
-    color: #fff;
     font-weight: bold;
+    color: #fff;
+    transition: color 0.3s ease;
 }
 
-nav ul li a:hover {
-    color: #f0a500; /* dorado al pasar ratón */
+nav ul li a:hover,
+nav ul li a.active {
+    color: #f39c12;
 }
 
-/* Iconos redes sociales */
+/* Iconos redes */
 .social-icons {
     display: flex;
     gap: 10px;
 }
 
-.social-icons img {
-    width: 20px;
-    height: 20px;
+.social-icons a img {
+    width: 18px;
+    height: 18px;
+    filter: invert(1); /* Blancos */
+    transition: transform 0.3s ease;
+}
+
+.social-icons a img:hover {
+    transform: scale(1.2);
 }

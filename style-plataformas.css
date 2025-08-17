@@ -1,42 +1,43 @@
-/* ===================== */
-/* ESTILOS ESPECÍFICOS PLATAFORMAS */
-/* ===================== */
-
+/* Fondo */
 body {
-    background: url("img/plataformas-background.jpg") no-repeat center center/cover;
-    color: white;
-    text-align: center;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('img/fondo-plataformas.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Contenedor de botones */
-.platforms {
+/* Contenedor botones */
+.platforms-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 15px;
-    margin-top: 120px; /* margen para el header fijo */
+    width: 300px;
 }
 
-/* Botón de plataforma */
+/* Botones */
 .platform-button {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: white;
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 25px;
     padding: 10px 20px;
-    width: 300px;
-    transition: transform 0.2s ease-in-out;
-}
-
-.platform-button img {
-    width: 24px;
-    height: 24px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .platform-button:hover {
     transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+/* Iconos dentro de botones */
+.platform-button img {
+    width: 24px;
+    height: 24px;
 }
