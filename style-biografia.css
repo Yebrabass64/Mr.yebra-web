@@ -1,0 +1,51 @@
+/* ===== Estilos exclusivos para biografia.html ===== */
+
+body.biografia-page {
+  background-color: #555; /* gris intermedio */
+  color: #fff;
+  font-family: 'Merriweather', Georgia, serif;
+  padding-top: 80px; /* espacio para el header fijo */
+}
+
+.bio-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.bio-container h1 {
+  text-align: left;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: white;
+  letter-spacing: 2px;
+}
+
+.bio-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.bio-text {
+  flex: 1;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.bio-text button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  background: #ff9800;
+  color: black;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.bio-image img {
+  width: 280px; /* más pequeña */
+  border-radius: 10px;
+}
