@@ -12,19 +12,24 @@
   <link rel="stylesheet" href="style-common.css">
 
   <style>
-    /* Estilo para el iframe de YouTube */
-    .youtube-container {
-      margin-top: 100px; /* espacio debajo del header */
-      display: flex;
-      justify-content: center;
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
     }
+
+    .youtube-container {
+      position: absolute;
+      top: 60px; /* altura de la cabecera */
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+
     .youtube-container iframe {
-      width: 90%;
-      max-width: 1200px;
-      height: 700px;
+      width: 100%;
+      height: 100%;
       border: none;
-      border-radius: 10px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.4);
     }
   </style>
 </head>
@@ -48,10 +53,10 @@
     </div>
   </header>
 
-  <!-- Contenedor de YouTube -->
+  <!-- Canal de YouTube ocupando toda la pantalla -->
   <div class="youtube-container">
     <iframe 
-      src="https://www.youtube.com/embed?listType=user_uploads&list=user-Mr._Yebra" 
+      src="https://www.youtube.com/@user-Mr._Yebra"
       allowfullscreen>
     </iframe>
   </div>
