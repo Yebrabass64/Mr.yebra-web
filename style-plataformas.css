@@ -2,10 +2,12 @@
 
 /* Fondo */
 body.plataformas-page {
-  background: url("omg/fondo-plataformas.webp") no-repeat center center fixed;
+  background: url("omg/portada.webp") no-repeat center center fixed;
   background-size: cover;
   margin: 0;
   font-family: Arial, sans-serif;
+  color: white;
+  text-align: center;
 }
 
 /* Contenedor de botones */
