@@ -5,11 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vídeos - Mr. Yebra</title>
 
-  <!-- Fuente para logo y texto -->
+  <!-- Fuente para logo -->
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
 
   <!-- CSS común -->
   <link rel="stylesheet" href="style-common.css">
+
+  <style>
+    /* Estilo para el iframe de YouTube */
+    .youtube-container {
+      margin-top: 100px; /* espacio debajo del header */
+      display: flex;
+      justify-content: center;
+    }
+    .youtube-container iframe {
+      width: 90%;
+      max-width: 1200px;
+      height: 700px;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    }
+  </style>
 </head>
 <body>
   <!-- Header (idéntico al index) -->
@@ -20,6 +37,7 @@
       <a href="biografia.html">Biografía</a>
       <a href="musica.html">Música</a>
       <a href="videos.html" class="active">Vídeos</a>
+      <a href="plataformas.html">Plataformas</a>
       <a href="contacto.html">Contacto</a>
     </nav>
     <div class="social-icons">
@@ -30,17 +48,12 @@
     </div>
   </header>
 
-  <!-- Redirección automática -->
-  <main class="redirect">
-    <p>Estás siendo redirigido al canal oficial de <strong>Mr. Yebra</strong> en YouTube...</p>
-    <p><a href="https://www.youtube.com/@user-Mr._Yebra" target="_blank">Haz clic aquí si no eres redirigido automáticamente</a></p>
-  </main>
-
-  <script>
-    // Redirigir tras 2 segundos
-    setTimeout(() => {
-      window.location.href = "https://www.youtube.com/@user-Mr._Yebra";
-    }, 2000);
-  </script>
+  <!-- Contenedor de YouTube -->
+  <div class="youtube-container">
+    <iframe 
+      src="https://www.youtube.com/embed?listType=user_uploads&list=user-Mr._Yebra" 
+      allowfullscreen>
+    </iframe>
+  </div>
 </body>
 </html>
