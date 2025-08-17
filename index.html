@@ -1,38 +1,50 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mr. Yebra - Inicio</title>
-    <link rel="stylesheet" href="style-common.css">
-    <link rel="stylesheet" href="style-index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mr. Yebra</title>
+  <link rel="stylesheet" href="style-common.css">
+  <link rel="stylesheet" href="style-index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Cabecera común -->
-    <header>
-        <a href="index.html" class="logo">Mr. Yebra</a>
-        <nav>
-            <ul>
-                <li><a href="index.html" class="active">Inicio</a></li>
-                <li><a href="biografia.html">Biografía</a></li>
-                <li><a href="musica.html">Música</a></li>
-                <li><a href="videos.html">Videos</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-        <div class="social-icons">
-            <a href="https://instagram.com" target="_blank"><img src="img/instagram.png" alt="Instagram"></a>
-            <a href="https://facebook.com" target="_blank"><img src="img/facebook.png" alt="Facebook"></a>
-            <a href="https://tiktok.com" target="_blank"><img src="img/tiktok.png" alt="TikTok"></a>
-            <a href="https://x.com" target="_blank"><img src="img/x.png" alt="X"></a>
-        </div>
-    </header>
 
-    <!-- Contenido portada -->
-    <div class="hero-content">
-        <h2>Ya disponible</h2>
-        <h1>Continuous Pulse</h1>
-        <a href="plataformas.html">Escuchar Ahora</a>
+  <!-- Barra superior -->
+  <header class="top-bar">
+    <div class="logo">Mr. Yebra</div>
+    <nav class="main-menu">
+      <a href="index.html" class="active">Inicio</a>
+      <a href="biografia.html">Biografía</a>
+      <a href="musica.html">Música</a>
+      <a href="videos.html">Videos</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/mr.yebra_/?hl=es" target="_blank"><img src="omg/instagram.webp" alt="Instagram"></a>
+      <a href="https://www.facebook.com/mr.yebra" target="_blank"><img src="omg/facebook.webp" alt="Facebook"></a>
+      <a href="https://www.tiktok.com/@mr.yebra" target="_blank"><img src="omg/tiktok.webp" alt="TikTok"></a>
+      <a href="https://x.com/MrYebra78474" target="_blank"><img src="omg/X.webp" alt="X"></a>
     </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" style="--hero-img: url('omg/portada.webp');">
+    <div class="hero-content">
+      <p class="tagline">Ya disponible</p>
+      <h1 class="song-title">Continuous Pulse</h1>
+      <a href="plataformas.html" class="btn-listen">Escuchar Ahora</a>
+    </div>
+  </section>
+
+  <!-- Suscripción -->
+  <section class="subscribe">
+    <p>Suscríbete con tu correo electrónico para recibir noticias y actualizaciones</p>
+    <form onsubmit="return false">
+      <input type="email" placeholder="Introduce tu correo electrónico" required>
+      <button type="submit">Suscribirse</button>
+    </form>
+  </section>
+
 </body>
 </html>
