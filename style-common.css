@@ -16,27 +16,54 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #d9d9d9; /* gris claro */
-  padding: 10px 20px;
+  background: rgba(0, 0, 0, 0.7); /* negro translúcido */
+  padding: 10px 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-sizing: border-box;
 }
 
+/* Logo (Mr. Yebra) */
 .logo {
-  font-weight: bold;
+  font-family: 'Dancing Script', cursive; /* más artística */
+  font-size: 1.8rem;
+  font-weight: normal; /* sin negrita */
+  color: #fff;
+}
+
+/* Menú principal */
+.main-menu {
+  display: flex;
+  gap: 25px;
 }
 
 .main-menu a {
-  margin: 0 10px;
   text-decoration: none;
-  font-weight: bold;
-  color: #000;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s;
 }
 
+.main-menu a:hover,
 .main-menu a.active {
-  text-decoration: underline;
+  color: #ff9800; /* resaltar en naranja */
+}
+
+/* Redes sociales */
+.social-icons {
+  display: flex;
+  gap: 12px;
 }
 
 .social-icons img {
   width: 20px;
   height: 20px;
-  margin-left: 10px;
+  transition: transform 0.2s;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
 }
