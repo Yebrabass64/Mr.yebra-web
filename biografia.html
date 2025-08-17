@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Biografía - Mr. Yebra</title>
 
-  <!-- Fuente para logo -->
+  <!-- Fuente para logo y texto -->
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
 
@@ -43,11 +43,21 @@
       <!-- Texto -->
       <div class="bio-text">
         <p id="bio-text">
-          Hola, MR. YEBRA es mi proyecto musical, una fusión de música electrónica, elementos experimentales y armonías progresivas. 
-          Este nombre representa mi identidad artística. Después de años de giras internacionales como bajista, he decidido dar el salto a la creación personal, explorando nuevos paisajes sonoros y compartiendo mi música con el mundo. 
-          Mi tema debut, “A House in The Stars”, se lanzó el 1 de febrero de 2024. Le siguieron “Party at the Comet” (7 de marzo), “At the Court of King Yebra” (25 de mayo) y “Daisy’s Magical Dream” (8 de diciembre). 
-          En 2025, publiqué “Harmonic Dimension” el 21 de marzo, y el próximo tema “Continuous Pulse” saldrá el 11 de julio: una nueva exploración de ritmos y atmósferas electrónicas. 
-          Esto es solo el principio. Bienvenido al mundo de MR. YEBRA.
+          MR. YEBRA es el alter ego artístico de Paco Yebra, un visionario musical que fusiona música electrónica, 
+          texturas experimentales y armonías progresivas para crear paisajes sonoros únicos. Este proyecto representa la 
+          culminación de su viaje como artista, un espacio donde la innovación y la emoción se entrelazan para dar vida 
+          a una experiencia auditiva inolvidable.
+          <br><br>
+          Tras años de giras internacionales como bajista, Paco ha canalizado su experiencia y pasión en MR. YEBRA, su proyecto 
+          solista que marca un nuevo capítulo en su carrera. Con un enfoque audaz, explora nuevos horizontes sonoros, rompiendo 
+          las barreras de los géneros para conectar con audiencias de todo el mundo.
+          <br><br>
+          Su debut, "A House In The Stars" (1 de febrero de 2024), irrumpió en la escena con una propuesta fresca y cósmica. 
+          Le siguieron "Party at the Comet" (7 de marzo), "At the Court of King Yebra" (25 de mayo) y "Daisy's Magical Dream" 
+          (8 de diciembre), cada uno consolidando su estilo distintivo. En 2025, MR. YEBRA elevó su sonido con "Harmonic Dimension" 
+          (21 de marzo) y "Continuous Pulse" (11 de julio), una nueva exploración de ritmos y atmósferas electrónicas.
+          <br><br>
+          Y esto es solo el comienzo. Bienvenidos al mundo de MR. YEBRA.
         </p>
         <button id="toggle-lang">English</button>
       </div>
@@ -65,17 +75,21 @@
     const bioText = document.getElementById('bio-text');
     let isSpanish = true;
 
-    const textoES = `Hola, MR. YEBRA es mi proyecto musical, una fusión de música electrónica, elementos experimentales y armonías progresivas. 
-    Este nombre representa mi identidad artística. Después de años de giras internacionales como bajista, he decidido dar el salto a la creación personal, explorando nuevos paisajes sonoros y compartiendo mi música con el mundo. 
-    Mi tema debut, “A House in The Stars”, se lanzó el 1 de febrero de 2024. Le siguieron “Party at the Comet” (7 de marzo), “At the Court of King Yebra” (25 de mayo) y “Daisy’s Magical Dream” (8 de diciembre). 
-    En 2025, publiqué “Harmonic Dimension” el 21 de marzo, y el próximo tema “Continuous Pulse” saldrá el 11 de julio: una nueva exploración de ritmos y atmósferas electrónicas. 
-    Esto es solo el principio. Bienvenido al mundo de MR. YEBRA.`;
+    const textoES = `MR. YEBRA es el alter ego artístico de Paco Yebra, un visionario musical que fusiona música electrónica, texturas experimentales y armonías progresivas para crear paisajes sonoros únicos. Este proyecto representa la culminación de su viaje como artista, un espacio donde la innovación y la emoción se entrelazan para dar vida a una experiencia auditiva inolvidable.
 
-    const textoEN = `Hello, MR. YEBRA is my musical project, a fusion of electronic music, experimental elements, and progressive harmonies. 
-    This name represents my artistic identity. After years of international tours as a bassist, I decided to take the leap into personal creation, exploring new soundscapes and sharing my music with the world. 
-    My debut track, “A House in The Stars”, was released on February 1, 2024. It was followed by “Party at the Comet” (March 7), “At the Court of King Yebra” (May 25), and “Daisy’s Magical Dream” (December 8). 
-    In 2025, I released “Harmonic Dimension” on March 21, and my upcoming track “Continuous Pulse” will be released on July 11: a new exploration of rhythms and electronic atmospheres. 
-    This is just the beginning. Welcome to the world of MR. YEBRA.`;
+    Tras años de giras internacionales como bajista, Paco ha canalizado su experiencia y pasión en MR. YEBRA, su proyecto solista que marca un nuevo capítulo en su carrera. Con un enfoque audaz, explora nuevos horizontes sonoros, rompiendo las barreras de los géneros para conectar con audiencias de todo el mundo.
+
+    Su debut, "A House In The Stars" (1 de febrero de 2024), irrumpió en la escena con una propuesta fresca y cósmica. Le siguieron "Party at the Comet" (7 de marzo), "At the Court of King Yebra" (25 de mayo) y "Daisy's Magical Dream" (8 de diciembre), cada uno consolidando su estilo distintivo. En 2025, MR. YEBRA elevó su sonido con "Harmonic Dimension" (21 de marzo) y "Continuous Pulse" (11 de julio), una nueva exploración de ritmos y atmósferas electrónicas.
+
+    Y esto es solo el comienzo. Bienvenidos al mundo de MR. YEBRA.`;
+
+    const textoEN = `MR. YEBRA is the artistic alter ego of Paco Yebra, a musical visionary who fuses electronic music, experimental textures, and progressive harmonies to create unique soundscapes. This project represents the culmination of his journey as an artist, a space where innovation and emotion intertwine to bring to life an unforgettable auditory experience.
+
+    After years of international tours as a bassist, Paco has channeled his experience and passion into MR. YEBRA, his solo project marking a new chapter in his career. With a bold approach, he explores new sonic horizons, breaking genre barriers to connect with audiences worldwide.
+
+    His debut, "A House In The Stars" (February 1, 2024), burst onto the scene with a fresh and cosmic proposal. It was followed by "Party at the Comet" (March 7), "At the Court of King Yebra" (May 25), and "Daisy's Magical Dream" (December 8), each consolidating his distinctive style. In 2025, MR. YEBRA elevated his sound with "Harmonic Dimension" (March 21) and "Continuous Pulse" (July 11), a new exploration of rhythms and electronic atmospheres.
+
+    And this is just the beginning. Welcome to the world of MR. YEBRA.`;
 
     toggleBtn.addEventListener('click', () => {
       if (isSpanish) {
