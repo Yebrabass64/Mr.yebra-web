@@ -1,63 +1,41 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vídeos - Mr. Yebra</title>
-
-  <!-- Fuente para logo -->
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-
-  <!-- CSS común -->
-  <link rel="stylesheet" href="style-common.css">
-
-  <style>
-    body, html {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-    }
-
-    .youtube-container {
-      position: absolute;
-      top: 60px; /* altura de la cabecera */
-      left: 0;
-      right: 0;
-      bottom: 0;
-    }
-
-    .youtube-container iframe {
-      width: 100%;
-      height: 100%;
-      border: none;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr. Yebra - Videos</title>
+    <link rel="stylesheet" href="style-common.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Header (idéntico al index) -->
-  <header class="top-bar">
-    <div class="logo">Mr. Yebra</div>
-    <nav class="main-menu">
-      <a href="index.html">Inicio</a>
-      <a href="biografia.html">Biografía</a>
-      <a href="musica.html">Música</a>
-      <a href="videos.html" class="active">Vídeos</a>
-      <a href="contacto.html">Contacto</a>
-    </nav>
-    <div class="social-icons">
-      <a href="https://www.instagram.com/mr.yebra_/?hl=es" target="_blank"><img src="omg/instagram.webp" alt="Instagram"></a>
-      <a href="https://www.facebook.com/mr.yebra" target="_blank"><img src="omg/facebook.webp" alt="Facebook"></a>
-      <a href="https://x.com/MrYebra78474" target="_blank"><img src="omg/X.webp" alt="X"></a>
-      <a href="https://www.tiktok.com/@mr.yebra" target="_blank"><img src="omg/tiktok.webp" alt="TikTok"></a>
-    </div>
-  </header>
+    <!-- Barra de navegación igual que en el home -->
+    <header>
+        <div class="logo">Mr. Yebra</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="biografia.html">Biografía</a></li>
+                <li><a href="musica.html">Música</a></li>
+                <!-- Aquí el enlace abre YouTube en una nueva pestaña -->
+                <li><a href="https://www.youtube.com/@user-Mr._Yebra" target="_blank">Vídeos</a></li>
+                <li><a href="plataformas.html">Plataformas</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="social-icons">
+            <a href="https://www.instagram.com" target="_blank"><img src="img/instagram.webp" alt="Instagram"></a>
+            <a href="https://www.facebook.com" target="_blank"><img src="img/facebook.webp" alt="Facebook"></a>
+            <a href="https://x.com" target="_blank"><img src="img/X.webp" alt="X"></a>
+            <a href="https://www.tiktok.com" target="_blank"><img src="img/tiktok.webp" alt="TikTok"></a>
+        </div>
+    </header>
 
-  <!-- Canal de YouTube ocupando toda la pantalla -->
-  <div class="youtube-container">
-    <iframe 
-      src="https://www.youtube.com/@user-Mr._Yebra"
-      allowfullscreen>
-    </iframe>
-  </div>
+    <!-- Contenido de la página -->
+    <main>
+        <section class="videos">
+            <h1>Canal de YouTube</h1>
+            <p>Haz clic en el menú superior en <strong>Vídeos</strong> para visitar el canal oficial de YouTube de Mr. Yebra.</p>
+        </section>
+    </main>
 </body>
 </html>
