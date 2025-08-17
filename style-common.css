@@ -57,6 +57,6 @@ body {
 .logo {
   font-family: 'Dancing Script', cursive !important;
   font-size: 28px !important;
-  color: #111 !important; /* gris oscuro */
+  color: #fff !important; /* blanco para que destaque sobre la barra negra */
   font-weight: bold !important;
 }
