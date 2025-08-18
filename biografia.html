@@ -17,19 +17,12 @@
 </head>
 <body class="biografia-page">
 
-  <!-- Header -->
+  <!-- Header con menú hamburguesa -->
   <header class="top-bar">
     <div class="logo">Mr. Yebra</div>
 
-    <!-- Botón menú hamburguesa (solo en móviles) -->
-    <div class="menu-toggle" id="menu-toggle">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-
     <!-- Menú principal -->
-    <nav class="main-menu" id="main-menu">
+    <nav class="main-menu">
       <a href="index.html">Inicio</a>
       <a href="biografia.html" class="active">Biografía</a>
       <a href="musica.html">Música</a>
@@ -37,12 +30,19 @@
       <a href="contacto.html">Contacto</a>
     </nav>
 
-    <!-- Iconos redes -->
+    <!-- Redes sociales + hamburguesa -->
     <div class="social-icons">
       <a href="https://www.instagram.com/mr.yebra_/?hl=es" target="_blank"><img src="omg/instagram.webp" alt="Instagram"></a>
       <a href="https://www.facebook.com/mr.yebra" target="_blank"><img src="omg/facebook.webp" alt="Facebook"></a>
       <a href="https://x.com/MrYebra78474" target="_blank"><img src="omg/X.webp" alt="X"></a>
       <a href="https://www.tiktok.com/@mr.yebra" target="_blank"><img src="omg/tiktok.webp" alt="TikTok"></a>
+
+      <!-- Botón hamburguesa -->
+      <div class="menu-toggle" id="menu-toggle">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
     </div>
   </header>
 
@@ -80,16 +80,6 @@
     </div>
   </main>
 
-  <!-- Script para menú hamburguesa -->
-  <script>
-    const toggle = document.getElementById("menu-toggle");
-    const menu = document.getElementById("main-menu");
-
-    toggle.addEventListener("click", () => {
-      menu.classList.toggle("active");
-    });
-  </script>
-
   <!-- Script para cambiar idioma -->
   <script>
     const toggleBtn = document.getElementById('toggle-lang');
@@ -121,6 +111,14 @@
         toggleBtn.textContent = "English";
       }
       isSpanish = !isSpanish;
+    });
+
+    // Script para el menú hamburguesa
+    const menuToggle = document.getElementById('menu-toggle');
+    const mainMenu = document.querySelector('.main-menu');
+
+    menuToggle.addEventListener('click', () => {
+      mainMenu.classList.toggle('active');
     });
   </script>
 </body>
