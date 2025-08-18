@@ -2,12 +2,19 @@ body {
   background-color: #4a4a58; /* mismo gris que biografía */
   margin: 0;
   font-family: Arial, sans-serif;
-  color: white;
+  color: black;
 }
 
 .musica-wrapper {
-  padding: 40px 20px; /* margen arriba y abajo */
+  padding: 60px 20px; /* más espacio arriba para no pegarse a la barra */
   text-align: center;
+}
+
+.titulo-discografia {
+  font-family: 'Dancing Script', cursive;
+  font-size: 42px;
+  color: black;
+  margin-bottom: 40px;
 }
 
 .grid-musica {
@@ -28,17 +35,22 @@ body {
   margin-top: 10px;
   font-family: 'Dancing Script', cursive;
   font-size: 24px;
+  color: black;
 }
 
-.link-escuchar {
-  display: block;
-  margin-top: 8px;
-  font-family: 'Dancing Script', cursive;
-  font-size: 20px;
+.btn-escuchar {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 8px 20px;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
   text-decoration: none;
-  color: #ffd700; /* dorado elegante */
+  font-size: 16px;
+  font-weight: bold;
+  transition: background 0.3s ease;
 }
 
-.link-escuchar:hover {
-  text-decoration: underline;
+.btn-escuchar:hover {
+  background-color: #333;
 }
