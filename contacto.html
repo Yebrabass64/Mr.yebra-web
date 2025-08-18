@@ -4,11 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contacto - Mr. Yebra</title>
-  <link rel="stylesheet" href="style.css"> <!-- mismo estilo global -->
-  <link rel="stylesheet" href="style-contacto.css"> <!-- estilos solo de contacto -->
+  <link rel="stylesheet" href="style.css"> <!-- estilos generales -->
+  <link rel="stylesheet" href="style-contacto.css"> <!-- estilos propios de contacto -->
 </head>
 <body>
-  <!-- Barra superior igual que en el home -->
+
+  <!-- Barra de navegación idéntica al Home -->
   <header>
     <div class="logo">Mr. Yebra</div>
     <nav>
@@ -29,17 +30,18 @@
     </div>
   </header>
 
-  <!-- Contenedor principal -->
+  <!-- Contenido principal -->
   <main class="contact-container">
-    <!-- Imagen izquierda -->
+    <!-- Imagen a la izquierda -->
     <div class="contact-image">
-      <img src="omg/contacto.webp" alt="Imagen de contacto">
+      <img src="omg/contacto.webp" alt="Contacto Mr. Yebra">
     </div>
 
-    <!-- Formulario derecha -->
+    <!-- Formulario a la derecha -->
     <div class="contact-form">
       <h2>Contact me</h2>
-      <form action="#" method="post">
+      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        
         <label for="nombre">Nombre (obligatorio)</label>
         <input type="text" id="nombre" name="nombre" required>
 
@@ -58,11 +60,12 @@
         <input type="text" id="asunto" name="asunto" required>
 
         <label for="mensaje">Mensaje (obligatorio)</label>
-        <textarea id="mensaje" name="mensaje" required></textarea>
+        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
 
-        <button type="submit">SEND</button>
+        <button type="submit">ENVIAR</button>
       </form>
     </div>
   </main>
+
 </body>
 </html>
