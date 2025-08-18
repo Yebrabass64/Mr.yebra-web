@@ -5,38 +5,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Biografía - Mr. Yebra</title>
 
-  <!-- Fuentes -->
+  <!-- Fuente para logo y texto -->
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
 
-  <!-- CSS -->
+  <!-- CSS común -->
   <link rel="stylesheet" href="style-common.css">
+
+  <!-- CSS exclusivo de biografía -->
   <link rel="stylesheet" href="style-biografia.css">
 </head>
 <body class="biografia-page">
 
-  <!-- HEADER con hamburguesa -->
+  <!-- Header -->
   <header class="top-bar">
     <div class="logo">Mr. Yebra</div>
 
-    <!-- Botón hamburguesa en el centro -->
-    <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
-
-    <div class="social-icons">
-      <a href="https://www.instagram.com/mr.yebra_/?hl=es" target="_blank"><img src="omg/instagram.webp" alt="Instagram"></a>
-      <a href="https://www.facebook.com/mr.yebra" target="_blank"><img src="omg/facebook.webp" alt="Facebook"></a>
-      <a href="https://x.com/MrYebra78474" target="_blank"><img src="omg/X.webp" alt="X"></a>
-      <a href="https://www.tiktok.com/@mr.yebra" target="_blank"><img src="omg/tiktok.webp" alt="TikTok"></a>
+    <!-- Botón menú hamburguesa (solo en móviles) -->
+    <div class="menu-toggle" id="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
 
-    <!-- Menú -->
-    <nav class="main-menu">
+    <!-- Menú principal -->
+    <nav class="main-menu" id="main-menu">
       <a href="index.html">Inicio</a>
       <a href="biografia.html" class="active">Biografía</a>
       <a href="musica.html">Música</a>
       <a href="https://www.youtube.com/@user-Mr._Yebra/featured" target="_blank" rel="noopener noreferrer">Vídeos</a>
       <a href="contacto.html">Contacto</a>
     </nav>
+
+    <!-- Iconos redes -->
+    <div class="social-icons">
+      <a href="https://www.instagram.com/mr.yebra_/?hl=es" target="_blank"><img src="omg/instagram.webp" alt="Instagram"></a>
+      <a href="https://www.facebook.com/mr.yebra" target="_blank"><img src="omg/facebook.webp" alt="Facebook"></a>
+      <a href="https://x.com/MrYebra78474" target="_blank"><img src="omg/X.webp" alt="X"></a>
+      <a href="https://www.tiktok.com/@mr.yebra" target="_blank"><img src="omg/tiktok.webp" alt="TikTok"></a>
+    </div>
   </header>
 
   <!-- Contenido principal -->
@@ -73,6 +80,16 @@
     </div>
   </main>
 
+  <!-- Script para menú hamburguesa -->
+  <script>
+    const toggle = document.getElementById("menu-toggle");
+    const menu = document.getElementById("main-menu");
+
+    toggle.addEventListener("click", () => {
+      menu.classList.toggle("active");
+    });
+  </script>
+
   <!-- Script para cambiar idioma -->
   <script>
     const toggleBtn = document.getElementById('toggle-lang');
@@ -104,18 +121,6 @@
         toggleBtn.textContent = "English";
       }
       isSpanish = !isSpanish;
-    });
-  </script>
-
-  <!-- Script para menú hamburguesa -->
-  <script>
-    const menuToggle = document.querySelector('.menu-toggle');
-    const mainMenu = document.querySelector('.main-menu');
-
-    menuToggle.addEventListener('click', () => {
-      mainMenu.classList.toggle('show');
-      const expanded = menuToggle.getAttribute("aria-expanded") === "true" || false;
-      menuToggle.setAttribute("aria-expanded", !expanded);
     });
   </script>
 </body>

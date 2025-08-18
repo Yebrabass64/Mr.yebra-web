@@ -12,10 +12,10 @@ body {
 /* HEADER */
 .top-bar {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* logo izq, menú centro, redes dcha */
   align-items: center;
-  background: rgba(0, 0, 0, 0.7); /* negro translúcido */
-  padding: 10px 40px;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px 20px;
   position: fixed;
   top: 0;
   left: 0;
@@ -24,7 +24,7 @@ body {
   box-sizing: border-box;
 }
 
-/* Logo */
+/* Logo (Mr. Yebra) */
 .logo {
   font-family: 'Dancing Script', cursive;
   font-size: 1.8rem;
@@ -50,10 +50,27 @@ body {
   color: #ff9800;
 }
 
+/* Botón menú hamburguesa */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+  margin: 0 20px; /* centrado entre logo y redes */
+}
+
+.menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background: white;
+  border-radius: 3px;
+}
+
 /* Redes sociales */
 .social-icons {
   display: flex;
   gap: 12px;
+  margin-left: auto; /* siempre pegadas a la derecha */
 }
 
 .social-icons img {
@@ -66,36 +83,24 @@ body {
   transform: scale(1.2);
 }
 
-/* Botón hamburguesa */
-.menu-toggle {
-  display: none;
-  font-size: 2rem;
-  color: white;
-  background: none;
-  border: none;
-  cursor: pointer;
-  margin: 0 auto; /* lo centra entre logo y redes */
-}
-
-/* Responsive: móviles */
+/* Responsive */
 @media (max-width: 768px) {
   .main-menu {
     display: none;
     flex-direction: column;
+    background: rgba(0, 0, 0, 0.9);
     position: absolute;
     top: 60px;
     left: 0;
     width: 100%;
-    background: rgba(0, 0, 0, 0.9);
     padding: 20px;
-    gap: 15px;
   }
 
-  .main-menu.show {
+  .main-menu.active {
     display: flex;
   }
 
   .menu-toggle {
-    display: block;
+    display: flex;
   }
 }
