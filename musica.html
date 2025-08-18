@@ -1,43 +1,71 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Música - Mr. Yebra</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Música – Mr. Yebra</title>
+
+  <!-- CSS comunes -->
+  <link rel="stylesheet" href="style-common.css" />
+  <link rel="stylesheet" href="style-musica.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Raleway:wght@500&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="musica-page">
 
-    <!-- Menú -->
-    <header>
-        <div class="logo">Mr. Yebra</div>
-        <nav>
-            <a href="index.html">Inicio</a>
-            <a href="biografia.html">Biografía</a>
-            <a href="musica.html">Música</a>
-            <a href="videos.html">Videos</a>
-            <a href="contacto.html">Contacto</a>
-        </nav>
-        <div class="social-icons">
-            <a href="https://www.instagram.com/mr.yebra_/?hl=es" target="_blank">
-                <img src="img/instagram.webp" alt="Instagram">
-            </a>
-            <a href="https://www.facebook.com/mr.yebra" target="_blank">
-                <img src="img/facebook.webp" alt="Facebook">
-            </a>
-            <a href="https://www.tiktok.com/@mr.yebra" target="_blank">
-                <img src="img/tiktok.webp" alt="TikTok">
-            </a>
-            <a href="https://x.com/MrYebra78474" target="_blank">
-                <img src="img/X.webp" alt="X">
-            </a>
-        </div>
-    </header>
+  <!-- Barra superior (igual que en index) -->
+  <header class="top-bar">
+    <div class="logo">Mr. Yebra</div>
+    <nav class="main-menu">
+      <a href="index.html">Inicio</a>
+      <a href="biografia.html">Biografía</a>
+      <a href="musica.html" class="active">Música</a>
+      <a href="https://www.youtube.com/@user-Mr._Yebra/featured" target="_blank" rel="noopener noreferrer">Vídeos</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/mr.yebra_/?hl=es" target="_blank"><img src="omg/instagram.webp" alt="Instagram" /></a>
+      <a href="https://www.facebook.com/mr.yebra" target="_blank"><img src="omg/facebook.webp" alt="Facebook" /></a>
+      <a href="https://www.tiktok.com/@mr.yebra" target="_blank"><img src="omg/tiktok.webp" alt="TikTok" /></a>
+      <a href="https://x.com/MrYebra78474" target="_blank"><img src="omg/X.webp" alt="X" /></a>
+    </div>
+  </header>
 
-    <section>
-        <h1 style="text-align:center; padding-top:100px;">Página de Música</h1>
-        <p style="text-align:center;">Aquí podrás añadir contenido musical próximamente.</p>
-    </section>
+  <!-- Contenido principal -->
+  <main class="musica-container">
+    <h1 class="musica-title">Discografía</h1>
+    <div class="grid-musica">
+      <div class="sencillo">
+        <img src="omg/sencillo1.webp" alt="A House in The Star">
+        <p>A House in The Star</p>
+        <a class="btn-listen" href="https://open.spotify.com/track/XXXXXXXX" target="_blank">Escuchar</a>
+      </div>
+      <div class="sencillo">
+        <img src="omg/sencillo2.webp" alt="Party at the Comet">
+        <p>Party at the Comet</p>
+        <a class="btn-listen" href="https://open.spotify.com/track/XXXXXXXX" target="_blank">Escuchar</a>
+      </div>
+      <div class="sencillo">
+        <img src="omg/sencillo3.webp" alt="At the Court of King Yebra">
+        <p>At the Court of King Yebra</p>
+        <a class="btn-listen" href="https://open.spotify.com/track/XXXXXXXX" target="_blank">Escuchar</a>
+      </div>
+      <div class="sencillo">
+        <img src="omg/sencillo4.webp" alt="Daisy's Magical Dream">
+        <p>Daisy's Magical Dream</p>
+        <a class="btn-listen" href="https://open.spotify.com/track/XXXXXXXX" target="_blank">Escuchar</a>
+      </div>
+      <div class="sencillo">
+        <img src="omg/sencillo5.webp" alt="Harmonic Dimension">
+        <p>Harmonic Dimension</p>
+        <a class="btn-listen" href="https://open.spotify.com/track/XXXXXXXX" target="_blank">Escuchar</a>
+      </div>
+      <div class="sencillo">
+        <img src="omg/sencillo6.webp" alt="Continuous Pulse">
+        <p>Continuous Pulse</p>
+        <a class="btn-listen" href="https://open.spotify.com/track/XXXXXXXX" target="_blank">Escuchar</a>
+      </div>
+    </div>
+  </main>
 
 </body>
 </html>
