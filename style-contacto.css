@@ -1,63 +1,104 @@
-/* Contenedor general */
-.contact-container {
-  display: flex;
-  justify-content: center;
-  align-items: stretch;
-  min-height: calc(100vh - 80px); /* resta altura de la barra */
-  margin-top: 20px;
+/* Layout general */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fff;
+  color: #000;
 }
 
-/* Imagen izquierda */
+.contact-section {
+  display: flex;
+  min-height: calc(100vh - 80px); /* resta la altura de la barra superior */
+}
+
+/* Imagen a la izquierda */
+.contact-image {
+  flex: 1;
+}
+
 .contact-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 12px;
+  border-radius: 0 20px 20px 0;
 }
 
-/* Formulario derecha */
+/* Formulario a la derecha */
 .contact-form {
   flex: 1;
-  padding: 40px;
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  margin-left: 20px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.contact-form h2 {
+.contact-form h1 {
+  font-size: 2rem;
   margin-bottom: 20px;
-  font-size: 28px;
-  font-weight: bold;
+}
+
+/* Estilos de los campos */
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .contact-form label {
-  display: block;
-  margin-top: 15px;
   font-weight: bold;
+  font-size: 14px;
 }
 
 .contact-form input,
 .contact-form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-top: 5px;
+  padding: 12px;
   border: none;
-  border-radius: 8px;
-  background: #f4f4f4;
+  border-radius: 20px;
+  background: #f3f3f3;
+  font-size: 14px;
+  width: 100%;
 }
 
+.contact-form textarea {
+  resize: none;
+  min-height: 120px;
+}
+
+/* Checkbox */
+.contact-form input[type="checkbox"] {
+  width: auto;
+  margin-right: 8px;
+}
+
+/* Botón */
 .contact-form button {
-  margin-top: 20px;
-  padding: 12px 20px;
-  background: black;
-  color: white;
+  margin-top: 10px;
+  padding: 12px;
+  background: #000;
+  color: #fff;
   border: none;
   border-radius: 25px;
   cursor: pointer;
-  font-weight: bold;
+  font-size: 16px;
+  width: 120px;
+  align-self: flex-start;
 }
 
 .contact-form button:hover {
   background: #333;
+}
+
+/* Responsive (pantallas pequeñas) */
+@media (max-width: 900px) {
+  .contact-section {
+    flex-direction: column;
+  }
+
+  .contact-image {
+    height: 250px;
+  }
+
+  .contact-image img {
+    border-radius: 0;
+  }
 }

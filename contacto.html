@@ -4,68 +4,63 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contacto - Mr. Yebra</title>
-  <link rel="stylesheet" href="style.css"> <!-- estilos generales -->
-  <link rel="stylesheet" href="style-contacto.css"> <!-- estilos propios de contacto -->
+  <link rel="stylesheet" href="style-common.css">
+  <link rel="stylesheet" href="style-contacto.css">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- Barra de navegación idéntica al Home -->
-  <header>
+  <!-- Barra superior (igual que en index.html) -->
+  <header class="top-bar">
     <div class="logo">Mr. Yebra</div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="biografia.html">Biografía</a></li>
-        <li><a href="musica.html">Música</a></li>
-        <li><a href="https://www.youtube.com/@user-Mr._Yebra" target="_blank">Vídeos</a></li>
-        <li><a href="plataformas.html">Plataformas</a></li>
-        <li><a href="contacto.html" class="active">Contacto</a></li>
-      </ul>
+    <nav class="main-menu">
+      <a href="index.html">Inicio</a>
+      <a href="biografia.html">Biografía</a>
+      <a href="musica.html">Música</a>
+      <a href="https://www.youtube.com/@user-Mr._Yebra/featured" target="_blank" rel="noopener noreferrer">Vídeos</a>
+      <a href="contacto.html" class="active">Contacto</a>
     </nav>
     <div class="social-icons">
-      <a href="#"><img src="omg/instagram.webp" alt="Instagram"></a>
-      <a href="#"><img src="omg/facebook.webp" alt="Facebook"></a>
-      <a href="#"><img src="omg/X.webp" alt="X"></a>
-      <a href="#"><img src="omg/tiktok.webp" alt="TikTok"></a>
+      <a href="https://www.instagram.com/mr.yebra_/?hl=es" target="_blank"><img src="omg/instagram.webp" alt="Instagram"></a>
+      <a href="https://www.facebook.com/mr.yebra" target="_blank"><img src="omg/facebook.webp" alt="Facebook"></a>
+      <a href="https://www.tiktok.com/@mr.yebra" target="_blank"><img src="omg/tiktok.webp" alt="TikTok"></a>
+      <a href="https://x.com/MrYebra78474" target="_blank"><img src="omg/X.webp" alt="X"></a>
     </div>
   </header>
 
-  <!-- Contenido principal -->
-  <main class="contact-container">
-    <!-- Imagen a la izquierda -->
+  <!-- Contenido de Contacto -->
+  <section class="contact-section">
     <div class="contact-image">
-      <img src="omg/contacto.webp" alt="Contacto Mr. Yebra">
+      <img src="omg/contacto.webp" alt="Mr. Yebra">
     </div>
 
-    <!-- Formulario a la derecha -->
     <div class="contact-form">
-      <h2>Contact me</h2>
-      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-        
-        <label for="nombre">Nombre (obligatorio)</label>
-        <input type="text" id="nombre" name="nombre" required>
+      <h1>Contact me</h1>
+      <form action="https://formspree.io/f/tu-endpoint" method="POST">
+        <label>Nombre (obligatorio)</label>
+        <input type="text" name="nombre" required>
 
-        <label for="apellidos">Apellidos</label>
-        <input type="text" id="apellidos" name="apellidos">
+        <label>Apellidos</label>
+        <input type="text" name="apellidos">
 
-        <label for="email">Correo electrónico (obligatorio)</label>
-        <input type="email" id="email" name="email" required>
+        <label>Correo electrónico (obligatorio)</label>
+        <input type="email" name="email" required>
 
         <label>
           <input type="checkbox" name="suscripcion">
           Suscríbete para recibir noticias y actualizaciones
         </label>
 
-        <label for="asunto">Asunto (obligatorio)</label>
-        <input type="text" id="asunto" name="asunto" required>
+        <label>Asunto (obligatorio)</label>
+        <input type="text" name="asunto" required>
 
-        <label for="mensaje">Mensaje (obligatorio)</label>
-        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+        <label>Mensaje (obligatorio)</label>
+        <textarea name="mensaje" required></textarea>
 
-        <button type="submit">ENVIAR</button>
+        <button type="submit">SEND</button>
       </form>
     </div>
-  </main>
+  </section>
 
 </body>
 </html>
