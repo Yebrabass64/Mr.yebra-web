@@ -2,7 +2,7 @@
 
 /* Da aire por si la top-bar es fija/alta */
 .contacto-wrapper {
-  padding-top: 90px; /* ajusta si tu top-bar ocupa más/menos */
+  padding-top: 140px; /* antes era 90px, ahora hay más aire */
   padding-bottom: 40px;
 }
 
