@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contacto - Mr. Yebra</title>
-  <link rel="stylesheet" href="style-common.css">
-  <link rel="stylesheet" href="style-contacto.css">
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto – Mr. Yebra</title>
+
+  <!-- MISMA CSS QUE EL HOME -->
+  <link rel="stylesheet" href="style-common.css" />
+  <!-- Estilos específicos de contacto -->
+  <link rel="stylesheet" href="style-contacto.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet" />
 </head>
 <body>
 
-  <!-- Barra superior (igual que en index.html) -->
+  <!-- BARRA SUPERIOR (calcada del home) -->
   <header class="top-bar">
     <div class="logo">Mr. Yebra</div>
     <nav class="main-menu">
@@ -21,46 +24,51 @@
       <a href="contacto.html" class="active">Contacto</a>
     </nav>
     <div class="social-icons">
-      <a href="https://www.instagram.com/mr.yebra_/?hl=es" target="_blank"><img src="omg/instagram.webp" alt="Instagram"></a>
-      <a href="https://www.facebook.com/mr.yebra" target="_blank"><img src="omg/facebook.webp" alt="Facebook"></a>
-      <a href="https://www.tiktok.com/@mr.yebra" target="_blank"><img src="omg/tiktok.webp" alt="TikTok"></a>
-      <a href="https://x.com/MrYebra78474" target="_blank"><img src="omg/X.webp" alt="X"></a>
+      <a href="https://www.instagram.com/mr.yebra_/?hl=es" target="_blank"><img src="omg/instagram.webp" alt="Instagram" /></a>
+      <a href="https://www.facebook.com/mr.yebra" target="_blank"><img src="omg/facebook.webp" alt="Facebook" /></a>
+      <a href="https://www.tiktok.com/@mr.yebra" target="_blank"><img src="omg/tiktok.webp" alt="TikTok" /></a>
+      <a href="https://x.com/MrYebra78474" target="_blank"><img src="omg/X.webp" alt="X" /></a>
     </div>
   </header>
 
-  <!-- Contenido de Contacto -->
-  <section class="contact-section">
-    <div class="contact-image">
-      <img src="omg/contacto.webp" alt="Mr. Yebra">
+  <!-- CONTENIDO CONTACTO -->
+  <main class="contacto-wrapper">
+    <div class="contacto-layout">
+      <!-- Foto a la izquierda -->
+      <div class="contacto-foto">
+        <img src="omg/contacto.webp" alt="Mr. Yebra" />
+      </div>
+
+      <!-- Formulario a la derecha -->
+      <section class="contacto-form">
+        <h1>Contact me</h1>
+
+        <form id="contact-form" onsubmit="return false">
+          <label for="nombre">Nombre <span class="req">(obligatorio)</span></label>
+          <input type="text" id="nombre" name="nombre" required />
+
+          <label for="apellidos">Apellidos</label>
+          <input type="text" id="apellidos" name="apellidos" />
+
+          <label for="email">Correo electrónico <span class="req">(obligatorio)</span></label>
+          <input type="email" id="email" name="email" required />
+
+          <div class="check-row">
+            <input type="checkbox" id="suscribe" name="suscribe" />
+            <label for="suscribe" class="inline">Suscríbete para recibir noticias y actualizaciones</label>
+          </div>
+
+          <label for="asunto">Asunto <span class="req">(obligatorio)</span></label>
+          <input type="text" id="asunto" name="asunto" required />
+
+          <label for="mensaje">Mensaje <span class="req">(obligatorio)</span></label>
+          <textarea id="mensaje" name="mensaje" rows="8" required></textarea>
+
+          <button type="submit" class="btn-send">SEND</button>
+        </form>
+      </section>
     </div>
-
-    <div class="contact-form">
-      <h1>Contact me</h1>
-      <form action="https://formspree.io/f/tu-endpoint" method="POST">
-        <label>Nombre (obligatorio)</label>
-        <input type="text" name="nombre" required>
-
-        <label>Apellidos</label>
-        <input type="text" name="apellidos">
-
-        <label>Correo electrónico (obligatorio)</label>
-        <input type="email" name="email" required>
-
-        <label>
-          <input type="checkbox" name="suscripcion">
-          Suscríbete para recibir noticias y actualizaciones
-        </label>
-
-        <label>Asunto (obligatorio)</label>
-        <input type="text" name="asunto" required>
-
-        <label>Mensaje (obligatorio)</label>
-        <textarea name="mensaje" required></textarea>
-
-        <button type="submit">SEND</button>
-      </form>
-    </div>
-  </section>
+  </main>
 
 </body>
 </html>
