@@ -1,6 +1,6 @@
 .contact-container {
   display: flex;
-  min-height: calc(100vh - 80px); /* para no tapar la barra superior */
+  min-height: calc(100vh - 80px); /* Altura menos la barra superior */
 }
 
 .contact-image {
