@@ -1,56 +1,60 @@
-body {
-  background-color: #4a4a58; /* mismo gris que biografía */
+/* Fondo como biografía */
+body.musica-page {
+  background-color: #d3d3d3; /* gris intermedio */
+  font-family: 'Poppins', sans-serif;
   margin: 0;
-  font-family: Arial, sans-serif;
-  color: black;
 }
 
-.musica-wrapper {
-  padding: 60px 20px; /* más espacio arriba para no pegarse a la barra */
+/* Contenedor general */
+.musica-container {
+  padding: 100px 20px 40px; /* deja espacio con la barra */
   text-align: center;
 }
 
-.titulo-discografia {
-  font-family: 'Dancing Script', cursive;
-  font-size: 42px;
+/* Título principal */
+.discografia-title {
+  font-size: 2.5rem;
   color: black;
+  font-weight: 600;
   margin-bottom: 40px;
 }
 
-.grid-musica {
+/* Grid de sencillos */
+.grid-sencillos {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 40px; /* espacio entre imágenes */
+  gap: 40px;
   max-width: 1000px;
   margin: 0 auto;
 }
 
+/* Cada sencillo */
 .sencillo img {
   width: 100%;
-  border-radius: 12px;
+  max-width: 400px;
+  border-radius: 10px;
   display: block;
+  margin: 0 auto 15px;
 }
 
-.titulo-cancion {
-  margin-top: 10px;
-  font-family: 'Dancing Script', cursive;
-  font-size: 24px;
+.sencillo h2 {
+  font-size: 1.2rem;
   color: black;
+  font-weight: 500;
+  margin-bottom: 10px;
 }
 
-.btn-escuchar {
-  display: inline-block;
-  margin-top: 12px;
-  padding: 8px 20px;
-  background-color: black;
+/* Botón escuchar */
+.btn-listen {
+  background: black;
   color: white;
-  border-radius: 20px;
   text-decoration: none;
-  font-size: 16px;
-  font-weight: bold;
+  padding: 8px 20px;
+  border-radius: 25px;
+  font-size: 0.9rem;
   transition: background 0.3s ease;
 }
 
-.btn-escuchar:hover {
-  background-color: #333;
+.btn-listen:hover {
+  background: #333;
 }
