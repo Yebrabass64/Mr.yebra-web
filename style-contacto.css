@@ -2,7 +2,7 @@
 
 /* Da aire por si la top-bar es fija/alta */
 .contacto-wrapper {
-  background-color: #f4f4f4;
+  background-color: #555;
   padding-top: 140px; /* antes era 90px, ahora hay más aire */
   padding-bottom: 40px;
 }
