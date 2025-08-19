@@ -81,9 +81,9 @@
 .contacto-form input,
 .contacto-form textarea,
 .contacto-form select {
-  background-color: #333333;   /* Gris oscuro para que resalte */
-  color: #ffffff;              /* Texto blanco dentro */
-  border: 1px solid #555555;   /* Borde gris medio */
+  background-color: #f3f4f5;   /* Gris claro por defecto */
+  color: #000000;              /* Texto negro */
+  border: 1px solid #ccc;      /* Borde gris */
   padding: 14px 16px;
   border-radius: 8px;
   width: 100%;
@@ -95,7 +95,8 @@
 .contacto-form input:focus,
 .contacto-form textarea:focus,
 .contacto-form select:focus {
-  background-color: #444444;   /* Un poco más claro al enfocar */
+  background-color: #000000;   /* Negro al escribir */
+  color: #ffffff;              /* Texto blanco */
   border-color: #ff9800;       /* Borde naranja al enfocar */
   outline: none;
 }
