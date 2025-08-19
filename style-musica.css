@@ -1,8 +1,10 @@
 /* Fondo como biografía */
 body.musica-page {
-  background-color: #777777; /* gris intermedio */
+  background: url("omg/fondomusica.webp") no-repeat center center fixed;
+  background-size: cover;   /* La imagen cubre toda la pantalla */
   font-family: 'Poppins', sans-serif;
   margin: 0;
+  color: #fff; /* Asegura que el texto sea legible */
 }
 
 /* Contenedor general */
