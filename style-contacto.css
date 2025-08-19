@@ -81,9 +81,9 @@
 .contacto-form input,
 .contacto-form textarea,
 .contacto-form select {
-  background-color: #eaeaea;   /* Gris claro (destaca sobre el fondo) */
-  color: #000000;              /* Texto negro */
-  border: 1px solid #bbb;      /* Borde gris más marcado */
+  background-color: #333333;   /* Gris oscuro (resalta sobre el fondo) */
+  color: #ffffff;              /* Texto blanco dentro */
+  border: 1px solid #555555;   /* Borde gris medio */
   padding: 14px 16px;
   border-radius: 8px;          /* Bordes suavemente redondeados */
   width: 100%;
@@ -95,14 +95,14 @@
 .contacto-form input:focus,
 .contacto-form textarea:focus,
 .contacto-form select:focus {
-  background-color: #ffffff;   /* Se ilumina al enfocar */
+  background-color: #444444;   /* Un poco más claro al enfocar */
   border-color: #ff9800;       /* Borde naranja al enfocar */
   outline: none;
 }
 
-/* 🔹 Etiquetas y textos auxiliares en negro */
+/* 🔹 Etiquetas y textos auxiliares en blanco */
 .contacto-form label,
 .contacto-form .req,
 .contacto-form .inline {
-  color: #000000;
+  color: #ffffff;
 }
