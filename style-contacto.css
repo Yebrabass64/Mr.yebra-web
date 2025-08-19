@@ -78,3 +78,22 @@
   }
   .contacto-foto { order: -1; }
 }
+
+/* 🔹 Estilos para los campos del formulario en la página de contacto */
+.contacto-form input,
+.contacto-form textarea,
+.contacto-form select {
+  background-color: #ffffff;  /* Casilleros blancos */
+  color: #000000;             /* Texto negro dentro del campo */
+  border: 1px solid #ccc;     /* Borde gris para que se note el campo */
+  padding: 8px;
+  border-radius: 4px;         /* Bordes redondeados */
+  width: 100%;
+}
+
+.contacto-form label,
+.contacto-form .req,
+.contacto-form .inline {
+  color: #ffffff;  /* Etiquetas en blanco */
+}
+
