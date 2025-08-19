@@ -81,11 +81,11 @@
 .contacto-form input,
 .contacto-form textarea,
 .contacto-form select {
-  background-color: #333333;   /* Gris oscuro (resalta sobre el fondo) */
+  background-color: #333333;   /* Gris oscuro para que resalte */
   color: #ffffff;              /* Texto blanco dentro */
   border: 1px solid #555555;   /* Borde gris medio */
   padding: 14px 16px;
-  border-radius: 8px;          /* Bordes suavemente redondeados */
+  border-radius: 8px;
   width: 100%;
   font-size: 16px;
   transition: all 0.3s ease;
@@ -100,9 +100,9 @@
   outline: none;
 }
 
-/* 🔹 Etiquetas y textos auxiliares en blanco */
+/* 🔹 Etiquetas y textos auxiliares en negro */
 .contacto-form label,
 .contacto-form .req,
 .contacto-form .inline {
-  color: #ffffff;
+  color: #000000;  /* Negro para que contraste con el fondo */
 }
