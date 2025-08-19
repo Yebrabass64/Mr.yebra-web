@@ -31,32 +31,44 @@ body.musica-page {
 }
 
 /* Cada sencillo */
-.sencillo img {
-  width: 100%;
-  max-width: 400px;
-  border-radius: 10px;
-  display: block;
-  margin: 0 auto 15px;
+.sencillo {
+  background: rgba(0, 0, 0, 0.6);   /* Fondo semitransparente para destacar */
+  padding: 15px;
+  border-radius: 12px;              /* Bordes redondeados */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5); /* Sombra para resaltar */
+  text-align: center;
 }
 
+.sencillo img {
+  width: 100%;
+  max-width: 280px;  /* más compacto que antes */
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto 10px;  /* ↓ espacio más pequeño debajo */
+}
+
+/* Título de cada sencillo */
 .sencillo h2 {
-  font-size: 1.2rem;
-  color: black;
+  font-size: 1.1rem;
+  color: #fff;       /* Blanco para que contraste mejor */
   font-weight: 500;
-  margin-bottom: 10px;
+  margin: 8px 0;     /* ↓ reduce la separación */
 }
 
 /* Botón escuchar */
 .btn-listen {
-  background: black;
-  color: white;
+  background: #ff9800;
+  color: black;
   text-decoration: none;
-  padding: 8px 20px;
-  border-radius: 25px;
+  padding: 6px 18px;
+  border-radius: 20px;
   font-size: 0.9rem;
+  font-weight: 600;
+  margin-top: 6px;      /* ↓ menos separación del título */
+  display: inline-block;
   transition: background 0.3s ease;
 }
 
 .btn-listen:hover {
-  background: #333;
+  background: #e68900;
 }
