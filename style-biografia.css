@@ -52,12 +52,15 @@ body.biografia-page {
 
 /* Imagen */
 .bio-image {
-  flex: 1;
+  flex: 1;                     /* mantiene su columna */
   display: flex;
   justify-content: center;
+  align-items: stretch;         /* estira la imagen verticalmente */
 }
 
 .bio-image img {
-  max-width: 280px;
+  width: 100%;                  /* ocupa todo el ancho de la columna */
+  height: 100%;                 /* ocupa toda la altura del texto */
+  object-fit: cover;            /* la recorta si hace falta */
   border-radius: 10px;
 }
