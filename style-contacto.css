@@ -81,17 +81,28 @@
 .contacto-form input,
 .contacto-form textarea,
 .contacto-form select {
-  background-color: #ffffff;  /* Fondo blanco */
-  color: #000000;             /* Texto negro dentro */
-  border: 1px solid #ccc;     /* Borde gris */
-  padding: 8px;
-  border-radius: 4px;         /* Bordes redondeados */
+  background-color: #eaeaea;   /* Gris claro (destaca sobre el fondo) */
+  color: #000000;              /* Texto negro */
+  border: 1px solid #bbb;      /* Borde gris más marcado */
+  padding: 14px 16px;
+  border-radius: 8px;          /* Bordes suavemente redondeados */
   width: 100%;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+/* 🔹 Efecto al enfocar (cuando escribes en un casillero) */
+.contacto-form input:focus,
+.contacto-form textarea:focus,
+.contacto-form select:focus {
+  background-color: #ffffff;   /* Se ilumina al enfocar */
+  border-color: #ff9800;       /* Borde naranja al enfocar */
+  outline: none;
 }
 
 /* 🔹 Etiquetas y textos auxiliares en negro */
 .contacto-form label,
 .contacto-form .req,
 .contacto-form .inline {
-  color: #000000;  /* Etiquetas y "(obligatorio)" en negro */
+  color: #000000;
 }
