@@ -13,9 +13,10 @@
 </head>
 <body>
 
-  <!-- BARRA SUPERIOR (calcada del home) -->
+  <!-- BARRA SUPERIOR -->
   <header class="top-bar">
     <div class="logo">Mr. Yebra</div>
+    
     <nav class="main-menu">
       <a href="index.html">Inicio</a>
       <a href="biografia.html">Biografía</a>
@@ -23,6 +24,15 @@
       <a href="https://www.youtube.com/@user-Mr._Yebra/featured" target="_blank" rel="noopener noreferrer">Vídeos</a>
       <a href="contacto.html" class="active">Contacto</a>
     </nav>
+
+    <!-- Botón menú hamburguesa -->
+    <div class="menu-toggle" id="menu-toggle">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <!-- Redes sociales -->
     <div class="social-icons">
       <a href="https://www.instagram.com/mr.yebra_/?hl=es" target="_blank"><img src="omg/instagram.webp" alt="Instagram" /></a>
       <a href="https://www.facebook.com/mr.yebra" target="_blank"><img src="omg/facebook.webp" alt="Facebook" /></a>
@@ -43,7 +53,6 @@
       <section class="contacto-form">
         <h1>Contact me</h1>
 
-        <!-- 🚨 Aquí está el form corregido -->
         <form action="https://formspree.io/f/xzzvqoww" method="POST">
           <label for="nombre">Nombre <span class="req">(obligatorio)</span></label>
           <input type="text" id="nombre" name="nombre" required />
@@ -70,6 +79,16 @@
       </section>
     </div>
   </main>
+
+  <!-- Script menú hamburguesa -->
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const mainMenu = document.querySelector('.main-menu');
+
+    menuToggle.addEventListener('click', () => {
+      mainMenu.classList.toggle('active');
+    });
+  </script>
 
 </body>
 </html>
