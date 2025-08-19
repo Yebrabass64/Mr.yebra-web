@@ -64,3 +64,25 @@ body.biografia-page {
   object-fit: cover;            /* la recorta si hace falta */
   border-radius: 10px;
 }
+
+/* 📱 Versión móvil */
+@media (max-width: 768px) {
+  .bio-content {
+    display: block; /* Se apila vertical */
+  }
+
+  .bio-image {
+    margin: 20px auto; /* centra la foto */
+    text-align: center;
+  }
+
+  .bio-image img {
+    max-width: 80%; /* que no quede tan pequeña */
+    height: auto;
+  }
+
+  .bio-text {
+    font-size: 1rem;  /* un poco más compacto en móvil */
+    line-height: 1.5;
+  }
+}
