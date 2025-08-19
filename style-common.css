@@ -6,38 +6,37 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 /* HEADER */
 .top-bar {
-  display: flex;
-  align-items: center;
-  background: rgba(0, 0, 0, 0.7);
-  padding: 10px 20px;
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  right: 0;
+  height: 80px;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
   z-index: 1000;
-  box-sizing: border-box;
 }
 
-/* Logo (Mr. Yebra) */
+/* Logo */
 .logo {
   font-family: 'Poppins', sans-serif;
   font-size: 1.8rem;
-  font-weight: normal;
-  color: #fff;
-  margin-right: auto; /* empuja el menú hacia el centro */
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
 }
 
 /* Menú principal */
 .main-menu {
   display: flex;
   gap: 25px;
-  justify-content: center;
-  flex: 1; /* ocupa todo el espacio central */
 }
 
 .main-menu a {
@@ -56,12 +55,11 @@ body {
 .social-icons {
   display: flex;
   gap: 12px;
-  margin-left: auto; /* siempre pegadas a la derecha */
 }
 
 .social-icons img {
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
   transition: transform 0.2s;
 }
 
@@ -69,13 +67,12 @@ body {
   transform: scale(1.2);
 }
 
-/* Botón menú hamburguesa */
+/* Menú hamburguesa */
 .menu-toggle {
   display: none;
   flex-direction: column;
   cursor: pointer;
   gap: 5px;
-  margin-left: 15px; /* pequeño espacio antes de los iconos */
 }
 
 .menu-toggle div {
@@ -92,7 +89,7 @@ body {
     flex-direction: column;
     background: rgba(0, 0, 0, 0.9);
     position: absolute;
-    top: 60px;
+    top: 80px;
     left: 0;
     width: 100%;
     padding: 20px;
