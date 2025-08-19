@@ -77,3 +77,21 @@
   }
   .contacto-foto { order: -1; }
 }
+
+.contacto-form input,
+.contacto-form textarea,
+.contacto-form select {
+  background-color: #ffffff;  /* Fondo blanco */
+  color: #000000;             /* Texto negro dentro */
+  border: 1px solid #ccc;     /* Borde gris */
+  padding: 8px;
+  border-radius: 4px;         /* Bordes redondeados */
+  width: 100%;
+}
+
+/* 🔹 Etiquetas y textos auxiliares en negro */
+.contacto-form label,
+.contacto-form .req,
+.contacto-form .inline {
+  color: #000000;  /* Etiquetas y "(obligatorio)" en negro */
+}
