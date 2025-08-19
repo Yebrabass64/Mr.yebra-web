@@ -1,6 +1,7 @@
 /* Fondo gris intermedio */
 body.biografia-page {
-  background-color: #777777; /* gris intermedio */
+  background: url("omg/fondobiografia.webp") no-repeat center center fixed;
+  background-size: cover;   /* Ajusta la imagen a toda la pantalla */
   color: #fff;
   font-family: 'Merriweather', Georgia, serif;
   padding-top: 100px; /* espacio para header fijo */
