@@ -5,8 +5,11 @@ body.plataformas-page {
   margin: 0;
   font-family: 'Merriweather', Georgia, serif;
   color: white;
-  text-align: center;
   padding-top: 100px; /* espacio para header fijo */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
 }
 
 /* Contenedor de botones */
@@ -14,33 +17,35 @@ body.plataformas-page {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 25px; /* más espacio entre botones */
-  margin-top: 30px;
+  gap: 40px; /* más espacio entre botones */
+  margin-top: 60px;
+  width: 100%;
+  max-width: 700px; /* centrado en el medio */
 }
 
 /* Botones de plataformas */
 .platform-btn {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.95);
   color: black;
   text-decoration: none;
-  padding: 18px 30px; /* más alto y más ancho */
-  border-radius: 30px;
+  padding: 25px 40px; /* mucho más alto y ancho */
+  border-radius: 35px;
   font-weight: bold;
-  font-size: 18px; /* texto un poco más grande */
+  font-size: 22px; /* texto más grande */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 320px; /* más anchos */
+  width: 100%; /* ocupa todo el ancho disponible */
   transition: transform 0.2s ease, background-color 0.2s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* pequeño relieve */
 }
 
 .platform-btn img {
-  height: 36px; /* iconos más grandes */
+  height: 50px; /* iconos mucho más grandes */
   width: auto;
 }
 
 .platform-btn:hover {
-  transform: scale(1.08);
+  transform: scale(1.1);
   background-color: white;
 }
-
