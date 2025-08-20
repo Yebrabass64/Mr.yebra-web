@@ -101,15 +101,12 @@ body {
     padding: 20px;
   }
 
+  .main-menu.active { display: flex; }
+  .menu-toggle { display: flex; }
+}
+
   /* Forzar barra negra sólida en todas las páginas */
 .top-bar {
   background: #000 !important;
 }
 
-  .main-menu.active { display: flex; }
-  .menu-toggle { display: flex; }
-}
-
-  .top-bar {
-    background: rgba(0, 0, 0, 0.7) !important; /* negro semitransparente */
-}
