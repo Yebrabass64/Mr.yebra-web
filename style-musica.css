@@ -1,16 +1,16 @@
 /* Fondo como biografía */
 body.musica-page {
   background: url("omg/fondomusica.webp") no-repeat center center fixed;
-  background-size: cover;   /* La imagen cubre toda la pantalla */
-  font-family: 'Merriweather', Georgia, serif; /* Igual que biografía */
+  background-size: cover;
+  font-family: 'Merriweather', Georgia, serif;
   margin: 0;
-  color: #fff; 
-  padding-top: 100px; /* 👈 deja espacio para la barra fija */
+  color: #fff;
+  padding-top: 100px;
 }
 
 /* Contenedor general */
 .musica-container {
-  padding: 100px 20px 40px; /* deja espacio con la barra */
+  padding: 100px 20px 40px;
   text-align: center;
 }
 
@@ -33,27 +33,27 @@ body.musica-page {
 
 /* Cada sencillo */
 .sencillo {
-  background: rgba(0, 0, 0, 0.6);   /* Fondo semitransparente para destacar */
+  background: rgba(0, 0, 0, 0.6);
   padding: 15px;
-  border-radius: 12px;              /* Bordes redondeados */
-  box-shadow: 0 4px 12px rgba(0,0,0,0.5); /* Sombra para resaltar */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
   text-align: center;
 }
 
 .sencillo img {
   width: 100%;
-  max-width: 280px;  /* más compacto que antes */
+  max-width: 280px;
   border-radius: 8px;
   display: block;
-  margin: 0 auto 10px;  /* ↓ espacio más pequeño debajo */
+  margin: 0 auto 10px;
 }
 
 /* Título de cada sencillo */
 .sencillo h2 {
   font-size: 1.1rem;
-  color: #fff;       /* Blanco para que contraste mejor */
+  color: #fff;
   font-weight: 500;
-  margin: 8px 0;     /* ↓ reduce la separación */
+  margin: 8px 0;
 }
 
 /* Botón escuchar */
@@ -65,7 +65,7 @@ body.musica-page {
   border-radius: 20px;
   font-size: 0.9rem;
   font-weight: 600;
-  margin-top: 6px;      /* ↓ menos separación del título */
+  margin-top: 6px;
   display: inline-block;
   transition: background 0.3s ease;
 }
@@ -73,5 +73,3 @@ body.musica-page {
 .btn-listen:hover {
   background: #e68900;
 }
-
-

@@ -1,7 +1,7 @@
 /* Fondo gris intermedio */
 body.biografia-page {
   background: url("omg/fondobiografia.webp") no-repeat center center fixed;
-  background-size: cover;   /* Ajusta la imagen a toda la pantalla */
+  background-size: cover;
   color: #fff;
   font-family: 'Merriweather', Georgia, serif;
   padding-top: 100px; /* espacio para header fijo */
@@ -33,7 +33,7 @@ body.biografia-page {
 
 /* Texto */
 .bio-text {
-  flex: 2; /* más ancho */
+  flex: 2;
   font-size: 1.1rem;
   line-height: 1.6;
 }
@@ -52,38 +52,37 @@ body.biografia-page {
 
 /* Imagen */
 .bio-image {
-  flex: 1;                     /* mantiene su columna */
+  flex: 1;
   display: flex;
   justify-content: center;
-  align-items: stretch;         /* estira la imagen verticalmente */
+  align-items: stretch;
 }
 
 .bio-image img {
-  width: 100%;                  /* ocupa todo el ancho de la columna */
-  height: 100%;                 /* ocupa toda la altura del texto */
-  object-fit: cover;            /* la recorta si hace falta */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   border-radius: 10px;
 }
 
 /* 📱 Versión móvil */
 @media (max-width: 768px) {
   .bio-content {
-    display: block; /* Se apila vertical */
+    display: block;
   }
 
   .bio-image {
-    margin: 20px auto; /* centra la foto */
+    margin: 20px auto;
     text-align: center;
   }
 
   .bio-image img {
-    max-width: 80%; /* que no quede tan pequeña */
+    max-width: 80%;
     height: auto;
   }
 
   .bio-text {
-    font-size: 1rem;  /* un poco más compacto en móvil */
+    font-size: 1rem;
     line-height: 1.5;
   }
-
 }

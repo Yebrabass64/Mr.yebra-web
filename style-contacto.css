@@ -1,8 +1,6 @@
-/* style-contacto.css */
-
 /* Da aire por si la top-bar es fija/alta */
 .contacto-wrapper {
-  padding-top: 140px; /* antes era 90px, ahora hay más aire */
+  padding-top: 140px;
   padding-bottom: 40px;
 }
 
@@ -81,9 +79,9 @@
 .contacto-form input,
 .contacto-form textarea,
 .contacto-form select {
-  background-color: #f3f4f5;   /* Gris claro por defecto */
-  color: #000000;              /* Texto negro */
-  border: 1px solid #ccc;      /* Borde gris */
+  background-color: #f3f4f5;
+  color: #000000;
+  border: 1px solid #ccc;
   padding: 14px 16px;
   border-radius: 8px;
   width: 100%;
@@ -91,13 +89,13 @@
   transition: all 0.3s ease;
 }
 
-/* 🔹 Efecto al enfocar (cuando escribes en un casillero) */
+/* 🔹 Efecto al enfocar */
 .contacto-form input:focus,
 .contacto-form textarea:focus,
 .contacto-form select:focus {
-  background-color: #000000;   /* Negro al escribir */
-  color: #ffffff;              /* Texto blanco */
-  border-color: #ff9800;       /* Borde naranja al enfocar */
+  background-color: #000000;
+  color: #ffffff;
+  border-color: #ff9800;
   outline: none;
 }
 
@@ -105,6 +103,5 @@
 .contacto-form label,
 .contacto-form .req,
 .contacto-form .inline {
-  color: #000000;  /* Negro para que contraste con el fondo */
+  color: #000000;
 }
-
