@@ -3,7 +3,7 @@
 body.index-page {
   background: #000;
   color: white;
-  font-family: 'Merriweather', Georgia, serif; /* Igual que biografía */
+  font-family: 'Orbitron', sans-serif /* Igual que biografía */
   padding-top: 100px; /* deja espacio para la barra fija */
   margin: 0;
 }
