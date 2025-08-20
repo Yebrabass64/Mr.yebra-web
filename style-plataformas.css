@@ -43,3 +43,11 @@ body.plataformas-page {
   transform: scale(1.05);
   background-color: white;
 }
+
+/* Ajuste igual que en biografía */
+body.plataformas-page {
+  padding-top: 100px; /* espacio para la barra superior fija */
+  color: #fff;
+  font-family: 'Merriweather', Georgia, serif;
+}
+
