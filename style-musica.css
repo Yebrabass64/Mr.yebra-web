@@ -2,9 +2,10 @@
 body.musica-page {
   background: url("omg/fondomusica.webp") no-repeat center center fixed;
   background-size: cover;   /* La imagen cubre toda la pantalla */
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Merriweather', Georgia, serif; /* Igual que biografía */
   margin: 0;
-  color: #fff; /* Asegura que el texto sea legible */
+  color: #fff; 
+  padding-top: 100px; /* 👈 deja espacio para la barra fija */
 }
 
 /* Contenedor general */
