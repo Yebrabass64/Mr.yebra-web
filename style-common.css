@@ -108,4 +108,7 @@ body {
   .menu-toggle {
     display: flex;
   }
+
+  .top-bar {
+    background: rgba(0, 0, 0, 0.7) !important; /* negro semitransparente */
 }
