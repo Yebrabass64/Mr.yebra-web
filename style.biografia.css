@@ -1,0 +1,88 @@
+/* Fondo gris intermedio con imagen */
+body.biografia-page {
+  background: url("omg/fondobiografia.webp") no-repeat center center fixed;
+  background-size: cover;   /* Ajusta la imagen a toda la pantalla */
+  color: #fff;
+  font-family: 'Merriweather', Georgia, serif;
+  padding-top: 100px; /* espacio para header fijo */
+}
+
+/* Contenedor principal */
+.bio-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+/* Título BIOGRAFÍA */
+.bio-container h1 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: white;
+  letter-spacing: 2px;
+  text-align: left;
+}
+
+/* Layout en dos columnas */
+.bio-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+/* Texto */
+.bio-text {
+  flex: 2; /* más ancho */
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Botón idiomas */
+.bio-text button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  background: #ff9800;
+  color: black;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Imagen */
+.bio-image {
+  flex: 1;                     /* mantiene su columna */
+  display: flex;
+  justify-content: center;
+  align-items: stretch;         /* estira la imagen verticalmente */
+}
+
+.bio-image img {
+  width: 100%;                  /* ocupa todo el ancho de la columna */
+  height: 100%;                 /* ocupa toda la altura del texto */
+  object-fit: cover;            /* recorta si hace falta */
+  border-radius: 10px;
+}
+
+/* 📱 Versión móvil */
+@media (max-width: 768px) {
+  .bio-content {
+    display: block; /* Se apila vertical */
+  }
+
+  .bio-image {
+    margin: 20px auto; /* centra la foto */
+    text-align: center;
+  }
+
+  .bio-image img {
+    max-width: 80%; /* que no quede tan pequeña */
+    height: auto;
+  }
+
+  .bio-text {
+    font-size: 1rem;  /* más compacto en móvil */
+    line-height: 1.5;
+  }
+}
