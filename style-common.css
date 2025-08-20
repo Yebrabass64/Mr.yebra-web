@@ -35,11 +35,12 @@ body {
 }
 
 /* Menú principal */
-.main-menu {
-  display: flex;
-  gap: 25px;
-  justify-content: center;
-  flex: 1; /* ocupa todo el espacio central */
+.main-menu a {
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s;
 }
 
 .main-menu a {
