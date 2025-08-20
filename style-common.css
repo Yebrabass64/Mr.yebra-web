@@ -107,4 +107,7 @@ body {
   .menu-toggle {
     display: flex;
   }
+
+  .main-menu a {
+    font-family: 'Poppins', sans-serif !important;
 }
