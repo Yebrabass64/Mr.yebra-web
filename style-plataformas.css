@@ -17,10 +17,10 @@ body.plataformas-page {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 45px; /* más separación */
-  margin: auto 0; /* centra verticalmente */
+  gap: 35px; /* separación moderada */
+  margin: auto 0;
   width: 100%;
-  max-width: 900px; /* más largo */
+  max-width: 700px; /* ancho más contenido */
 }
 
 /* Botones de plataformas */
@@ -28,24 +28,24 @@ body.plataformas-page {
   background-color: rgba(255, 255, 255, 0.95);
   color: black;
   text-decoration: none;
-  padding: 28px 50px; /* más alto y más largo */
-  border-radius: 40px;
+  padding: 20px 35px; /* un poco más pequeño */
+  border-radius: 30px;
   font-weight: bold;
-  font-size: 24px; /* texto aún más grande */
+  font-size: 20px; /* texto más equilibrado */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%; /* ocupa todo el ancho del contenedor */
+  width: 100%;
   transition: transform 0.2s ease, background-color 0.2s ease;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
 }
 
 .platform-btn img {
-  height: 60px; /* iconos más grandes */
+  height: 40px; /* iconos un poco más grandes que antes */
   width: auto;
 }
 
 .platform-btn:hover {
-  transform: scale(1.08);
+  transform: scale(1.07);
   background-color: white;
 }
