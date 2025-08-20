@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: Arial, sans-serif; /* Fuente base, luego se sobrescribe en cada página */
 }
 
 /* HEADER */
@@ -25,30 +25,29 @@ body {
 
 /* Logo (Mr. Yebra) */
 .logo {
-  font-family: 'Orbitron', sans-serif;
+  font-family: 'Orbitron', sans-serif; /* 👈 SIEMPRE Orbitron */
   font-size: 1.8rem;
   font-weight: 700;
   text-transform: uppercase;
   color: #fff;
   margin-right: auto;
-  letter-spacing: 0; /* 👈 evita que se desplace en unas páginas y en otras no */
+  letter-spacing: 0; /* 👈 evita el desplazamiento raro */
 }
 
 /* Menú principal */
-.main-menu a {
-  font-family: 'Poppins', sans-serif;
-  text-decoration: none;
-  color: #fff;
-  font-weight: 500;
-  transition: color 0.3s;
+.main-menu {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  flex: 1;
 }
 
 .main-menu a {
+  font-family: 'Poppins', sans-serif; /* 👈 SIEMPRE Poppins */
   text-decoration: none;
   color: #fff;
   font-weight: 500;
   transition: color 0.3s;
-  font-family: 'Poppins', sans-serif !important;
 }
 
 .main-menu a:hover,
@@ -60,7 +59,7 @@ body {
 .social-icons {
   display: flex;
   gap: 12px;
-  margin-left: auto; /* siempre pegadas a la derecha */
+  margin-left: auto;
 }
 
 .social-icons img {
@@ -79,7 +78,7 @@ body {
   flex-direction: column;
   cursor: pointer;
   gap: 5px;
-  margin-left: 15px; /* pequeño espacio antes de los iconos */
+  margin-left: 15px;
 }
 
 .menu-toggle div {
