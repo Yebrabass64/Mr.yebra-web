@@ -101,13 +101,9 @@ body {
     padding: 20px;
   }
 
-  .main-menu.active {
-    display: flex;
-  }
-
-  .menu-toggle {
-    display: flex;
-  }
+  .main-menu.active { display: flex; }
+  .menu-toggle { display: flex; }
+}
 
   .top-bar {
     background: rgba(0, 0, 0, 0.7) !important; /* negro semitransparente */
