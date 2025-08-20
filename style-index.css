@@ -27,19 +27,21 @@ body.index-page {
 }
 
 .hero-content .tagline {
-  font-size: 20px;           /* un poco más grande */
-  font-weight: 600;          /* más grueso */
+  font-size: 20px;           
+  font-weight: 600;          
   color: #ffffff;            /* blanco puro */
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.7); /* sombra para destacar */
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7); 
   margin-bottom: 12px;
 }
 
 .hero-content .song-title {
   font-family: 'Dancing Script', cursive;
-  font-size: 56px;           /* más grande */
-  font-weight: 700;          /* más grueso */
+  font-size: 56px;           
+  font-weight: 700;          
   color: #ffffff;            /* blanco puro */
-  text-shadow: 3px 3px 6px rgba(0,0,0,0.8); /* sombra más marcada */
+  text-shadow: 
+    3px 3px 6px rgba(0,0,0,0.8),   /* sombra negra para contraste */
+    0 0 8px #ff9800;               /* leve resplandor naranja */
   margin-bottom: 20px;
 }
 
