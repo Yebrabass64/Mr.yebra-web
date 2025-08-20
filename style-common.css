@@ -13,7 +13,7 @@ body {
 .top-bar {
   display: flex;
   align-items: center;
-  background: rgba(0, 0, 0, 0.7);
+  background: #000; /* negro sólido por defecto */
   padding: 10px 20px;
   position: fixed;
   top: 0;
@@ -25,13 +25,13 @@ body {
 
 /* Logo (Mr. Yebra) */
 .logo {
-  font-family: 'Orbitron', sans-serif; /* 👈 SIEMPRE Orbitron */
+  font-family: 'Orbitron', sans-serif; /* SIEMPRE Orbitron */
   font-size: 1.8rem;
   font-weight: 700;
   text-transform: uppercase;
   color: #fff;
   margin-right: auto;
-  letter-spacing: 0; /* 👈 evita el desplazamiento raro */
+  letter-spacing: 0; /* evita el desplazamiento raro */
 }
 
 /* Menú principal */
@@ -43,7 +43,7 @@ body {
 }
 
 .main-menu a {
-  font-family: 'Poppins', sans-serif; /* 👈 SIEMPRE Poppins */
+  font-family: 'Poppins', sans-serif; /* SIEMPRE Poppins */
   text-decoration: none;
   color: #fff;
   font-weight: 500;
@@ -101,12 +101,16 @@ body {
     padding: 20px;
   }
 
-  .main-menu.active { display: flex; }
-  .menu-toggle { display: flex; }
+  .main-menu.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
 }
 
-  /* Forzar barra negra sólida en todas las páginas */
+/* 👇 Forzar SIEMPRE fondo negro sólido en la barra */
 .top-bar {
   background: #000 !important;
 }
-
