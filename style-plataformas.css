@@ -14,8 +14,8 @@ body.plataformas-page {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 15px;
-  margin-top: 20px;
+  gap: 25px; /* más espacio entre botones */
+  margin-top: 30px;
 }
 
 /* Botones de plataformas */
@@ -23,22 +23,24 @@ body.plataformas-page {
   background-color: rgba(255, 255, 255, 0.9);
   color: black;
   text-decoration: none;
-  padding: 10px 25px;
-  border-radius: 25px;
+  padding: 18px 30px; /* más alto y más ancho */
+  border-radius: 30px;
   font-weight: bold;
+  font-size: 18px; /* texto un poco más grande */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 250px;
+  width: 320px; /* más anchos */
   transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
 .platform-btn img {
-  height: 20px;
+  height: 36px; /* iconos más grandes */
   width: auto;
 }
 
 .platform-btn:hover {
-  transform: scale(1.05);
+  transform: scale(1.08);
   background-color: white;
 }
+
