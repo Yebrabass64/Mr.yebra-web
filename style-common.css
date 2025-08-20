@@ -47,6 +47,7 @@ body {
   color: #fff;
   font-weight: 500;
   transition: color 0.3s;
+  font-family: 'Poppins', sans-serif !important;
 }
 
 .main-menu a:hover,
