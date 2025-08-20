@@ -49,5 +49,13 @@ body.plataformas-page {
   padding-top: 100px; /* espacio para la barra superior fija */
   color: #fff;
   font-family: 'Merriweather', Georgia, serif;
+
+.plataformas-page .logo {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-size: 1.8rem;   /* mismo tamaño que Home */
+  color: #fff;
 }
 
