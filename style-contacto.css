@@ -108,11 +108,3 @@
   color: #000000;  /* Negro para que contraste con el fondo */
 }
 
-.contacto-page .logo {
-  font-family: 'Orbitron', sans-serif;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  font-size: 1.8rem;  /* igual que Home */
-  color: #fff;
-}
