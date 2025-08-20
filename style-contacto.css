@@ -36,7 +36,11 @@
   margin: 16px 0 8px;
 }
 
-.req { font-weight: 400; font-size: 0.9em; opacity: 0.7; }
+.req {
+  font-weight: 400;
+  font-size: 0.9em;
+  opacity: 0.7;
+}
 
 .contacto-form input[type="text"],
 .contacto-form input[type="email"],
@@ -57,7 +61,10 @@
   margin: 14px 0 6px;
 }
 
-.check-row .inline { margin: 0; font-weight: 500; }
+.check-row .inline {
+  margin: 0;
+  font-weight: 500;
+}
 
 .btn-send {
   margin-top: 18px;
@@ -73,15 +80,17 @@
   .contacto-layout {
     grid-template-columns: 1fr;
   }
-  .contacto-foto { order: -1; }
+  .contacto-foto {
+    order: -1;
+  }
 }
 
 .contacto-form input,
 .contacto-form textarea,
 .contacto-form select {
-  background-color: #f3f4f5;
-  color: #000000;
-  border: 1px solid #ccc;
+  background-color: #f3f4f5; /* Gris claro por defecto */
+  color: #000000; /* Texto negro */
+  border: 1px solid #ccc; /* Borde gris */
   padding: 14px 16px;
   border-radius: 8px;
   width: 100%;
@@ -89,7 +98,7 @@
   transition: all 0.3s ease;
 }
 
-/* 🔹 Efecto al enfocar */
+/* Efecto al enfocar */
 .contacto-form input:focus,
 .contacto-form textarea:focus,
 .contacto-form select:focus {
@@ -99,10 +108,9 @@
   outline: none;
 }
 
-/* 🔹 Etiquetas y textos auxiliares en negro */
+/* Etiquetas y textos auxiliares en negro */
 .contacto-form label,
 .contacto-form .req,
 .contacto-form .inline {
   color: #000000;
 }
-
