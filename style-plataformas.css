@@ -13,39 +13,37 @@ body.plataformas-page {
 }
 
 /* Contenedor de botones */
+/* Contenedor de botones */
 .platforms {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 40px; /* más espacio entre botones */
-  margin-top: 60px;
-  width: 100%;
-  max-width: 700px; /* centrado en el medio */
+  gap: 25px; /* más espacio entre botones */
+  margin-top: 30px;
 }
 
 /* Botones de plataformas */
 .platform-btn {
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: rgba(255, 255, 255, 0.9);
   color: black;
   text-decoration: none;
-  padding: 25px 40px; /* mucho más alto y ancho */
-  border-radius: 35px;
+  padding: 18px 30px; /* más alto y más ancho */
+  border-radius: 30px;
   font-weight: bold;
-  font-size: 22px; /* texto más grande */
+  font-size: 18px; /* texto un poco más grande */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%; /* ocupa todo el ancho disponible */
+  width: 320px; /* más anchos */
   transition: transform 0.2s ease, background-color 0.2s ease;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* pequeño relieve */
 }
 
 .platform-btn img {
-  height: 50px; /* iconos mucho más grandes */
+  height: 36px; /* iconos más grandes */
   width: auto;
 }
 
 .platform-btn:hover {
-  transform: scale(1.1);
+  transform: scale(1.08);
   background-color: white;
 }
