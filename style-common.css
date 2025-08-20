@@ -25,13 +25,13 @@ body {
 
 /* Logo (Mr. Yebra) */
 .logo {
-  font-family: 'Orbitron', sans-serif !important;
+  font-family: 'Orbitron', sans-serif;
   font-size: 1.8rem;
   font-weight: 700;
   text-transform: uppercase;
   color: #fff;
   margin-right: auto;
-  letter-spacing: 0;
+  letter-spacing: 0; /* 👈 evita que se desplace en unas páginas y en otras no */
 }
 
 /* Menú principal */
