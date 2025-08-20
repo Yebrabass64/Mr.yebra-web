@@ -105,3 +105,7 @@
 .contacto-form .inline {
   color: #000000;
 }
+
+.contacto-page .top-bar {
+  background: rgba(0, 0, 0, 0.7); /* igual que las demás */
+}
