@@ -16,10 +16,14 @@ body.musica-page {
 
 /* Título principal */
 .discografia-title {
-  font-size: 2.5rem;
-  color: black;
-  font-weight: 600;
-  margin-bottom: 40px;
+  font-family: 'Merriweather', serif; /* tipografía elegante */
+  font-size: 52px; /* un poco más grande */
+  font-weight: 700; /* más grueso */
+  text-align: center;
+  margin-bottom: 50px;
+  color: #ffffff; /* blanco puro */
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8); /* sombra para destacar */
+  letter-spacing: 1px; /* ligero espacio entre letras */
 }
 
 /* Grid de sencillos */
