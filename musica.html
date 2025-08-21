@@ -1,43 +1,102 @@
-<div class="grid-sencillos">
-  <!-- Sencillo 1 -->
-  <div class="sencillo">
-    <img src="omg/sencillo6.webp" alt="Continuous Pulse">
-    <h2>Continuous Pulse</h2>
-    <a href="https://open.spotify.com/intl-es/track/4wkGthjofKJdeoEn5CTMbk?si=4c78e48a178f4db1" target="_blank" class="btn-listen">Escuchar</a>
-  </div>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discografía – Mr. Yebra</title>
 
-  <!-- Sencillo 2 -->
-  <div class="sencillo">
-    <img src="omg/sencillo5.webp" alt="Harmonic Dimension">
-    <h2>Harmonic Dimension</h2>
-    <a href="https://open.spotify.com/intl-es/track/5i7wIpSc59EhXaWac9DOgu?si=9052ac16225541e8" target="_blank" class="btn-listen">Escuchar</a>
-  </div>
+  <!-- CSS común -->
+  <link rel="stylesheet" href="style-common.css">
+  <!-- CSS exclusivo música -->
+  <link rel="stylesheet" href="style-musica.css">
 
-  <!-- Sencillo 3 -->
-  <div class="sencillo">
-    <img src="omg/sencillo4.webp" alt="Daisy's Magical Dream">
-    <h2>Daisy's Magical Dream</h2>
-    <a href="https://open.spotify.com/intl-es/track/5tSUfksF9pj7Xv5Br5IV4y?si=85a5c83e6fab4660" target="_blank" class="btn-listen">Escuchar</a>
-  </div>
+  <!-- Fuente moderna -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@400;600&family=Merriweather&display=swap" rel="stylesheet">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap"></noscript>
+</head>
+<body class="musica-page">
 
-  <!-- Sencillo 4 -->
-  <div class="sencillo">
-    <img src="omg/sencillo3.webp" alt="At the Court of King Yebra">
-    <h2>At the Court of King Yebra</h2>
-    <a href="https://open.spotify.com/intl-es/track/20mJuWi3GuEjWoVfJqbayl?si=9fdae448d1a84a5c" target="_blank" class="btn-listen">Escuchar</a>
-  </div>
+  <!-- Barra superior -->
+  <header class="top-bar">
+    <div class="logo">Mr. Yebra</div>
+    
+    <nav class="main-menu">
+      <a href="index.html">Inicio</a>
+      <a href="biografia.html">Biografía</a>
+      <a href="musica.html" class="active">Música</a>
+      <a href="https://www.youtube.com/@user-Mr._Yebra/featured" target="_blank" rel="noopener noreferrer">Vídeos</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
 
-  <!-- Sencillo 5 -->
-  <div class="sencillo">
-    <img src="omg/sencillo2.webp" alt="Party at The Comet">
-    <h2>Party at The Comet</h2>
-    <a href="https://open.spotify.com/intl-es/track/4hIv62OsnJixULguVuOHAu?si=4f42c5f71d0c4356" target="_blank" class="btn-listen">Escuchar</a>
-  </div>
+    <!-- Botón menú hamburguesa -->
+    <div class="menu-toggle" id="menu-toggle">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
 
-  <!-- Sencillo 6 -->
-  <div class="sencillo">
-    <img src="omg/sencillo1.webp" alt="A House in The Star">
-    <h2>A House in The Star</h2>
-    <a href="https://open.spotify.com/intl-es/track/6NJ2jegy3r0E5V8vqgDcCW?si=3f6717403aeb41f2" target="_blank" class="btn-listen">Escuchar</a>
-  </div>
-</div>
+    <!-- Redes sociales -->
+    <div class="social-icons">
+      <a href="https://www.instagram.com/mr.yebra_/?hl=es" target="_blank"><img src="omg/instagram.webp" alt="Instagram"></a>
+      <a href="https://www.facebook.com/mr.yebra" target="_blank"><img src="omg/facebook.webp" alt="Facebook"></a>
+      <a href="https://www.tiktok.com/@mr.yebra" target="_blank"><img src="omg/tiktok.webp" alt="TikTok"></a>
+      <a href="https://x.com/MrYebra78474" target="_blank"><img src="omg/X.webp" alt="X"></a>
+    </div>
+  </header>
+
+  <!-- Contenido -->
+  <main class="musica-container">
+    <h1 class="discografia-title">Discografía</h1>
+
+    <div class="grid-sencillos">
+      <!-- Fila 1 -->
+      <div class="sencillo">
+        <img src="omg/sencillo6.webp" alt="Continuous Pulse">
+        <h2>Continuous Pulse</h2>
+        <a href="https://open.spotify.com/intl-es/track/4wkGthjofKJdeoEn5CTMbk?si=4c78e48a178f4db1" target="_blank" class="btn-listen">Escuchar</a>
+      </div>
+      <div class="sencillo">
+        <img src="omg/sencillo5.webp" alt="Harmonic Dimension">
+        <h2>Harmonic Dimension</h2>
+        <a href="https://open.spotify.com/intl-es/track/5i7wIpSc59EhXaWac9DOgu?si=9052ac16225541e8" target="_blank" class="btn-listen">Escuchar</a>
+      </div>
+
+      <!-- Fila 2 -->
+      <div class="sencillo">
+        <img src="omg/sencillo4.webp" alt="Daisy's Magical Dream">
+        <h2>Daisy's Magical Dream</h2>
+        <a href="https://open.spotify.com/intl-es/track/5tSUfksF9pj7Xv5Br5IV4y?si=85a5c83e6fab4660" target="_blank" class="btn-listen">Escuchar</a>
+      </div>
+      <div class="sencillo">
+        <img src="omg/sencillo3.webp" alt="At the Court of King Yebra">
+        <h2>At the Court of King Yebra</h2>
+        <a href="https://open.spotify.com/intl-es/track/20mJuWi3GuEjWoVfJqbayl?si=9fdae448d1a84a5c" target="_blank" class="btn-listen">Escuchar</a>
+      </div>
+
+      <!-- Fila 3 -->
+      <div class="sencillo">
+        <img src="omg/sencillo2.webp" alt="Party at The Comet">
+        <h2>Party at The Comet</h2>
+        <a href="https://open.spotify.com/intl-es/track/4hIv62OsnJixULguVuOHAu?si=4f42c5f71d0c4356" target="_blank" class="btn-listen">Escuchar</a>
+      </div>
+      <div class="sencillo">
+        <img src="omg/sencillo1.webp" alt="A House in The Star">
+        <h2>A House in The Star</h2>
+        <a href="https://open.spotify.com/intl-es/track/6NJ2jegy3r0E5V8vqgDcCW?si=3f6717403aeb41f2" target="_blank" class="btn-listen">Escuchar</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Script menú hamburguesa -->
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const mainMenu = document.querySelector('.main-menu');
+
+    menuToggle.addEventListener('click', () => {
+      mainMenu.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>
