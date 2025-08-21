@@ -5,15 +5,13 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: Arial, sans-serif; /* Fuente base, luego se sobrescribe en cada página */
-}
+body { font-family: Arial, sans-serif; }
 
-/* HEADER */
+/* HEADER: barra fija superior */
 .top-bar {
   display: flex;
   align-items: center;
-  background: #000; /* negro sólido por defecto */
+  background: rgba(0, 0, 0, 0.7); /* mismo aspecto de antes */
   padding: 10px 20px;
   position: fixed;
   top: 0;
@@ -23,15 +21,15 @@ body {
   box-sizing: border-box;
 }
 
-/* Logo (Mr. Yebra) */
+/* Logo (texto) */
 .logo {
-  font-family: 'Orbitron', sans-serif; /* SIEMPRE Orbitron */
+  font-family: 'Orbitron', sans-serif;
   font-size: 1.8rem;
   font-weight: 700;
   text-transform: uppercase;
   color: #fff;
   margin-right: auto;
-  letter-spacing: 0; /* evita el desplazamiento raro */
+  letter-spacing: 0;
 }
 
 /* Menú principal */
@@ -43,7 +41,7 @@ body {
 }
 
 .main-menu a {
-  font-family: 'Poppins', sans-serif; /* SIEMPRE Poppins */
+  font-family: 'Poppins', sans-serif;
   text-decoration: none;
   color: #fff;
   font-weight: 500;
@@ -68,11 +66,9 @@ body {
   transition: transform 0.2s;
 }
 
-.social-icons img:hover {
-  transform: scale(1.2);
-}
+.social-icons img:hover { transform: scale(1.2); }
 
-/* Botón menú hamburguesa */
+/* Botón menú hamburguesa (solo móvil) */
 .menu-toggle {
   display: none;
   flex-direction: column;
@@ -95,22 +91,12 @@ body {
     flex-direction: column;
     background: rgba(0, 0, 0, 0.9);
     position: absolute;
-    top: 60px;
+    top: 60px; /* debajo de la barra */
     left: 0;
     width: 100%;
     padding: 20px;
   }
 
-  .main-menu.active {
-    display: flex;
-  }
-
-  .menu-toggle {
-    display: flex;
-  }
-}
-
-/* 👇 Forzar SIEMPRE fondo negro sólido en la barra */
-.top-bar {
-  background: #000 !important;
+  .main-menu.active { display: flex; }
+  .menu-toggle { display: flex; }
 }

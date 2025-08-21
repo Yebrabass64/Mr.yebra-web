@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mr. Yebra</title>
-  <link rel="stylesheet" href="style-common.css">
-  <link rel="stylesheet" href="style-index.css">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="style-common.css" />
+  <link rel="stylesheet" href="style-index.css" />
+
+  <!-- Fuentes -->
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@400;600&family=Merriweather&display=swap" rel="stylesheet">
+</head>
+<body class="index-page">
 
   <!-- Barra superior -->
   <header class="top-bar">
     <div class="logo">Mr. Yebra</div>
-    
+
     <nav class="main-menu">
       <a href="index.html" class="active">Inicio</a>
       <a href="biografia.html">Biografía</a>
@@ -21,7 +27,7 @@
     </nav>
 
     <!-- Botón menú hamburguesa -->
-    <div class="menu-toggle" id="menu-toggle">
+    <div class="menu-toggle" id="menu-toggle" aria-label="Abrir menú" role="button">
       <div></div>
       <div></div>
       <div></div>
@@ -29,10 +35,10 @@
 
     <!-- Redes sociales -->
     <div class="social-icons">
-      <a href="https://www.instagram.com/mr.yebra_/?hl=es" target="_blank"><img src="omg/instagram.webp" alt="Instagram"></a>
-      <a href="https://www.facebook.com/mr.yebra" target="_blank"><img src="omg/facebook.webp" alt="Facebook"></a>
-      <a href="https://www.tiktok.com/@mr.yebra" target="_blank"><img src="omg/tiktok.webp" alt="TikTok"></a>
-      <a href="https://x.com/MrYebra78474" target="_blank"><img src="omg/X.webp" alt="X"></a>
+      <a href="https://www.instagram.com/mr.yebra_/?hl=es" target="_blank" rel="noopener"><img src="omg/instagram.webp" alt="Instagram" /></a>
+      <a href="https://www.facebook.com/mr.yebra" target="_blank" rel="noopener"><img src="omg/facebook.webp" alt="Facebook" /></a>
+      <a href="https://www.tiktok.com/@mr.yebra" target="_blank" rel="noopener"><img src="omg/tiktok.webp" alt="TikTok" /></a>
+      <a href="https://x.com/MrYebra78474" target="_blank" rel="noopener"><img src="omg/X.webp" alt="X" /></a>
     </div>
   </header>
 
@@ -49,7 +55,7 @@
   <section class="subscribe">
     <p>Suscríbete con tu correo electrónico para recibir noticias y actualizaciones</p>
     <form action="https://formspree.io/f/mgvzbbpy" method="POST">
-      <input type="email" name="email" placeholder="Introduce tu correo electrónico" required>
+      <input type="email" name="email" placeholder="Introduce tu correo electrónico" required />
       <button type="submit">Suscribirse</button>
     </form>
   </section>
@@ -58,7 +64,6 @@
   <script>
     const menuToggle = document.getElementById('menu-toggle');
     const mainMenu = document.querySelector('.main-menu');
-
     menuToggle.addEventListener('click', () => {
       mainMenu.classList.toggle('active');
     });
