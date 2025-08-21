@@ -24,14 +24,10 @@ body {
 }
 
 /* Logo (Mr. Yebra) */
-.logo {
-  font-family: 'Orbitron', sans-serif; /* SIEMPRE Orbitron */
-  font-size: 1.8rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #fff;
-  margin-right: auto;
-  letter-spacing: 0; /* evita el desplazamiento raro */
+.logo img {
+  height: 50px;     /* ajusta tamaño vertical */
+  width: auto;      /* mantiene proporción */
+  display: block;
 }
 
 /* Menú principal */
