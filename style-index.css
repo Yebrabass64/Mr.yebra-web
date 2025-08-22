@@ -48,7 +48,7 @@ body.index-page {
 
   /* Claves para que NUNCA se parta en 2 líneas */
   white-space: nowrap;
-  display: inline-block;
+  display: block;
   max-width: 100%;
   line-height: 1.05;
 }
