@@ -51,50 +51,51 @@
   </header>
 
   <!-- Contenido de plataformas -->
-  <main class="platforms">
-    <a class="platform-btn" href="https://open.spotify.com/intl-es/track/4wkGthjofKJdeoEn5CTMbk?si=7a771c212bc746a3" target="_blank" rel="noopener noreferrer" data-platform="Spotify" data-song="Continuous Pulse">
-      Escuchar <img src="omg/spotify.webp" alt="Spotify">
-    </a>
-    <a class="platform-btn" href="https://music.apple.com/us/album/continuous-pulse-single/1823460869" target="_blank" rel="noopener noreferrer" data-platform="Apple Music" data-song="Continuous Pulse">
-      Escuchar <img src="omg/apple.webp" alt="Apple Music">
-    </a>
-    <a class="platform-btn" href="https://www.youtube.com/watch?v=4Y92Z6JcxlA" target="_blank" rel="noopener noreferrer" data-platform="YouTube" data-song="Continuous Pulse">
-      Escuchar <img src="omg/youtube.webp" alt="YouTube">
-    </a>
-    <a class="platform-btn" href="https://link.deezer.com/s/30PEbrur5Ydu7cA0AG4nK" target="_blank" rel="noopener noreferrer" data-platform="Deezer" data-song="Continuous Pulse">
-      Escuchar <img src="omg/deezer.webp" alt="Deezer">
-    </a>
-    <a class="platform-btn" href="https://music.amazon.co.uk/albums/B0FFZDGWTS" target="_blank" rel="noopener noreferrer" data-platform="Amazon Music" data-song="Continuous Pulse">
-      Escuchar <img src="omg/amazon.webp" alt="Amazon Music">
-    </a>
-    <a class="platform-btn" href="https://www.boomplay.com/songs/210280913?from=search" target="_blank" rel="noopener noreferrer" data-platform="Boomplay" data-song="Continuous Pulse">
-      Escuchar <img src="omg/boomplay.webp" alt="Boomplay">
-    </a>
-    <a class="platform-btn" href="https://tidal.com/browse/artist/44584343" target="_blank" rel="noopener noreferrer" data-platform="Tidal" data-song="Continuous Pulse">
-      Escuchar <img src="omg/tidal.webp" alt="Tidal">
-    </a>
-  </main>
+<main class="platforms">
+  <a class="platform-btn" href="https://open.spotify.com/intl-es/track/4wkGthjofKJdeoEn5CTMbk?si=7a771c212bc746a3" target="_blank" rel="noopener noreferrer" data-platform="Spotify" data-song="Continuous Pulse">
+    Escuchar <img src="omg/spotify.webp" alt="Spotify">
+  </a>
+  <a class="platform-btn" href="https://music.apple.com/us/album/continuous-pulse-single/1823460869" target="_blank" rel="noopener noreferrer" data-platform="Apple Music" data-song="Continuous Pulse">
+    Escuchar <img src="omg/apple.webp" alt="Apple Music">
+  </a>
+  <a class="platform-btn" href="https://www.youtube.com/watch?v=4Y92Z6JcxlA" target="_blank" rel="noopener noreferrer" data-platform="YouTube" data-song="Continuous Pulse">
+    Escuchar <img src="omg/youtube.webp" alt="YouTube">
+  </a>
+  <a class="platform-btn" href="https://link.deezer.com/s/30PEbrur5Ydu7cA0AG4nK" target="_blank" rel="noopener noreferrer" data-platform="Deezer" data-song="Continuous Pulse">
+    Escuchar <img src="omg/deezer.webp" alt="Deezer">
+  </a>
+  <a class="platform-btn" href="https://music.amazon.co.uk/albums/B0FFZDGWTS" target="_blank" rel="noopener noreferrer" data-platform="Amazon Music" data-song="Continuous Pulse">
+    Escuchar <img src="omg/amazon.webp" alt="Amazon Music">
+  </a>
+  <a class="platform-btn" href="https://www.boomplay.com/songs/210280913?from=search" target="_blank" rel="noopener noreferrer" data-platform="Boomplay" data-song="Continuous Pulse">
+    Escuchar <img src="omg/boomplay.webp" alt="Boomplay">
+  </a>
+  <a class="platform-btn" href="https://tidal.com/browse/artist/44584343" target="_blank" rel="noopener noreferrer" data-platform="Tidal" data-song="Continuous Pulse">
+    Escuchar <img src="omg/tidal.webp" alt="Tidal">
+  </a>
+</main>
 
-  <!-- Scripts -->
-  <script>
-    // Menú hamburguesa
-    const menuToggle = document.getElementById('menu-toggle');
-    const mainMenu = document.querySelector('.main-menu');
-    menuToggle.addEventListener('click', () => {
-      mainMenu.classList.toggle('active');
-    });
+<script>
+  // Menú hamburguesa (si lo usas)
+  const menuToggle = document.getElementById('menu-toggle');
+  const mainMenu = document.querySelector('.main-menu');
+  if (menuToggle && mainMenu) {
+    menuToggle.addEventListener('click', () => mainMenu.classList.toggle('active'));
+  }
 
-    // GA4: evento por clic de plataforma (con canción y URL destino)
-    document.querySelectorAll('.platforms .platform-btn').forEach(link => {
-      link.addEventListener('click', () => {
-        gtag('event', 'platform_click', {
-          platform: link.dataset.platform || 'Desconocida',
-          song: link.dataset.song || 'Continuous Pulse',
-          page_section: 'plataformas',
-          destination_url: link.href
-        });
+  // GA4: evento por clic en plataforma
+  document.querySelectorAll('.platforms .platform-btn').forEach(link => {
+    link.addEventListener('click', () => {
+      gtag('event', 'platform_click', {
+        platform: link.dataset.platform || 'desconocida',
+        song: link.dataset.song || '',
+        destination_url: link.href,
+        page_section: 'plataformas',
+        transport_type: 'beacon'
       });
     });
-  </script>
+  });
+</script>
+
 </body>
 </html>
