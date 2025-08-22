@@ -3,7 +3,7 @@
 body.index-page {
   background: #000;
   color: white;
-  font-family: 'Orbitron', sans-serif /* Igual que biografía */
+  font-family: 'Orbitron', sans-serif; /* Igual que biografía */
   padding-top: 100px; /* deja espacio para la barra fija */
   margin: 0;
 }
@@ -27,24 +27,33 @@ body.index-page {
 }
 
 .hero-content .tagline {
-  font-size: 20px;           
-  font-weight: 600;          
-  color: #ffffff;            /* blanco puro */
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.7); 
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff; /* blanco puro */
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
   margin-bottom: 12px;
 }
 
 .hero-content .song-title {
   font-family: 'Dancing Script', cursive;
-  font-size: 56px;           
-  font-weight: 700;          
-  color: #ffffff;            /* blanco puro */
-  text-shadow: 
-    3px 3px 6px rgba(0,0,0,0.8),   /* sombra negra para contraste */
-    0 0 8px #ff9800;               /* leve resplandor naranja */
+  /* En escritorio se mantiene 56px.
+     En pantallas pequeñas baja proporcionalmente para no cortarse. */
+  font-size: min(56px, 12vw);
+  font-weight: 700;
+  color: #ffffff; /* blanco puro */
+  text-shadow:
+    3px 3px 6px rgba(0,0,0,0.8), /* sombra negra para contraste */
+    0 0 8px #ff9800;              /* leve resplandor naranja */
   margin-bottom: 20px;
+
+  /* Claves para que NUNCA se parta en 2 líneas */
+  white-space: nowrap;
+  display: inline-block;
+  max-width: 100%;
+  line-height: 1.05;
 }
 
+/* Botón escuchar */
 .btn-listen {
   background: orange;
   color: white;
@@ -74,4 +83,27 @@ body.index-page {
   color: white;
   font-weight: bold;
   border-radius: 4px;
+}
+
+/* Ajustes extra en móviles pequeños */
+@media (max-width: 480px) {
+  .hero-content {
+    padding: 14px 16px; /* menos padding = más ancho útil para el título */
+  }
+  .hero-content .tagline {
+    font-size: 16px;
+  }
+  /* Aún más flexible si el móvil es muy estrecho */
+  .hero-content .song-title {
+    font-size: min(48px, 14vw);
+  }
+}
+
+@media (max-width: 360px) {
+  .hero-content {
+    padding: 12px 14px;
+  }
+  .hero-content .song-title {
+    font-size: min(42px, 16vw);
+  }
 }
