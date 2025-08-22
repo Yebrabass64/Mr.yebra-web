@@ -139,14 +139,15 @@
       mainMenu.classList.toggle('active');
     });
 
-    // Eventos GA4: clic en botón "Escuchar" de cada canción (todas van a Spotify en esta página)
+    // Eventos GA4: clic en botón "Escuchar" de cada canción
     document.querySelectorAll('.grid-sencillos .btn-listen').forEach(link => {
       link.addEventListener('click', () => {
         gtag('event', 'platform_click', {
           platform: link.dataset.platform || 'Desconocida',
           song: link.dataset.song || 'Desconocida',
           page: 'musica',
-          destination_url: link.href
+          destination_url: link.href,
+          transport_type: 'beacon'
         });
       });
     });
