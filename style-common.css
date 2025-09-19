@@ -1,12 +1,18 @@
+/* style-common.css */
+
+/* ======== RESET BÁSICO ======== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* ======== HEADER / TOP BAR ======== */
 .top-bar {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  max-width: 100%;        /* evita que se ensanche más de lo debido */
-  overflow: hidden;       /* corta cualquier desbordamiento */
-  box-sizing: border-box; /* asegura que padding/border no agrande el ancho */
+  width: 100%;              /* ocupa todo el ancho */
   background: black;
   color: white;
   display: flex;
