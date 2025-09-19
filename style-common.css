@@ -1,104 +1,83 @@
-/* Reset básico */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, sans-serif; /* Fuente base, luego se sobrescribe en cada página */
-}
-
-/* HEADER */
+/* ======== HEADER / TOP BAR ======== */
 .top-bar {
-  display: flex;
-  align-items: center;
-  background: #000; /* negro sólido por defecto */
-  padding: 10px 20px;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+  max-width: 100%;        /* evita que se ensanche más de lo debido */
+  overflow: hidden;       /* corta cualquier desbordamiento */
+  box-sizing: border-box; /* asegura que padding/border no agrande el ancho */
+  background: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
   z-index: 1000;
-  box-sizing: border-box;
 }
 
-/* Logo (Mr. Yebra) */
+/* Logo */
 .logo {
-  font-family: 'Orbitron', sans-serif; /* SIEMPRE Orbitron */
-  font-size: 1.8rem;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 24px;
   font-weight: 700;
-  text-transform: uppercase;
-  color: #fff;
-  margin-right: auto;
-  letter-spacing: 0; /* evita el desplazamiento raro */
+  color: white;
 }
 
 /* Menú principal */
 .main-menu {
   display: flex;
-  gap: 25px;
-  justify-content: center;
-  flex: 1;
+  gap: 20px;
 }
 
 .main-menu a {
-  font-family: 'Poppins', sans-serif; /* SIEMPRE Poppins */
+  color: white;
   text-decoration: none;
-  color: #fff;
-  font-weight: 500;
-  transition: color 0.3s;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
 }
 
-.main-menu a:hover,
 .main-menu a.active {
-  color: #ff9800;
+  color: orange;
 }
 
-/* Redes sociales */
-.social-icons {
-  display: flex;
-  gap: 12px;
-  margin-left: auto;
-}
-
-.social-icons img {
-  width: 20px;
-  height: 20px;
-  transition: transform 0.2s;
-}
-
-.social-icons img:hover {
-  transform: scale(1.2);
-}
-
-/* Botón menú hamburguesa */
+/* Menú hamburguesa (solo visible en móvil) */
 .menu-toggle {
   display: none;
   flex-direction: column;
+  gap: 4px;
   cursor: pointer;
-  gap: 5px;
-  margin-left: 15px;
 }
 
 .menu-toggle div {
   width: 25px;
   height: 3px;
   background: white;
-  border-radius: 3px;
 }
 
-/* Responsive */
+/* Redes sociales */
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons img {
+  width: 20px;
+  height: 20px;
+}
+
+/* ======== RESPONSIVE ======== */
 @media (max-width: 768px) {
   .main-menu {
     display: none;
     flex-direction: column;
-    background: rgba(0, 0, 0, 0.9);
     position: absolute;
     top: 60px;
-    left: 0;
-    width: 100%;
-    padding: 20px;
+    right: 20px;
+    background: black;
+    padding: 10px;
+    border-radius: 6px;
   }
 
   .main-menu.active {
@@ -108,9 +87,4 @@ body {
   .menu-toggle {
     display: flex;
   }
-}
-
-/* 👇 Forzar SIEMPRE fondo negro sólido en la barra */
-.top-bar {
-  background: #000 !important;
 }
