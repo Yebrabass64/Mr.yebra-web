@@ -1,9 +1,10 @@
 /* style-index.css */
 
+/* ======== HOME (INDEX) ======== */
 body.index-page {
   background: #000;
   color: white;
-  font-family: 'Orbitron', sans-serif; /* Igual que biografía */
+  font-family: 'Orbitron', sans-serif;
   padding-top: 100px; /* deja espacio para la barra fija */
   margin: 0;
 }
@@ -36,17 +37,15 @@ body.index-page {
 
 .hero-content .song-title {
   font-family: 'Dancing Script', cursive;
-  /* En escritorio se mantiene 56px.
-     En pantallas pequeñas baja proporcionalmente para no cortarse. */
-  font-size: min(56px, 12vw);
+  font-size: min(56px, 12vw); /* adaptable: 56px en escritorio, flexible en móviles */
   font-weight: 700;
-  color: #ffffff; /* blanco puro */
+  color: #ffffff;
   text-shadow:
-    3px 3px 6px rgba(0,0,0,0.8), /* sombra negra para contraste */
-    0 0 8px #ff9800;              /* leve resplandor naranja */
+    3px 3px 6px rgba(0,0,0,0.8),
+    0 0 8px #ff9800;
   margin-bottom: 20px;
 
-  /* Claves para que NUNCA se parta en 2 líneas */
+  /* evita cortes en dos líneas */
   white-space: nowrap;
   display: block;
   max-width: 100%;
@@ -88,12 +87,11 @@ body.index-page {
 /* Ajustes extra en móviles pequeños */
 @media (max-width: 480px) {
   .hero-content {
-    padding: 14px 16px; /* menos padding = más ancho útil para el título */
+    padding: 14px 16px;
   }
   .hero-content .tagline {
     font-size: 16px;
   }
-  /* Aún más flexible si el móvil es muy estrecho */
   .hero-content .song-title {
     font-size: min(48px, 14vw);
   }
