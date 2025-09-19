@@ -103,6 +103,13 @@ body.index-page {
   .hero-content {
     padding: 12px 14px;
   }
+  /* Evitar que el header se expanda o deforme */
+.top-bar {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
   .hero-content .song-title {
     font-size: min(42px, 16vw);
   }
