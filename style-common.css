@@ -1,24 +1,16 @@
-/* style-common.css */
-
-/* ======== RESET BÁSICO ======== */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 /* ======== HEADER / TOP BAR ======== */
 .top-bar {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;              /* ocupa todo el ancho */
+  width: 100%;
   background: black;
   color: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 10px 20px;
+  box-sizing: border-box;
   z-index: 1000;
 }
 

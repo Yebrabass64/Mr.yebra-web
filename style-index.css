@@ -1,6 +1,4 @@
-/* style-index.css */
-
-/* ======== HOME (INDEX) ======== */
+/* ======== ESTILOS HOME ======== */
 body.index-page {
   background: #000;
   color: white;
@@ -30,23 +28,21 @@ body.index-page {
 .hero-content .tagline {
   font-size: 20px;
   font-weight: 600;
-  color: #ffffff; /* blanco puro */
+  color: #ffffff;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
   margin-bottom: 12px;
 }
 
 .hero-content .song-title {
   font-family: 'Dancing Script', cursive;
-  font-size: min(56px, 12vw); /* adaptable: 56px en escritorio, flexible en móviles */
+  font-size: min(56px, 12vw); /* se adapta en pantallas pequeñas */
   font-weight: 700;
   color: #ffffff;
   text-shadow:
     3px 3px 6px rgba(0,0,0,0.8),
     0 0 8px #ff9800;
   margin-bottom: 20px;
-
-  /* evita cortes en dos líneas */
-  white-space: nowrap;
+  white-space: nowrap;   /* evita que se corte en dos líneas */
   display: block;
   max-width: 100%;
   line-height: 1.05;
