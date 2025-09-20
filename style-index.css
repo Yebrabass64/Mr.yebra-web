@@ -3,7 +3,7 @@ body.index-page {
   background: #000;
   color: white;
   font-family: 'Orbitron', sans-serif;
-  padding-top: 60px; /* deja espacio para la barra fija */
+  padding-top: 50px; /* deja espacio para la barra fija */
   margin: 0;
 }
 
