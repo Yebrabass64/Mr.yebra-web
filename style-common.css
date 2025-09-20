@@ -10,8 +10,8 @@
   align-items: center;
   justify-content: space-between;
   padding: 10px 20px;
-  box-sizing: border-box;
   z-index: 1000;
+  box-sizing: border-box;
 }
 
 /* Logo */
