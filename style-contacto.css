@@ -1,22 +1,19 @@
-/* ===========================
-   style-contacto.css (completo)
-   =========================== */
-
-/* Fondo exclusivo de la página de contacto */
+/* Fondo de la página de contacto */
 body.contacto-page {
   background: url("omg/fondocontacto.webp") no-repeat center center fixed;
   background-size: cover;
   margin: 0;
-  /* No forzamos color global para no romper estilos específicos */
+  font-family: 'Merriweather', Georgia, serif;
+  color: white;
 }
 
 /* Da aire por si la top-bar es fija/alta */
 .contacto-wrapper {
-  padding-top: 140px; /* deja espacio para la top-bar fija */
+  padding-top: 140px;
   padding-bottom: 40px;
 }
 
-/* Layout: foto izquierda, formulario derecha */
+/* Dos columnas: foto izquierda, formulario derecha */
 .contacto-layout {
   max-width: 1200px;
   margin: 0 auto;
@@ -33,7 +30,6 @@ body.contacto-page {
   height: auto;
   display: block;
   border-radius: 14px;
-  object-fit: cover;
 }
 
 /* FORM */
@@ -41,23 +37,42 @@ body.contacto-page {
   font-size: 40px;
   line-height: 1.1;
   margin-bottom: 24px;
-}
-
-.contacto-form label {
-  display: block;
-  font-weight: 600;
-  margin: 16px 0 8px;
-  color: #000000; /* etiquetas en negro para legibilidad sobre el fondo */
-}
-
-.req {
-  font-weight: 400;
-  font-size: 0.9em;
-  opacity: 0.7;
   color: #000000;
 }
 
-/* Inputs y textarea (primera definición: estilo base) */
+/* Etiquetas (nombres de los casilleros) */
+.contacto-form label {
+  display: block;
+  font-weight: 700;     /* más grueso */
+  font-size: 18px;      /* más grande */
+  margin: 16px 0 8px;
+  color: #000000;       /* negro fuerte */
+  text-shadow: 1px 1px 2px rgba(255,255,255,0.6); /* mejora la visibilidad sobre fondos claros */
+}
+
+/* Textos auxiliares */
+.req {
+  font-weight: 500;
+  font-size: 0.95em;
+  opacity: 0.85;
+  color: #000000;
+}
+
+.check-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 14px 0 6px;
+}
+
+.check-row .inline {
+  margin: 0;
+  font-weight: 600;
+  font-size: 16px;
+  color: #000000;
+}
+
+/* Inputs y textarea */
 .contacto-form input[type="text"],
 .contacto-form input[type="email"],
 .contacto-form textarea {
@@ -69,24 +84,20 @@ body.contacto-page {
   font-size: 16px;
   outline: none;
   color: #000000;
-  box-sizing: border-box;
+  border: 1px solid #ccc;
+  transition: all 0.3s ease;
 }
 
-/* Check row */
-.check-row {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin: 14px 0 6px;
+/* Efecto al enfocar */
+.contacto-form input:focus,
+.contacto-form textarea:focus {
+  background-color: #000000;
+  color: #ffffff;
+  border-color: #ff9800;
+  outline: none;
 }
 
-.check-row .inline {
-  margin: 0;
-  font-weight: 500;
-  color: #000000;
-}
-
-/* Botón enviar (mantuvimos el formato anterior, sin alterar demasiado su aspecto) */
+/* Botón */
 .btn-send {
   margin-top: 18px;
   border: none;
@@ -94,59 +105,21 @@ body.contacto-page {
   border-radius: 26px;
   font-weight: 700;
   cursor: pointer;
-  /* si quieres un color por defecto descomenta la línea siguiente:
-     background: #ff9800; color: #fff; */
+  background: #ff9800;
+  color: #000;
+  transition: background 0.3s ease;
 }
 
-/* Responsivo: en pantallas estrechas se apila */
+.btn-send:hover {
+  background: #e68900;
+}
+
+/* Responsive */
 @media (max-width: 900px) {
   .contacto-layout {
     grid-template-columns: 1fr;
   }
   .contacto-foto {
-    order: -1; /* la foto irá arriba en móvil */
+    order: -1;
   }
 }
-
-/* Reglas adicionales para inputs/select/textarea (agrega borde por compatibilidad visual) */
-.contacto-form input,
-.contacto-form textarea,
-.contacto-form select {
-  background-color: #f3f4f5;   /* Gris claro por defecto */
-  color: #000000;             /* Texto negro */
-  border: 1px solid #ccc;     /* Borde gris suave */
-  padding: 14px 16px;
-  border-radius: 8px;
-  width: 100%;
-  font-size: 16px;
-  transition: all 0.22s ease;
-  box-sizing: border-box;
-}
-
-/* Efecto al enfocar */
-.contacto-form input:focus,
-.contacto-form textarea:focus,
-.contacto-form select:focus {
-  background-color: #000000;
-  color: #ffffff;
-  border-color: #ff9800;
-  outline: none;
-  box-shadow: 0 0 0 4px rgba(255,152,0,0.08);
-}
-
-/* Aseguramos que etiquetas y textos auxiliares se queden en negro */
-.contacto-form label,
-.contacto-form .req,
-.contacto-form .inline {
-  color: #000000;
-}
-
-/* Pequeño ajuste para que el formulario no quede invisible si el fondo es muy claro:
-   (opcional) Si quieres capa semitransparente detrás del formulario descomenta: */
-/*
-.contacto-layout {
-  background: rgba(255,255,255,0.03); 
-}
-*/
-
-/* Fin de style-contacto.css */
