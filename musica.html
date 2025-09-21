@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Discografía – Mr. Yebra</title>
 
   <!-- Google tag (gtag.js) -->
@@ -38,16 +38,16 @@
     </nav>
 
     <!-- Botón menú hamburguesa -->
-    <div class="menu-toggle" id="menu-toggle">
+    <div class="menu-toggle" id="menu-toggle" aria-label="Abrir menú" role="button">
       <div></div><div></div><div></div>
     </div>
 
     <!-- Redes sociales -->
     <div class="social-icons">
-      <a href="https://www.instagram.com/mr.yebra_/?hl=es" target="_blank"><img src="omg/instagram.webp" alt="Instagram"></a>
-      <a href="https://www.facebook.com/mr.yebra" target="_blank"><img src="omg/facebook.webp" alt="Facebook"></a>
-      <a href="https://www.tiktok.com/@mr.yebra" target="_blank"><img src="omg/tiktok.webp" alt="TikTok"></a>
-      <a href="https://x.com/MrYebra78474" target="_blank"><img src="omg/X.webp" alt="X"></a>
+      <a href="https://www.instagram.com/mr.yebra_/?hl=es" target="_blank" rel="noopener"><img src="omg/instagram.webp" alt="Instagram"></a>
+      <a href="https://www.facebook.com/mr.yebra" target="_blank" rel="noopener"><img src="omg/facebook.webp" alt="Facebook"></a>
+      <a href="https://www.tiktok.com/@mr.yebra" target="_blank" rel="noopener"><img src="omg/tiktok.webp" alt="TikTok"></a>
+      <a href="https://x.com/MrYebra78474" target="_blank" rel="noopener"><img src="omg/X.webp" alt="X"></a>
     </div>
   </header>
 
@@ -56,7 +56,20 @@
     <h1 class="discografia-title">Discografía</h1>
 
     <div class="grid-sencillos">
-      <!-- Fila 1 -->
+      <!-- Fila 1: Parallel Gravity | Continuous Pulse -->
+      <div class="sencillo">
+        <img src="omg/sencillo7.webp" alt="Parallel Gravity">
+        <h2>Parallel Gravity</h2>
+        <a
+          href="https://open.spotify.com/intl-es/track/4bWpc4dlhj8rkQukxhGTdK?si=6bafc086501547ea"
+          target="_blank"
+          class="btn-listen"
+          data-platform="Spotify"
+          data-song="Parallel Gravity"
+          rel="noopener noreferrer"
+        >Escuchar</a>
+      </div>
+
       <div class="sencillo">
         <img src="omg/sencillo6.webp" alt="Continuous Pulse">
         <h2>Continuous Pulse</h2>
@@ -66,8 +79,11 @@
           class="btn-listen"
           data-platform="Spotify"
           data-song="Continuous Pulse"
+          rel="noopener noreferrer"
         >Escuchar</a>
       </div>
+
+      <!-- Fila 2: Harmonic Dimension | Daisy's Magical Dream -->
       <div class="sencillo">
         <img src="omg/sencillo5.webp" alt="Harmonic Dimension">
         <h2>Harmonic Dimension</h2>
@@ -77,10 +93,10 @@
           class="btn-listen"
           data-platform="Spotify"
           data-song="Harmonic Dimension"
+          rel="noopener noreferrer"
         >Escuchar</a>
       </div>
 
-      <!-- Fila 2 -->
       <div class="sencillo">
         <img src="omg/sencillo4.webp" alt="Daisy's Magical Dream">
         <h2>Daisy's Magical Dream</h2>
@@ -90,8 +106,11 @@
           class="btn-listen"
           data-platform="Spotify"
           data-song="Daisy's Magical Dream"
+          rel="noopener noreferrer"
         >Escuchar</a>
       </div>
+
+      <!-- Fila 3: At the Court of King Yebra | Party at The Comet -->
       <div class="sencillo">
         <img src="omg/sencillo3.webp" alt="At the Court of King Yebra">
         <h2>At the Court of King Yebra</h2>
@@ -101,10 +120,10 @@
           class="btn-listen"
           data-platform="Spotify"
           data-song="At the Court of King Yebra"
+          rel="noopener noreferrer"
         >Escuchar</a>
       </div>
 
-      <!-- Fila 3 -->
       <div class="sencillo">
         <img src="omg/sencillo2.webp" alt="Party at The Comet">
         <h2>Party at The Comet</h2>
@@ -114,8 +133,11 @@
           class="btn-listen"
           data-platform="Spotify"
           data-song="Party at The Comet"
+          rel="noopener noreferrer"
         >Escuchar</a>
       </div>
+
+      <!-- Último: A House in The Star -->
       <div class="sencillo">
         <img src="omg/sencillo1.webp" alt="A House in The Star">
         <h2>A House in The Star</h2>
@@ -125,6 +147,7 @@
           class="btn-listen"
           data-platform="Spotify"
           data-song="A House in The Star"
+          rel="noopener noreferrer"
         >Escuchar</a>
       </div>
     </div>
@@ -135,20 +158,30 @@
     // menú hamburguesa
     const menuToggle = document.getElementById('menu-toggle');
     const mainMenu = document.querySelector('.main-menu');
-    menuToggle.addEventListener('click', () => {
-      mainMenu.classList.toggle('active');
-    });
+    if (menuToggle && mainMenu) {
+      menuToggle.addEventListener('click', () => {
+        mainMenu.classList.toggle('active');
+      });
+    }
 
     // Eventos GA4: clic en botón "Escuchar" de cada canción
+    // (envía platform y song)
     document.querySelectorAll('.grid-sencillos .btn-listen').forEach(link => {
-      link.addEventListener('click', () => {
-        gtag('event', 'platform_click', {
-          platform: link.dataset.platform || 'Desconocida',
-          song: link.dataset.song || 'Desconocida',
-          page: 'musica',
-          destination_url: link.href,
-          transport_type: 'beacon'
-        });
+      link.addEventListener('click', function (e) {
+        // Enviar evento a GA4
+        try {
+          gtag('event', 'platform_click', {
+            platform: this.dataset.platform || 'Desconocida',
+            song: this.dataset.song || 'Desconocida',
+            page: 'musica',
+            destination_url: this.href,
+            transport_type: 'beacon'
+          });
+        } catch (err) {
+          // si gtag no está definido, no romperá
+          console.warn('gtag no disponible', err);
+        }
+        // No evitamos la navegación: el navegador abrirá la URL en target=_blank
       });
     });
   </script>
