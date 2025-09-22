@@ -59,13 +59,13 @@
       <!-- Texto -->
       <div class="bio-text">
         <p id="bio-text">
-          MR. YEBRA es el proyecto personal de Paco Yebra, donde combina música electrónica con toques experimentales y melodías progresivas para crear un sonido propio. Este proyecto refleja todo lo que ha aprendido en su trayectoria como músico y le permite unir creatividad y emoción en cada tema.
+          MR. YEBRA es el proyecto personal de Paco Yebra, donde combina música electrónica con toques experimentales y melodías progresivas. Este proyecto refleja su trayectoria como músico, uniendo creatividad y emoción en cada tema.
           <br><br>
-          Después de varios años de giras internacionales como bajista, Paco decidió volcar toda su experiencia en MR. YEBRA, su proyecto en solitario que abre una nueva etapa en su carrera. Con una visión abierta y atrevida, explora distintos sonidos, cruza géneros y conecta con públicos de diferentes lugares.
+          Tras años de giras como bajista, Paco ha decidido volcar su experiencia en MR. YEBRA, su proyecto en solitario donde explora diversos sonidos, cruza géneros y conecta con públicos globales.
           <br><br>
-          Su primer lanzamiento, A House In The Stars (1 de febrero de 2024), presentó una propuesta fresca y cósmica. Luego llegaron Party at the Comet (7 de marzo), At the Court of King Yebra (25 de mayo) y Daisy's Magical Dream (8 de diciembre), que consolidaron su estilo personal. En 2025, MR. YEBRA siguió evolucionando con Harmonic Dimension (21 de marzo) y Continuous Pulse (11 de julio), donde exploró nuevas atmósferas y ritmos electrónicos.
+          Su debut, A House In The Stars (febrero de 2024), marcó una propuesta fresca y cósmica, seguido por lanzamientos como Party at the Comet, At the Court of King Yebra, Daisy's Magical Dream, Harmonic Dimension y Continuous Pulse. Su más reciente sencillo, Parallel Gravity (19 de septiembre de 2025), explora una vibrante onda melodic house y progressive, con atmósferas inmersivas y ritmos innovadores.
           <br><br>
-          Y esto es solo el inicio. Bienvenidos al universo de MR. YEBRA.
+          Y esto es solo el comienzo.
         </p>
         <button id="toggle-lang">English</button>
       </div>
@@ -83,21 +83,21 @@
     const bioText = document.getElementById('bio-text');
     let isSpanish = true;
 
-    const textoES = `MR. YEBRA es el proyecto personal de Paco Yebra, donde combina música electrónica con toques experimentales y melodías progresivas para crear un sonido propio. Este proyecto refleja todo lo que ha aprendido en su trayectoria como músico y le permite unir creatividad y emoción en cada tema.
+    const textoES = `MR. YEBRA es el proyecto personal de Paco Yebra, donde combina música electrónica con toques experimentales y melodías progresivas. Este proyecto refleja su trayectoria como músico, uniendo creatividad y emoción en cada tema.
 
-    Después de varios años de giras internacionales como bajista, Paco decidió volcar toda su experiencia en MR. YEBRA, su proyecto en solitario que abre una nueva etapa en su carrera. Con una visión abierta y atrevida, explora distintos sonidos, cruza géneros y conecta con públicos de diferentes lugares.
+Tras años de giras como bajista, Paco ha decidido volcar su experiencia en MR. YEBRA, su proyecto en solitario donde explora diversos sonidos, cruza géneros y conecta con públicos globales.
 
-    Su primer lanzamiento, A House In The Stars (1 de febrero de 2024), presentó una propuesta fresca y cósmica. Luego llegaron Party at the Comet (7 de marzo), At the Court of King Yebra (25 de mayo) y Daisy's Magical Dream (8 de diciembre), que consolidaron su estilo personal. En 2025, MR. YEBRA siguió evolucionando con Harmonic Dimension (21 de marzo) y Continuous Pulse (11 de julio), donde exploró nuevas atmósferas y ritmos electrónicos.
+Su debut, A House In The Stars (febrero de 2024), marcó una propuesta fresca y cósmica, seguido por lanzamientos como Party at the Comet, At the Court of King Yebra, Daisy's Magical Dream, Harmonic Dimension y Continuous Pulse. Su más reciente sencillo, Parallel Gravity (19 de septiembre de 2025), explora una vibrante onda melodic house y progressive, con atmósferas inmersivas y ritmos innovadores.
 
-    Y esto es solo el inicio. Bienvenidos al universo de MR. YEBRA.`;
+Y esto es solo el comienzo.`;
 
-    const textoEN = `MR. YEBRA is the personal project of Paco Yebra, combining electronic music with experimental touches and progressive melodies to create his own sound. This project reflects everything he has learned in his career as a musician and allows him to unite creativity and emotion in every track.
+    const textoEN = `MR. YEBRA is the personal project of Paco Yebra, combining electronic music with experimental touches and progressive melodies. This project reflects his career as a musician, uniting creativity and emotion in every track.
 
-    After several years of international tours as a bassist, Paco decided to pour all his experience into MR. YEBRA, his solo project that opens a new stage in his career. With an open and daring vision, he explores different sounds, crosses genres, and connects with audiences from different places.
+After years of touring as a bassist, Paco has decided to pour his experience into MR. YEBRA, his solo project where he explores diverse sounds, crosses genres, and connects with global audiences.
 
-    His first release, A House In The Stars (February 1, 2024), presented a fresh and cosmic proposal. Then came Party at the Comet (March 7), At the Court of King Yebra (May 25), and Daisy's Magical Dream (December 8), which consolidated his personal style. In 2025, MR. YEBRA continued evolving with Harmonic Dimension (March 21) and Continuous Pulse (July 11), where he explored new atmospheres and electronic rhythms.
+His debut, A House In The Stars (February 2024), presented a fresh and cosmic proposal, followed by releases such as Party at the Comet, At the Court of King Yebra, Daisy's Magical Dream, Harmonic Dimension, and Continuous Pulse. His most recent single, Parallel Gravity (September 19, 2025), explores a vibrant melodic house and progressive wave, with immersive atmospheres and innovative rhythms.
 
-    And this is only the beginning. Welcome to the universe of MR. YEBRA.`;
+And this is only the beginning.`;
 
     toggleBtn.addEventListener('click', () => {
       if (isSpanish) {
