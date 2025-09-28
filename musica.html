@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Discografía – Mr. Yebra</title>
+  <title>Sencillos – Mr. Yebra</title>
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJESLE8G6B"></script>
@@ -53,7 +53,7 @@
 
   <!-- Contenido -->
   <main class="musica-container">
-    <h1 class="discografia-title">Discografía</h1>
+    <h1 class="discografia-title">Sencillos</h1>
 
     <div class="grid-sencillos">
       <!-- Fila 1: Parallel Gravity | Continuous Pulse -->
@@ -165,10 +165,8 @@
     }
 
     // Eventos GA4: clic en botón "Escuchar" de cada canción
-    // (envía platform y song)
     document.querySelectorAll('.grid-sencillos .btn-listen').forEach(link => {
-      link.addEventListener('click', function (e) {
-        // Enviar evento a GA4
+      link.addEventListener('click', function () {
         try {
           gtag('event', 'platform_click', {
             platform: this.dataset.platform || 'Desconocida',
@@ -178,10 +176,8 @@
             transport_type: 'beacon'
           });
         } catch (err) {
-          // si gtag no está definido, no romperá
           console.warn('gtag no disponible', err);
         }
-        // No evitamos la navegación: el navegador abrirá la URL en target=_blank
       });
     });
   </script>
