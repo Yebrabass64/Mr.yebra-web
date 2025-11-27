@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta-name="viewport content="width=device-width, initial-scale=1.0" />
   <title>Sencillos – Mr. Yebra</title>
 
   <!-- Google tag (gtag.js) -->
@@ -24,6 +24,7 @@
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap"></noscript>
 </head>
+
 <body class="musica-page">
 
   <!-- Barra superior -->
@@ -56,7 +57,22 @@
     <h1 class="discografia-title">Sencillos</h1>
 
     <div class="grid-sencillos">
-      <!-- Fila 1: Parallel Gravity | Continuous Pulse -->
+
+      <!-- NUEVO PRIMER SENCILLO -->
+      <div class="sencillo">
+        <img src="omg/sencillo8.webp" alt="A Journey Beyond">
+        <h2>A Journey Beyond</h2>
+        <a
+          href="https://open.spotify.com/intl-es/track/4P8j7jrVc5Ds0gvVKG4xR4?si=e06b8c70f8e74f50"
+          target="_blank"
+          class="btn-listen"
+          data-platform="Spotify"
+          data-song="A Journey Beyond"
+          rel="noopener noreferrer"
+        >Escuchar</a>
+      </div>
+
+      <!-- SENCILLO 7: Parallel Gravity -->
       <div class="sencillo">
         <img src="omg/sencillo7.webp" alt="Parallel Gravity">
         <h2>Parallel Gravity</h2>
@@ -70,6 +86,7 @@
         >Escuchar</a>
       </div>
 
+      <!-- SENCILLO 6: Continuous Pulse -->
       <div class="sencillo">
         <img src="omg/sencillo6.webp" alt="Continuous Pulse">
         <h2>Continuous Pulse</h2>
@@ -83,7 +100,7 @@
         >Escuchar</a>
       </div>
 
-      <!-- Fila 2: Harmonic Dimension | Daisy's Magical Dream -->
+      <!-- SENCILLO 5: Harmonic Dimension -->
       <div class="sencillo">
         <img src="omg/sencillo5.webp" alt="Harmonic Dimension">
         <h2>Harmonic Dimension</h2>
@@ -97,6 +114,7 @@
         >Escuchar</a>
       </div>
 
+      <!-- SENCILLO 4: Daisy's Magical Dream -->
       <div class="sencillo">
         <img src="omg/sencillo4.webp" alt="Daisy's Magical Dream">
         <h2>Daisy's Magical Dream</h2>
@@ -110,7 +128,7 @@
         >Escuchar</a>
       </div>
 
-      <!-- Fila 3: At the Court of King Yebra | Party at The Comet -->
+      <!-- SENCILLO 3: At the Court of King Yebra -->
       <div class="sencillo">
         <img src="omg/sencillo3.webp" alt="At the Court of King Yebra">
         <h2>At the Court of King Yebra</h2>
@@ -124,6 +142,7 @@
         >Escuchar</a>
       </div>
 
+      <!-- SENCILLO 2: Party at the Comet -->
       <div class="sencillo">
         <img src="omg/sencillo2.webp" alt="Party at The Comet">
         <h2>Party at The Comet</h2>
@@ -137,7 +156,7 @@
         >Escuchar</a>
       </div>
 
-      <!-- Último: A House in The Star -->
+      <!-- SENCILLO 1: A House in the Star -->
       <div class="sencillo">
         <img src="omg/sencillo1.webp" alt="A House in The Star">
         <h2>A House in The Star</h2>
@@ -150,12 +169,12 @@
           rel="noopener noreferrer"
         >Escuchar</a>
       </div>
+
     </div>
   </main>
 
   <!-- Scripts -->
   <script>
-    // menú hamburguesa
     const menuToggle = document.getElementById('menu-toggle');
     const mainMenu = document.querySelector('.main-menu');
     if (menuToggle && mainMenu) {
@@ -164,7 +183,6 @@
       });
     }
 
-    // Eventos GA4: clic en botón "Escuchar" de cada canción
     document.querySelectorAll('.grid-sencillos .btn-listen').forEach(link => {
       link.addEventListener('click', function () {
         try {
@@ -181,5 +199,6 @@
       });
     });
   </script>
+
 </body>
 </html>
