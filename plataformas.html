@@ -42,7 +42,6 @@
   <!-- CSS exclusivo plataformas -->
   <link rel="stylesheet" href="style-plataformas.css">
 </head>
-
 <body class="plataformas-page">
 
   <!-- Barra superior -->
@@ -73,7 +72,6 @@
 
   <!-- Contenido de plataformas -->
   <main class="platforms">
-
     <a class="platform-btn"
        href="https://open.spotify.com/intl-es/track/4P8j7jrVc5Ds0gvVKG4xR4?si=e06b8c70f8e74f50"
        target="_blank"
@@ -136,7 +134,6 @@
        data-song="A Journey Beyond">
       Escuchar <img src="omg/tidal.webp" alt="Tidal">
     </a>
-
   </main>
 
   <script>
@@ -147,11 +144,9 @@
       menuToggle.addEventListener('click', () => mainMenu.classList.toggle('active'));
     }
 
-    // Eventos por clic en plataformas (GA4 + Meta Pixel)
+    // GA4: evento por clic en plataforma
     document.querySelectorAll('.platforms .platform-btn').forEach(link => {
       link.addEventListener('click', () => {
-
-        // GA4
         gtag('event', 'platform_click', {
           platform: link.dataset.platform || 'desconocida',
           song: link.dataset.song || '',
@@ -159,16 +154,6 @@
           page_section: 'plataformas',
           transport_type: 'beacon'
         });
-
-        // META PIXEL – SOLO CLICK REAL
-        if (typeof fbq === 'function') {
-          fbq('trackCustom', 'SubscribedButtonClick', {
-            platform: link.dataset.platform || 'desconocida',
-            song: link.dataset.song || '',
-            destination_url: link.href
-          });
-        }
-
       });
     });
   </script>
