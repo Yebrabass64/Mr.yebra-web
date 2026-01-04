@@ -1,1 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirigiendo a Spotify…</title>
 
+  <!-- Meta Pixel -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+
+    fbq('init', '302281599484821');
+    fbq('track', 'ViewContent', {
+      content_name: 'A Journey Beyond',
+      content_category: 'Spotify',
+      content_type: 'music'
+    });
+  </script>
+
+  <!-- Redirección -->
+  <meta http-equiv="refresh" content="0.3;url=https://open.spotify.com/intl-es/track/4P8j7jrVc5Ds0gvVKG4xR4?si=e06b8c70f8e74f50">
+</head>
+
+<body>
+  <p>Redirigiendo a Spotify…</p>
+</body>
+</html>
