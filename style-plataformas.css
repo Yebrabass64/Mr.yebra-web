@@ -18,9 +18,20 @@ body.plataformas-page {
   flex-direction: column;
   align-items: center;
   gap: 25px;
-  margin-top: 40px;
+  margin-top: 60px; /* ⬅️ un poco más abajo para dejar espacio al texto */
   width: 100%;
   max-width: 500px;
+}
+
+/* Texto superior */
+.platforms-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+  opacity: 0.9;
 }
 
 /* Botones de plataformas */
@@ -33,10 +44,10 @@ body.plataformas-page {
   font-weight: bold;
   font-size: 16px;
   display: flex;
-  justify-content: center;     /* texto centrado */
+  justify-content: center;
   align-items: center;
   width: 260px;
-  position: relative;          /* necesario para icono absoluto */
+  position: relative;
   transition: transform 0.2s ease, background-color 0.2s ease;
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
 }
