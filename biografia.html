@@ -32,15 +32,12 @@
       src="https://www.facebook.com/tr?id=302281599484821&ev=PageView&noscript=1"
     />
   </noscript>
-  <!-- End Meta Pixel Code -->
 
   <!-- Fuentes -->
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@400;600&family=Merriweather&display=swap" rel="stylesheet">
 
   <!-- CSS común -->
   <link rel="stylesheet" href="style-common.css">
-
-  <!-- CSS exclusivo de biografía -->
   <link rel="stylesheet" href="style-biografia.css">
 </head>
 <body class="biografia-page">
@@ -76,23 +73,17 @@
     <h1>BIOGRAFÍA</h1>
 
     <div class="bio-content">
-      <!-- Texto -->
       <div class="bio-text">
         <p id="bio-text">
-          MR. YEBRA es el proyecto personal de Paco Yebra, donde fusiona música electrónica con matices experimentales y melodías progresivas. Su propuesta nace de una amplia trayectoria como músico y bajista en directo, transformando esa experiencia en un universo sonoro propio, lleno de emoción, profundidad y exploración.
+          MR. YEBRA es el proyecto personal del músico y bajista Paco Yebra, enfocado en la creación de música electrónica con una base sólida en el Melodic Techno y el Progressive House.
           <br><br>
-          Tras años de giras, Paco decidió dar forma a MR. YEBRA como un proyecto en solitario que cruza géneros, expande atmósferas y conecta con un público global.
+          Tras años de trayectoria como músico en directo, el proyecto nace como una vía de exploración personal donde conviven groove, capas melódicas y estructuras progresivas, combinando energía de club con una escucha cuidada.
           <br><br>
-          Su debut, A House In The Stars (febrero de 2024), presentó una visión fresca y cósmica. Después llegaron lanzamientos como Party at the Comet, At the Court of King Yebra, Daisy's Magical Dream, Harmonic Dimension y Continuous Pulse. En septiembre de 2025 publicó Parallel Gravity, una vibrante pieza de melodic house y progressive.
-          <br><br>
-          El 28 de noviembre estrenó A Journey Beyond, un viaje sonoro a través del melodic techno y el progressive house, donde texturas hipnóticas y capas melódicas se combinan para crear una experiencia envolvente y emocional.
-          <br><br>
-          Y esto es solo el comienzo.
+          MR. YEBRA desarrolla un sonido propio dentro de la electrónica contemporánea, moviéndose entre la pista y la introspección, con producciones pensadas tanto para el directo como para una experiencia de escucha completa.
         </p>
         <button id="toggle-lang">English</button>
       </div>
 
-      <!-- Imagen -->
       <div class="bio-image">
         <img src="omg/biografia.webp" alt="Mr. Yebra">
       </div>
@@ -105,17 +96,13 @@
     const bioText = document.getElementById('bio-text');
     let isSpanish = true;
 
-    const textoES = `MR. YEBRA es el proyecto personal de Paco Yebra, donde fusiona música electrónica con matices experimentales y melodías progresivas. Su propuesta nace de una amplia trayectoria como músico y bajista en directo, transformando esa experiencia en un universo sonoro propio, lleno de emoción, profundidad y exploración.<br><br>
-Tras años de giras, Paco decidió dar forma a MR. YEBRA como un proyecto en solitario que cruza géneros, expande atmósferas y conecta con un público global.<br><br>
-Su debut, A House In The Stars (febrero de 2024), presentó una visión fresca y cósmica. Después llegaron lanzamientos como Party at the Comet, At the Court of King Yebra, Daisy's Magical Dream, Harmonic Dimension y Continuous Pulse. En septiembre de 2025 publicó Parallel Gravity, una vibrante pieza de melodic house y progressive.<br><br>
-El 28 de noviembre estrenó A Journey Beyond, un viaje sonoro a través del melodic techno y el progressive house, donde texturas hipnóticas y capas melódicas se combinan para crear una experiencia envolvente y emocional.<br><br>
-Y esto es solo el comienzo.`;
+    const textoES = `MR. YEBRA es el proyecto personal del músico y bajista Paco Yebra, enfocado en la creación de música electrónica con una base sólida en el Melodic Techno y el Progressive House.<br><br>
+Tras años de trayectoria como músico en directo, el proyecto nace como una vía de exploración personal donde conviven groove, capas melódicas y estructuras progresivas, combinando energía de club con una escucha cuidada.<br><br>
+MR. YEBRA desarrolla un sonido propio dentro de la electrónica contemporánea, moviéndose entre la pista y la introspección, con producciones pensadas tanto para el directo como para una experiencia de escucha completa.`;
 
-    const textoEN = `MR. YEBRA is the personal project of Paco Yebra, where he blends electronic music with experimental nuances and progressive melodies. His proposal emerges from a long career as a musician and live bassist, transforming that experience into his own sonic universe full of emotion, depth, and exploration.<br><br>
-After years of touring, Paco decided to shape MR. YEBRA as a solo project that crosses genres, expands atmospheres, and connects with a global audience.<br><br>
-His debut, A House In The Stars (February 2024), presented a fresh and cosmic vision. This was followed by releases such as Party at the Comet, At the Court of King Yebra, Daisy's Magical Dream, Harmonic Dimension, and Continuous Pulse. In September 2025 he released Parallel Gravity, a vibrant piece of melodic house and progressive.<br><br>
-On November 28 he premiered A Journey Beyond, a sonic journey through melodic techno and progressive house, where hypnotic textures and melodic layers combine to create an immersive and emotional experience.<br><br>
-And this is only the beginning.`;
+    const textoEN = `MR. YEBRA is the personal project of musician and bassist Paco Yebra, focused on creating electronic music with a solid foundation in Melodic Techno and Progressive House.<br><br>
+After years of experience as a live musician, the project emerges as a space for personal exploration, where groove, melodic layers, and progressive structures coexist, blending club energy with attentive listening.<br><br>
+MR. YEBRA develops a distinctive sound within contemporary electronic music, moving between the dancefloor and introspection, with productions designed both for live performance and for a complete listening experience.`;
 
     toggleBtn.addEventListener('click', () => {
       if (isSpanish) {
@@ -128,7 +115,6 @@ And this is only the beginning.`;
       isSpanish = !isSpanish;
     });
 
-    // Menú hamburguesa
     const menuToggle = document.getElementById('menu-toggle');
     const mainMenu = document.querySelector('.main-menu');
     menuToggle.addEventListener('click', () => {
