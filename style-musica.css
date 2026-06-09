@@ -1,6 +1,6 @@
 /* Fondo como biografía */
 body.musica-page {
-  background: url("omg/fondomusica.webp") no-repeat center center fixed;
+  background: #f5f5f5;
   background-size: cover;
   font-family: 'Merriweather', Georgia, serif;
   margin: 0;
@@ -21,8 +21,8 @@ body.musica-page {
   font-weight: 700; /* más grueso */
   text-align: center;
   margin-bottom: 50px;
-  color: #ffffff; /* blanco puro */
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8); /* sombra para destacar */
+  color: #222; /* blanco puro */
+  text-shadow: none; /* sombra para destacar */
   letter-spacing: 1px; /* ligero espacio entre letras */
 }
 
@@ -37,8 +37,8 @@ body.musica-page {
 
 /* Cada sencillo */
 .sencillo {
-  background: rgba(0, 0, 0, 0.6);
-  padding: 15px;
+  background: #e6e6e6;
+  padding: 20px;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.5);
   text-align: center;
@@ -55,7 +55,7 @@ body.musica-page {
 /* Título de cada sencillo */
 .sencillo h2 {
   font-size: 1.1rem;
-  color: #fff;
+  color: #222;
   font-weight: 500;
   margin: 8px 0;
 }
