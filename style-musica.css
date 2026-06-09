@@ -17,7 +17,7 @@ body.musica-page {
 /* Título principal */
 .discografia-title {
   font-family: 'Merriweather', serif; /* tipografía elegante */
-  font-size: 52px; /* un poco más grande */
+  font-size: 42px; /* un poco más grande */
   font-weight: 700; /* más grueso */
   text-align: center;
   margin-bottom: 50px;
@@ -37,16 +37,16 @@ body.musica-page {
 
 /* Cada sencillo */
 .sencillo {
-  background: #e9e9e9;
-  padding: 20px;
+  background: #d8d8d8;
+  padding: 10px;
   border: 1px solid #d8d8d8;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.18);
   text-align: center;
 }
 
 .sencillo img {
   width: 100%;
-  max-width: 280px;
+  max-width: 340px;
   border-radius: 8px;
   display: block;
   margin: 0 auto 10px;
