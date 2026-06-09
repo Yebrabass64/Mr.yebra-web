@@ -19,15 +19,17 @@ body.index-page {
 }
 
 .hero-content {
-  background: rgba(25, 25, 25, 0.18);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.10);
 
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  border: 1px solid rgba(255, 255, 255, 0.25);
+
   border-radius: 18px;
 
   box-shadow:
-    0 8px 32px rgba(0, 0, 0, 0.25);
+    0 8px 32px rgba(0, 0, 0, 0.18);
 
   padding: 20px 40px;
   text-align: center;
