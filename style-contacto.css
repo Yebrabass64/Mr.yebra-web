@@ -42,27 +42,27 @@ body.contacto-page {
   font-size: 44px;
   line-height: 1.1;
   margin-bottom: 24px;
-  color: #ffffff;  /* blanco puro */
+  color: #222;  /* blanco puro */
   font-weight: 900; /* máximo grosor */
-  text-shadow: 3px 3px 6px rgba(0,0,0,0.9); /* sombra negra fuerte */
+  text-shadow: none; /* sombra negra fuerte */
 }
 
 /* Etiquetas (nombres de los casilleros) */
 .contacto-form label {
   display: block;
-  font-weight: 900;    /* máximo grosor */
-  font-size: 22px;     /* más grande aún */
+  font-weight: 900;
+  font-size: 22px;
   margin: 16px 0 8px;
-  color: #ffffff;      /* blanco puro */
-  text-shadow: 2px 2px 5px rgba(0,0,0,0.9); /* sombra negra muy marcada */
+  color: #222;
+  text-shadow: none;
 }
 
 /* Textos auxiliares */
 .req {
   font-weight: 700;
   font-size: 1rem;
-  color: #ffffff;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.9);
+  color: #555;
+  text-shadow: none;
 }
 
 .check-row {
@@ -76,8 +76,8 @@ body.contacto-page {
   margin: 0;
   font-weight: 800;
   font-size: 18px;
-  color: #ffffff;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.9);
+  color: #222;
+  text-shadow: none;
 }
 
 /* Inputs y textarea */
