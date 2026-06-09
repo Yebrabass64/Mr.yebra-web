@@ -50,8 +50,8 @@ body.contacto-page {
 /* Etiquetas (nombres de los casilleros) */
 .contacto-form label {
   display: block;
-  font-weight: 900;
-  font-size: 22px;
+  font-weight: 600;
+  font-size: 16px;
   margin: 16px 0 8px;
   color: #222;
   text-shadow: none;
@@ -59,9 +59,9 @@ body.contacto-page {
 
 /* Textos auxiliares */
 .req {
-  font-weight: 700;
-  font-size: 1rem;
-  color: #555;
+  font-weight: 400;
+  font-size: 14px;
+  color: #777;
   text-shadow: none;
 }
 
@@ -99,9 +99,9 @@ body.contacto-page {
 /* Efecto al enfocar */
 .contacto-form input:focus,
 .contacto-form textarea:focus {
-  background-color: #000000;
-  color: #ffffff;
-  border-color: #ff9800;
+  background-color: #ffffff;
+  color: #222;
+  border-color: 1px solid #ff9800;
   outline: none;
 }
 
