@@ -37,9 +37,9 @@ body.musica-page {
 
 /* Cada sencillo */
 .sencillo {
-  background: #e6e6e6;
+  background: #e9e9e9;
   padding: 20px;
-  border-radius: 12px;
+  border: 1px solid #d8d8d8;
   box-shadow: 0 4px 12px rgba(0,0,0,0.5);
   text-align: center;
 }
