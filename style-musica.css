@@ -1,6 +1,6 @@
 /* Fondo como biografía */
 body.musica-page {
-  background: #f5f5f5;
+  background: url("omg/fondomusica.webp") no-repeat center center fixed;
   background-size: cover;
   font-family: 'Merriweather', Georgia, serif;
   margin: 0;
