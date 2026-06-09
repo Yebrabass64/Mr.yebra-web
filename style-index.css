@@ -19,7 +19,7 @@ body.index-page {
 }
 
 .hero-content {
-  background: rgba(25, 25, 25, 0.25);
+  background: rgba(25, 25, 25, 0.18);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 
