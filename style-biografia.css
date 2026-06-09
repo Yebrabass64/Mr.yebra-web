@@ -1,10 +1,9 @@
 /* Fondo gris intermedio */
 body.biografia-page {
-  background: url("omg/fondobiografia.webp") no-repeat center center fixed;
-  background-size: cover;
+  background: #f5f5f5;
   color: #fff;
-  font-family: 'Merriweather', Georgia, serif;
-  padding-top: 100px; /* espacio para header fijo */
+  font-family: 'Orbitron', sans-serif;
+  padding-top: 100px;
 }
 
 /* Contenedor principal */
