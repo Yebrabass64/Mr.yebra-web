@@ -37,10 +37,18 @@ body.musica-page {
 
 /* Cada sencillo */
 .sencillo {
-  background: #d8d8d8;
+  background: rgba(255, 255, 255, 0.45);
+
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
   padding: 10px;
-  border: 1px solid #d5d5d5;
+
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.25);
+
   box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+
   text-align: center;
 }
 
