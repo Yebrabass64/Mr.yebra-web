@@ -19,10 +19,18 @@ body.index-page {
 }
 
 .hero-content {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(25, 25, 25, 0.25);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 18px;
+
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.25);
+
   padding: 20px 40px;
   text-align: center;
-  border-radius: 10px;
 }
 
 .hero-content .tagline {
@@ -34,15 +42,17 @@ body.index-page {
 }
 
 .hero-content .song-title {
-  font-family: 'Dancing Script', cursive;
-  font-size: min(56px, 12vw); /* se adapta en pantallas pequeñas */
-  font-weight: 700;
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: min(56px, 12vw);
+  font-weight: 600;
   color: #ffffff;
+
   text-shadow:
-    3px 3px 6px rgba(0,0,0,0.8),
-    0 0 8px #ff9800;
+    2px 2px 5px rgba(0,0,0,0.65);
+
   margin-bottom: 20px;
-  white-space: nowrap;   /* evita que se corte en dos líneas */
+  white-space: nowrap;
   display: block;
   max-width: 100%;
   line-height: 1.05;
