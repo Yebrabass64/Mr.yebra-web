@@ -17,7 +17,7 @@ body.biografia-page {
 .bio-container h1 {
   font-size: 2rem;
   margin-bottom: 30px;
-  color: white;
+  color: #222;
   letter-spacing: 2px;
   text-align: left;
 }
