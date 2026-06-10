@@ -15,10 +15,11 @@ body.biografia-page {
 
 /* Título BIOGRAFÍA */
 .bio-container h1 {
-  font-size: 2rem;
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 3px;
   margin-bottom: 30px;
   color: #222;
-  letter-spacing: 2px;
   text-align: left;
 }
 
