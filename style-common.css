@@ -25,7 +25,7 @@
 /* Menú principal */
 .main-menu {
   display: flex;
-  gap: 20px;
+  gap: 24px;
 }
 
 .main-menu a {
