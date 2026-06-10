@@ -39,12 +39,14 @@ body.contacto-page {
 
 /* FORM */
 .contacto-form h1 {
-  font-size: 38px;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.3rem;
+  letter-spacing: 2px;
   line-height: 1.1;
   margin-bottom: 24px;
-  color: #222;  /* blanco puro */
-  font-weight: 900; /* máximo grosor */
-  text-shadow: none; /* sombra negra fuerte */
+  color: #222;
+  font-weight: 700;
+  text-shadow: none;
 }
 
 /* Etiquetas (nombres de los casilleros) */
