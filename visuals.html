@@ -1,1 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visuals – Mr. Yebra</title>
 
+  <link rel="stylesheet" href="style-common.css">
+  <link rel="stylesheet" href="style-visuals.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@400;600&family=Merriweather&display=swap" rel="stylesheet">
+</head>
+
+<body class="visuals-page">
+
+<header class="top-bar">
+  <div class="logo">Mr. Yebra</div>
+
+  <nav class="main-menu">
+    <a href="index.html">Inicio</a>
+    <a href="biografia.html">Biografía</a>
+    <a href="musica.html">Música</a>
+    <a href="visuals.html" class="active">Visuals</a>
+    <a href="https://www.youtube.com/@user-Mr._Yebra/featured" target="_blank" rel="noopener noreferrer">Vídeos</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
+
+  <div class="menu-toggle" id="menu-toggle">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <div class="social-icons">
+    <a href="https://www.instagram.com/mr.yebra_/?hl=es" target="_blank"><img src="omg/instagram.webp" alt="Instagram"></a>
+    <a href="https://www.facebook.com/mr.yebra" target="_blank"><img src="omg/facebook.webp" alt="Facebook"></a>
+    <a href="https://www.tiktok.com/@mr.yebra" target="_blank"><img src="omg/tiktok.webp" alt="TikTok"></a>
+    <a href="https://x.com/MrYebra78474" target="_blank"><img src="omg/X.webp" alt="X"></a>
+  </div>
+</header>
+
+<main class="visuals-container">
+
+<h1 class="visuals-title">VISUALS</h1>
+<div class="visual-item">
+
+  <div class="visual-image">
+    <img src="omg/mirage.webp" alt="Mirage in the Sky">
+  </div>
+
+  <div class="visual-text">
+    <h2>Mirage in the Sky</h2>
+    <p class="visual-type">Visual</p>
+
+    <a href="https://www.tiktok.com/@mr.yebra/video/7648697308405632278"
+       target="_blank"
+       class="btn-visual">
+       VER
+    </a>
+  </div>
+
+</div>
+
+  <div class="visual-item reverse">
+
+  <div class="visual-image">
+    <img src="omg/journey.webp" alt="A Journey Beyond">
+  </div>
+
+  <div class="visual-text">
+    <h2>A Journey Beyond</h2>
+    <p class="visual-type">Visual</p>
+
+    <a href="https://www.tiktok.com/@mr.yebra/video/7619445664144952598"
+       target="_blank"
+       class="btn-visual">
+       VER
+    </a>
+  </div>
+
+</div>
+
+  <h2 class="section-title">BEHIND THE PROJECT</h2>
+
+  </main>
+
+<script>
+const menuToggle = document.getElementById('menu-toggle');
+const mainMenu = document.querySelector('.main-menu');
+
+menuToggle.addEventListener('click', () => {
+  mainMenu.classList.toggle('active');
+});
+</script>
+
+</body>
+</html>
