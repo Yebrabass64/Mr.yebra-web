@@ -75,10 +75,24 @@
 
   <!-- Hero -->
 <section class="hero" style="--hero-img: url('omg/portada.webp');">
-  <div class="hero-content">
-    <p class="tagline">Próximamente el 19 de junio</p>
-    <h1 class="song-title">Mirage in the Sky</h1>
+
+  <div class="hero-wrapper">
+
+    <div class="hero-content">
+      <p class="tagline">Próximamente el 19 de junio</p>
+      <h1 class="song-title">Mirage in the Sky</h1>
+    </div>
+
+    <button id="audio-toggle" aria-label="Escuchar adelanto">
+      🔊
+    </button>
+
+    <audio id="previewAudio" loop>
+      <source src="audio/mirage-preview.mp3" type="audio/mpeg">
+    </audio>
+
   </div>
+
 </section>
 
   <!-- Suscripción -->
@@ -91,13 +105,28 @@
   </section>
 
   <!-- Script menú hamburguesa -->
-  <script>
-    const menuToggle = document.getElementById('menu-toggle');
-    const mainMenu = document.querySelector('.main-menu');
-    menuToggle.addEventListener('click', () => {
-      mainMenu.classList.toggle('active');
-    });
-  </script>
+<script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const mainMenu = document.querySelector('.main-menu');
+  menuToggle.addEventListener('click', () => {
+    mainMenu.classList.toggle('active');
+  });
+</script>
+
+<script>
+  const audio = document.getElementById('previewAudio');
+  const audioButton = document.getElementById('audio-toggle');
+
+  audioButton.addEventListener('click', () => {
+    if (audio.paused) {
+      audio.play();
+      audioButton.textContent = '🔇';
+    } else {
+      audio.pause();
+      audioButton.textContent = '🔊';
+    }
+  });
+</script>
 
 </body>
 </html>
