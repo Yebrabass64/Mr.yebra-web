@@ -122,13 +122,13 @@ body.index-page {
 }
 
 #audio-toggle {
-  width: 42px;
-  height: 42px;
+  width: 46px;
+  height: 46px;
 
   border: 1px solid rgba(255,255,255,0.25);
   border-radius: 50%;
 
-  background: rgba(255,255,255,0.10);
+  background: rgba(0,0,0,0.35);
 
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
@@ -147,7 +147,7 @@ body.index-page {
 
 #audio-toggle:hover {
   transform: scale(1.08);
-  background: rgba(255,255,255,0.18);
+  background: rgba(0,0,0,0.50);
 }
 
 @media (max-width: 768px) {
