@@ -112,9 +112,11 @@ body.index-page {
   .hero-content {
     padding: 12px 14px;
   }
+  
   .hero-content .song-title {
     font-size: min(42px, 16vw);
   }
+}
 
   /* ======== ALTAVOZ PREVIEW ======== */
 
