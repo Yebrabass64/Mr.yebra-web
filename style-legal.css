@@ -2,9 +2,9 @@ body {
     background: #000;
     color: #ffffff;
     font-family: Arial, sans-serif;
-    max-width: 900px;
+    max-width: 800px;
     margin: 0 auto;
-    padding: 40px;
+    padding: 60px 40px;
     line-height: 1.8;
 }
 
@@ -35,4 +35,5 @@ a:hover {
     display: inline-block;
     margin-bottom: 30px;
     font-size: 14px;
+    color: orange;
 }
