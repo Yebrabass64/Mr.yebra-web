@@ -1,1 +1,38 @@
+body {
+    background: #000;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px;
+    line-height: 1.8;
+}
 
+h1 {
+    font-size: 42px;
+    margin-bottom: 30px;
+}
+
+h2 {
+    margin-top: 40px;
+    color: #ffffff;
+}
+
+p {
+    color: rgba(255,255,255,0.85);
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.volver {
+    display: inline-block;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
