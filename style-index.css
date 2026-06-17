@@ -168,3 +168,29 @@ body.index-page {
     font-size: 16px;
   }
 }
+
+/* ======== FOOTER ======== */
+
+  .footer {
+   background: #000;
+   color: rgba(255,255,255,0.75);
+   text-align: center;
+   padding: 25px 15px;
+   font-size: 14px;
+   line-height: 1.8;
+ }
+
+ .footer p {
+   margin: 6px 0;
+ }
+
+ .footer a {
+   color: rgba(255,255,255,0.75);
+   text-decoration: none;
+   transition: color 0.25s ease;
+ }
+
+ .footer a:hover {
+   color: #ffffff;
+ }
+}
