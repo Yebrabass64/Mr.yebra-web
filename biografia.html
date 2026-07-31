@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Biografía - Mr. Yebra</title>
+  <title>Biography - Mr. Yebra</title>
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJESLE8G6B"></script>
@@ -47,13 +47,13 @@
     <div class="logo">Mr. Yebra</div>
 
     <nav class="main-menu">
-      <a href="index.html">Inicio</a>
-      <a href="biografia.html" class="active">Biografía</a>
-      <a href="musica.html">Música</a>
-      <a href="visuals.html">Visuals</a>
-      <a href="https://www.youtube.com/@user-Mr._Yebra/featured" target="_blank" rel="noopener noreferrer">Vídeos</a>
-      <a href="contacto.html">Contacto</a>
-    </nav>
+  <a href="index.html">Home</a>
+  <a href="biografia.html" class="active">Biography</a>
+  <a href="musica.html">Music</a>
+  <a href="visuals.html">Visuals</a>
+  <a href="https://www.youtube.com/@user-Mr._Yebra/featured" target="_blank" rel="noopener noreferrer">Video</a>
+  <a href="contacto.html">Contact</a>
+</nav>
 
     <div class="menu-toggle" id="menu-toggle">
       <div></div>
@@ -71,18 +71,17 @@
 
   <!-- Contenido principal -->
   <main class="bio-container">
-    <h1>BIOGRAFÍA</h1>
-
+    <h1>BIOGRAPHY</h1>
     <div class="bio-content">
       <div class="bio-text">
         <p id="bio-text">
-          MR. YEBRA es el proyecto personal del músico y bajista Paco Yebra, enfocado en la creación de música electrónica con una base sólida en el Melodic Techno y el Progressive House.
-          <br><br>
-          Tras años de trayectoria como músico en directo, el proyecto nace como una vía de exploración personal donde conviven groove, capas melódicas y estructuras progresivas, combinando energía de club con una escucha cuidada.
-          <br><br>
-          MR. YEBRA desarrolla un sonido propio dentro de la electrónica contemporánea, moviéndose entre la pista y la introspección, con producciones pensadas tanto para el directo como para una experiencia de escucha completa.
+         MR. YEBRA is the personal project of musician and bassist Paco Yebra, focused on creating electronic music with a solid foundation in Melodic Techno and Progressive House.
+         <br><br>
+         After years of experience as a live musician, the project emerges as a space for personal exploration, where groove, melodic layers, and progressive structures coexist, blending club energy with attentive listening.
+         <br><br>
+         MR. YEBRA develops a distinctive sound within contemporary electronic music, moving between the dancefloor and introspection, with productions designed both for live performance and for a complete listening experience.
         </p>
-        <button id="toggle-lang">English</button>
+        <button id="toggle-lang">Español</button>
       </div>
 
       <div class="bio-image">
@@ -95,7 +94,7 @@
   <script>
     const toggleBtn = document.getElementById('toggle-lang');
     const bioText = document.getElementById('bio-text');
-    let isSpanish = true;
+    let isSpanish = false;
 
     const textoES = `MR. YEBRA es el proyecto personal del músico y bajista Paco Yebra, enfocado en la creación de música electrónica con una base sólida en el Melodic Techno y el Progressive House.<br><br>
 Tras años de trayectoria como músico en directo, el proyecto nace como una vía de exploración personal donde conviven groove, capas melódicas y estructuras progresivas, combinando energía de club con una escucha cuidada.<br><br>
@@ -106,12 +105,12 @@ After years of experience as a live musician, the project emerges as a space for
 MR. YEBRA develops a distinctive sound within contemporary electronic music, moving between the dancefloor and introspection, with productions designed both for live performance and for a complete listening experience.`;
 
     toggleBtn.addEventListener('click', () => {
-      if (isSpanish) {
-        bioText.innerHTML = textoEN;
-        toggleBtn.textContent = "Español";
+      if (!isSpanish) {
+      bioText.innerHTML = textoES;
+      toggleBtn.textContent = "English";
       } else {
-        bioText.innerHTML = textoES;
-        toggleBtn.textContent = "English";
+      bioText.innerHTML = textoEN;
+      toggleBtn.textContent = "Español";
       }
       isSpanish = !isSpanish;
     });
