@@ -34,7 +34,7 @@ body.index-page {
   box-shadow:
     0 8px 32px rgba(0, 0, 0, 0.18);
 
-  padding: 15px 40px 50px 40px;
+  padding: 25px 40px 50px 40px;
   text-align: center;
 }
 .hero-content .latest-release {
@@ -64,14 +64,14 @@ body.index-page {
   text-shadow:
     2px 2px 5px rgba(0,0,0,0.65);
 
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   white-space: nowrap;
   display: block;
   max-width: 100%;
   line-height: 1.05;
 
   position: relative;
-  top: -5px;
+  top: -15px;
 }
 
 /* Botón escuchar */
