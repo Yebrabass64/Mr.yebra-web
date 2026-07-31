@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contacto – Mr. Yebra</title>
+  <title>Contact – Mr. Yebra</title>
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJESLE8G6B"></script>
@@ -47,12 +47,12 @@
     <div class="logo">Mr. Yebra</div>
     
     <nav class="main-menu">
-      <a href="index.html">Inicio</a>
-      <a href="biografia.html">Biografía</a>
-      <a href="musica.html">Música</a>
-      <a href="visuals.html">Visuals</a>
-      <a href="https://www.youtube.com/@user-Mr._Yebra/featured" target="_blank" rel="noopener noreferrer">Vídeos</a>
-      <a href="contacto.html" class="active">Contacto</a>
+      <a href="index.html">Home</a>
+       <a href="biografia.html">Biography</a>
+       <a href="musica.html">Music</a>
+       <a href="visuals.html">Visuals</a>
+       <a href="https://www.youtube.com/@user-Mr._Yebra/featured" target="_blank" rel="noopener noreferrer">Video</a>
+       <a href="contacto.html" class="active">Contact</a>
     </nav>
 
     <!-- Botón menú hamburguesa -->
@@ -81,27 +81,29 @@
 
       <!-- Formulario a la derecha -->
       <section class="contacto-form">
-        <h1>Contáctame</h1>
+        <h1>Contact Me</h1>
 
         <form action="https://formspree.io/f/xzzvqoww" method="POST">
-          <label for="nombre">Nombre <span class="req">(obligatorio)</span></label>
+          <label for="nombre">First Name <span class="req">(required)</span></label>
           <input type="text" id="nombre" name="nombre" required />
 
-          <label for="apellidos">Apellidos</label>
+          <label for="apellidos">Last Name</label>
           <input type="text" id="apellidos" name="apellidos" />
 
-          <label for="email">Correo electrónico <span class="req">(obligatorio)</span></label>
+          <label for="email">Email <span class="req">(required)</span></label>
           <input type="email" id="email" name="email" required />
 
           <div class="check-row">
             <input type="checkbox" id="suscribe" name="suscribe" />
-            <label for="suscribe" class="inline">Suscríbete para recibir noticias y actualizaciones</label>
+            <label for="suscribe" class="inline">
+            Subscribe to receive news and updates
+          </label>
           </div>
 
-          <label for="asunto">Asunto <span class="req">(obligatorio)</span></label>
+          <label for="asunto">Subject <span class="req">(required)</span></label>
           <input type="text" id="asunto" name="asunto" required />
 
-          <label for="mensaje">Mensaje <span class="req">(obligatorio)</span></label>
+          <label for="mensaje">Message <span class="req">(required)</span></label>
           <textarea id="mensaje" name="mensaje" rows="8" required></textarea>
 
           <button type="submit" class="btn-send">SEND</button>
