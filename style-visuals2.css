@@ -44,7 +44,9 @@ body.visuals-page {
 }
 
 .visual-text {
-  max-width: 400px;
+  max-width: 100%;
+  text-align: center;
+  margin-top: 12px;
 }
 
 .visual-text h2 {
