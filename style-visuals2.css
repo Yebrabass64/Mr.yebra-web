@@ -9,6 +9,10 @@ body.visuals-page {
   max-width: 1400px;
   margin: auto;
   padding: 40px 30px 100px;
+
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 40px;
 }
 
 .visuals-title {
