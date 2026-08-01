@@ -35,10 +35,12 @@ body.visuals-page {
 }
 
 .visual-image img {
-  width: 380px;
-  height: auto;
-  border-radius: 10px;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 12px;
   box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
 }
 
 .visual-text {
