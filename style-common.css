@@ -62,7 +62,7 @@
 /* Redes sociales */
 .social-icons {
   display: flex;
-  gap: 14px;
+  gap: 16px;
 }
 
 .social-icons img {
