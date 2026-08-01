@@ -22,6 +22,7 @@
   font-weight: 700;
   color: white;
   line-height: 1;
+  white-space: nowrap;
 }
 
 /* Menú principal */
@@ -89,5 +90,34 @@
 
   .menu-toggle {
     display: flex;
+  }
+}
+
+@media (max-width: 932px) and (orientation: landscape) {
+
+  .top-bar {
+    padding: 8px 12px;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .main-menu {
+    gap: 20px;
+  }
+
+  .main-menu a {
+    font-size: 13px;
+  }
+
+  .social-icons {
+    gap: 6px;
+    margin-left: 12px;
+  }
+
+  .social-icons img {
+    width: 18px;
+    height: 18px;
   }
 }
