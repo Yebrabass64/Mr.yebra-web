@@ -1,7 +1,7 @@
 body.visuals-page {
   background:
-    linear-gradient(rgba(237,243,250,0.88), rgba(219,231,242,0.88)),
-    url("omg/visuals.webp") center top / cover fixed;
+  linear-gradient(rgba(237,243,250,0.70), rgba(219,231,242,0.70)),
+  url("omg/visuals.webp") center top / cover fixed;
   font-family: 'Merriweather', serif;
   color: #222;
   padding-top: 100px;
