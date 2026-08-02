@@ -1,6 +1,6 @@
 body.visuals-page {
   background:
-  linear-gradient(rgba(237,243,250,0.70), rgba(219,231,242,0.70)),
+  linear-gradient(rgba(237,243,250,0.55), rgba(219,231,242,0.55)),
   url("omg/visuals.webp") center top / cover fixed;
   font-family: 'Merriweather', serif;
   color: #222;
