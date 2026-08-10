@@ -7,7 +7,8 @@ const SPOTIFY_CLIENT_ID =
     '25bc848823fc4b17a3b82558cb4f2b2f';
 
 const SPOTIFY_REDIRECT_URI =
-    https://www.mryebra.com/playlist.html
+    const SPOTIFY_REDIRECT_URI =
+    'https://www.mryebra.com/playlist.html';
 
 const SPOTIFY_PLAYLIST_ID =
     '1rdrf0vx3g9IrVy8hKQqsR';
