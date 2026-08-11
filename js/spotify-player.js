@@ -899,6 +899,123 @@ async function previousSpotifyTrack() {
     }
 }
 
+// =========================================================
+// GUARDAR PLAYLIST EN SPOTIFY
+// =========================================================
+
+async function savePlaylistToSpotify() {
+
+    let token =
+        await getAccessToken();
+
+    if (!token) {
+
+        loginWithSpotify();
+
+        return;
+    }
+
+    const response =
+        await fetch(
+            'https://api.spotify.com/v1/me/library',
+            {
+                method: 'PUT',
+
+                headers: {
+
+                    Authorization:
+                        `Bearer ${token}`,
+
+                    'Content-Type':
+                        'application/json'
+
+                },
+
+                body:
+                    JSON.stringify({
+
+                        uris:
+                            [
+                                `spotify:playlist:${SPOTIFY_PLAYLIST_ID}`
+                            ]
+
+                    })
+            }
+        );
+
+    if (response.status === 401) {
+
+        token =
+            await refreshAccessToken();
+
+        if (!token) {
+
+            loginWithSpotify();
+
+            return;
+        }
+
+        const retryResponse =
+            await fetch(
+                'https://api.spotify.com/v1/me/library',
+                {
+                    method: 'PUT',
+
+                    headers: {
+
+                        Authorization:
+                            `Bearer ${token}`,
+
+                        'Content-Type':
+                            'application/json'
+
+                    },
+
+                    body:
+                        JSON.stringify({
+
+                            uris:
+                                [
+                                    `spotify:playlist:${SPOTIFY_PLAYLIST_ID}`
+                                ]
+
+                        })
+                }
+            );
+
+        if (!retryResponse.ok) {
+
+            console.error(
+                'No se pudo guardar la playlist en Spotify.'
+            );
+
+            return;
+        }
+
+        console.log(
+            'Playlist guardada en Spotify.'
+        );
+
+        return;
+    }
+
+    if (!response.ok) {
+
+        const errorText =
+            await response.text();
+
+        console.error(
+            'Error al guardar la playlist:',
+            errorText
+        );
+
+        return;
+    }
+
+    console.log(
+        'Playlist guardada en Spotify.'
+    );
+}
 
 // =========================================================
 // EXPONER FUNCIONES
@@ -915,6 +1032,9 @@ window.MrYebraSpotify = {
     loadPlaylist:
         loadSpotifyPlaylist,
 
+    savePlaylist:
+        savePlaylistToSpotify,
+    
     createPlayer:
         createSpotifyPlayer,
 
