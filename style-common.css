@@ -108,11 +108,11 @@ html {
   }
 
   .main-menu {
-    gap: 20px;
+    gap: 14px;
   }
 
   .main-menu a {
-    font-size: 13px;
+    font-size: 12px;
   }
 
   .social-icons {
