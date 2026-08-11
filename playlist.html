@@ -1363,18 +1363,36 @@ document.addEventListener(
         // ------------------------------------------------
 
         playButton.addEventListener(
-          'click',
-          async (event) => {
+  'click',
+  async (event) => {
 
-            event.stopPropagation();
+    event.stopPropagation();
 
+    const player =
+      window.MrYebraSpotify.getPlayer();
 
-            await window.MrYebraSpotify.play(
-              index
-            );
+    const state =
+      await player?.getCurrentState();
 
-          }
-        );
+    if (
+      state &&
+      state.track_window &&
+      state.track_window.current_track &&
+      state.track_window.current_track.uri === track.uri
+    ) {
+
+      await window.MrYebraSpotify.toggle();
+
+    } else {
+
+      await window.MrYebraSpotify.play(
+        index
+      );
+
+    }
+
+  }
+);
 
 
         // ------------------------------------------------
