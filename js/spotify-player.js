@@ -916,11 +916,7 @@ async function savePlaylistToSpotify() {
     const spotifyUrl =
         `https://open.spotify.com/playlist/${SPOTIFY_PLAYLIST_ID}`;
 
-    window.open(
-        spotifyUrl,
-        '_blank',
-        'noopener,noreferrer'
-    );
+ window.location.href = spotifyUrl;
 }
 
 // =========================================================
