@@ -905,94 +905,21 @@ async function previousSpotifyTrack() {
 
 async function savePlaylistToSpotify() {
 
-     const confirmed =
-        confirm(
-            '¿Estás seguro de que quieres añadir esta playlist a tu Spotify?'
-        );
+    const confirmed = window.confirm(
+        '¿Estás seguro de que quieres añadir esta playlist a Spotify?'
+    );
 
     if (!confirmed) {
         return;
     }
-    
-    let token =
-        await getAccessToken();
 
-    if (!token) {
+    const spotifyUrl =
+        `https://open.spotify.com/playlist/${SPOTIFY_PLAYLIST_ID}`;
 
-        loginWithSpotify();
-
-        return;
-    }
-
- const response =
-    await fetch(
-        `https://api.spotify.com/v1/me/library?uris=${encodeURIComponent(`spotify:playlist:${SPOTIFY_PLAYLIST_ID}`)}`,
-        {
-            method: 'PUT',
-
-            headers: {
-                Authorization:
-                    `Bearer ${token}`
-            }
-        }
-    );
-    
-    if (response.status === 401) {
-
-        token =
-            await refreshAccessToken();
-
-        if (!token) {
-
-            loginWithSpotify();
-
-            return;
-        }
-
- const retryResponse =
-    await fetch(
-        `https://api.spotify.com/v1/me/library?uris=${encodeURIComponent(`spotify:playlist:${SPOTIFY_PLAYLIST_ID}`)}`,
-        {
-            method: 'PUT',
-
-            headers: {
-                Authorization:
-                    `Bearer ${token}`
-            }
-        }
-    );
-
-        if (!retryResponse.ok) {
-
-            console.error(
-                'No se pudo guardar la playlist en Spotify.'
-            );
-
-            return;
-        }
-
-        console.log(
-            'Playlist guardada en Spotify.'
-        );
-
-        return;
-    }
-
-    if (!response.ok) {
-
-        const errorText =
-            await response.text();
-
-        console.error(
-            'Error al guardar la playlist:',
-            errorText
-        );
-
-        return;
-    }
-
-    console.log(
-        'Playlist guardada en Spotify.'
+    window.open(
+        spotifyUrl,
+        '_blank',
+        'noopener,noreferrer'
     );
 }
 
