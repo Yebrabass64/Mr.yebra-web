@@ -742,8 +742,14 @@ async function playSpotifyTrack(index) {
     }
 
     currentTrackIndex =
-        index;
+    index;
 
+if (
+    spotifyPlayer &&
+    typeof spotifyPlayer.activateElement === 'function'
+) {
+    await spotifyPlayer.activateElement();
+}
 
     // Transferir reproducción al reproductor de nuestra web
     const transferResponse =
