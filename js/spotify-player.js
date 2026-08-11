@@ -905,6 +905,15 @@ async function previousSpotifyTrack() {
 
 async function savePlaylistToSpotify() {
 
+     const confirmed =
+        confirm(
+            '¿Estás seguro de que quieres añadir esta playlist a tu Spotify?'
+        );
+
+    if (!confirmed) {
+        return;
+    }
+    
     let token =
         await getAccessToken();
 
