@@ -999,6 +999,9 @@ window.MrYebraSpotify = {
     getToken:
         getAccessToken,
 
+    exchangeCode:
+        exchangeCodeForToken,
+    
     loadPlaylist:
         loadSpotifyPlaylist,
 
