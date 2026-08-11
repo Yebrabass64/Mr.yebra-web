@@ -587,6 +587,7 @@
 .spotify-link:hover {
     color: #ffffff !important;
     text-decoration: underline;
+}
 
 .spotify-link:visited {
     color: #ffffff !important;
