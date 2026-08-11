@@ -13,8 +13,8 @@ const SPOTIFY_PLAYLIST_ID =
     '1rdrf0vx3g9IrVy8hKQqsR';
 
 const SPOTIFY_SCOPES =
-    'streaming user-read-email user-read-private user-modify-playback-state playlist-read-private user-library-modify user-follow-modify';
-   
+    'streaming user-read-email user-read-private user-modify-playback-state playlist-read-private user-library-modify playlist-modify-public';
+
 const STORAGE_ACCESS_TOKEN =
     'mr_yebra_spotify_access_token';
 
