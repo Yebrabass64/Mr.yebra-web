@@ -915,34 +915,19 @@ async function savePlaylistToSpotify() {
         return;
     }
 
-    const response =
-        await fetch(
-            'https://api.spotify.com/v1/me/library',
-            {
-                method: 'PUT',
+ const response =
+    await fetch(
+        `https://api.spotify.com/v1/me/library?uris=${encodeURIComponent(`spotify:playlist:${SPOTIFY_PLAYLIST_ID}`)}`,
+        {
+            method: 'PUT',
 
-                headers: {
-
-                    Authorization:
-                        `Bearer ${token}`,
-
-                    'Content-Type':
-                        'application/json'
-
-                },
-
-                body:
-                    JSON.stringify({
-
-                        uris:
-                            [
-                                `spotify:playlist:${SPOTIFY_PLAYLIST_ID}`
-                            ]
-
-                    })
+            headers: {
+                Authorization:
+                    `Bearer ${token}`
             }
-        );
-
+        }
+    );
+    
     if (response.status === 401) {
 
         token =
@@ -955,33 +940,18 @@ async function savePlaylistToSpotify() {
             return;
         }
 
-        const retryResponse =
-            await fetch(
-                'https://api.spotify.com/v1/me/library',
-                {
-                    method: 'PUT',
+ const retryResponse =
+    await fetch(
+        `https://api.spotify.com/v1/me/library?uris=${encodeURIComponent(`spotify:playlist:${SPOTIFY_PLAYLIST_ID}`)}`,
+        {
+            method: 'PUT',
 
-                    headers: {
-
-                        Authorization:
-                            `Bearer ${token}`,
-
-                        'Content-Type':
-                            'application/json'
-
-                    },
-
-                    body:
-                        JSON.stringify({
-
-                            uris:
-                                [
-                                    `spotify:playlist:${SPOTIFY_PLAYLIST_ID}`
-                                ]
-
-                        })
-                }
-            );
+            headers: {
+                Authorization:
+                    `Bearer ${token}`
+            }
+        }
+    );
 
         if (!retryResponse.ok) {
 
